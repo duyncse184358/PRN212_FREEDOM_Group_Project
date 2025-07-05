@@ -1,0 +1,6 @@
+C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\Services\obj\Debug\net9.0\Services.csproj.AssemblyReference.cache
+C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\Services\obj\Debug\net9.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\Services\obj\Debug\net9.0\Services.AssemblyInfoInputs.cache
+C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\Services\obj\Debug\net9.0\Services.AssemblyInfo.cs
+C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\Services\obj\Debug\net9.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\Services\obj\Debug\net9.0\Services.sourcelink.json
