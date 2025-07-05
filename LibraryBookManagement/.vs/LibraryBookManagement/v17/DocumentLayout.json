@@ -1,0 +1,699 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\implementations\\activitylogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\activitylogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\implementations\\finerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\finerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\implementations\\returnrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\returnrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\implementations\\borrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\borrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\implementations\\patronrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\patronrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\implementations\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\iactivitylogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\iactivitylogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\ifinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\ifinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\ireturnrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\ireturnrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\reponsitories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\reponsitories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\iborrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\iborrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\ipatronrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\ipatronrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\reponsitories\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D224D1EF-1A9C-4E78-939E-D124FEF473E5}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\activitylogdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\activitylogdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\roledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\roledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\finedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\finedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\returndao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\returndao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\patrondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\patrondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\bookdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\bookdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|solutionrelative:dataaccessobject\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobjects\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F21D831-016F-483B-A262-DED34C803125}|DataAccessObjects\\DataAccessLayer.csproj|solutionrelative:dataaccessobjects\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|solutionrelative:dataaccessobject\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|solutionrelative:dataaccessobject\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\return.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|solutionrelative:dataaccessobject\\return.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|solutionrelative:dataaccessobject\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|solutionrelative:dataaccessobject\\fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\businessobject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|solutionrelative:dataaccessobject\\businessobject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|solutionrelative:dataaccessobject\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\borrowing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\BusinessObject.csproj|solutionrelative:dataaccessobject\\borrowing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\DataAccessObject.csproj|c:\\users\\victus\\source\\repos\\librarybookmanagement\\dataaccessobject\\activitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF84BCF-A32D-49CF-A924-6E8F99DD1B05}|DataAccessObject\\DataAccessObject.csproj|solutionrelative:dataaccessobject\\activitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActivityLogRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\ActivityLogRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\ActivityLogRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\ActivityLogRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\ActivityLogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:02:39.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:02:01.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\RoleRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\RoleRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:01:30.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FineRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\FineRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\FineRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\FineRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\FineRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:01:02.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReturnRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\ReturnRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\ReturnRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\ReturnRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\ReturnRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:00:33.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BorrowingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:00:03.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PatronRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\PatronRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\PatronRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\PatronRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\PatronRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:59:32.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\CategoryRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:58:45.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\BookRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Implementations\\BookRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\BookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:58:11.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Reponsitories",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Reponsitories.csproj",
+              "RelativeDocumentMoniker": "Reponsitories\\Reponsitories.csproj",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\Reponsitories.csproj",
+              "RelativeToolTip": "Reponsitories\\Reponsitories.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-04T15:54:08.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IActivityLogRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IActivityLogRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IActivityLogRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IActivityLogRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IActivityLogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:56:40.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IUserRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:56:08.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IRoleRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IRoleRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IRoleRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:55:38.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IFineRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IFineRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IFineRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IFineRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IFineRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:55:10.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IReturnRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IReturnRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IReturnRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IReturnRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IReturnRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:54:15.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IBorrowingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IBorrowingRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IBorrowingRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IBorrowingRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IBorrowingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:53:47.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IPatronRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IPatronRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IPatronRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IPatronRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IPatronRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:53:15.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\ICategoryRepository.cs",
+              "RelativeToolTip": "Reponsitories\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:44:04.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IBookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IBookRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IBookRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\Reponsitories\\IBookRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IBookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:42:50.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ActivityLogDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\ActivityLogDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\ActivityLogDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\ActivityLogDAO.cs",
+              "RelativeToolTip": "DataAccessObjects\\ActivityLogDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:39:57.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\UserDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\UserDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\UserDAO.cs",
+              "RelativeToolTip": "DataAccessObjects\\UserDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:39:18.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RoleDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\RoleDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\RoleDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\RoleDAO.cs",
+              "RelativeToolTip": "DataAccessObjects\\RoleDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:38:37.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FineDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\FineDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\FineDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\FineDAO.cs",
+              "RelativeToolTip": "DataAccessObjects\\FineDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:38:00.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ReturnDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\ReturnDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\ReturnDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\ReturnDAO.cs",
+              "RelativeToolTip": "DataAccessObjects\\ReturnDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:37:13.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BorrowingDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\BorrowingDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\BorrowingDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\BorrowingDAO.cs",
+              "RelativeToolTip": "DataAccessObjects\\BorrowingDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:36:38.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PatronDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\PatronDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\PatronDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\PatronDAO.cs",
+              "RelativeToolTip": "DataAccessObjects\\PatronDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:36:01.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CategoryDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\CategoryDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\CategoryDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\CategoryDAO.cs",
+              "RelativeToolTip": "DataAccessObjects\\CategoryDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:35:30.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BookDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\BookDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\BookDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\BookDAO.cs",
+              "RelativeToolTip": "DataAccessObjects\\BookDAO.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:33:59.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessObjects\\LibraryDbContext.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObjects\\LibraryDbContext.cs",
+              "RelativeToolTip": "DataAccessObjects\\LibraryDbContext.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAUwAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:28:29.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\User.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\User.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\User.cs",
+              "RelativeToolTip": "DataAccessObject\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:27:22.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Role.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\Role.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Role.cs",
+              "RelativeToolTip": "DataAccessObject\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:27:17.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Return.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Return.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\Return.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Return.cs",
+              "RelativeToolTip": "DataAccessObject\\Return.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:27:13.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Patron.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Patron.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\Patron.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Patron.cs",
+              "RelativeToolTip": "DataAccessObject\\Patron.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:27:02.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BusinessObject",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\BusinessObject.csproj",
+              "RelativeDocumentMoniker": "DataAccessObject\\BusinessObject.csproj",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\BusinessObject.csproj",
+              "RelativeToolTip": "DataAccessObject\\BusinessObject.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-04T15:26:52.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Fine.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Fine.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\Fine.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Fine.cs",
+              "RelativeToolTip": "DataAccessObject\\Fine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:26:45.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Category.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\Category.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Category.cs",
+              "RelativeToolTip": "DataAccessObject\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:26:37.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Borrowing.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Borrowing.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\Borrowing.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Borrowing.cs",
+              "RelativeToolTip": "DataAccessObject\\Borrowing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:26:32.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Book.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\Book.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\Book.cs",
+              "RelativeToolTip": "DataAccessObject\\Book.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:26:27.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ActivityLog.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\ActivityLog.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\ActivityLog.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\ActivityLog.cs",
+              "RelativeToolTip": "DataAccessObject\\ActivityLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:25:47.621Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
