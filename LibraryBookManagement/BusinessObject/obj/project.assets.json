@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\BusinessObject.csproj",
+      "projectUniqueName": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\LibraryBookManagement\\DataAccessObject\\BusinessObject.csproj",
       "projectName": "BusinessObject",
-      "projectPath": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\BusinessObject.csproj",
+      "projectPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\LibraryBookManagement\\DataAccessObject\\BusinessObject.csproj",
       "packagesPath": "C:\\Users\\VicTus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VicTus\\source\\repos\\LibraryBookManagement\\DataAccessObject\\obj\\",
+      "outputPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\LibraryBookManagement\\DataAccessObject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -67,12 +67,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-            "version": "[9.0.301, 9.0.301]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

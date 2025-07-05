@@ -8,7 +8,7 @@ using Reponsitories;
 
 namespace Services.Implementaions
 {
-    public class CategoryService
+    public class CategoryService : ICategoryService
     {
         private readonly ICategoryRepository repository;
         public CategoryService(ICategoryRepository repository) => this.repository = repository;
@@ -17,7 +17,7 @@ namespace Services.Implementaions
 
         public void AddCategory(Category category)
         {
-            if (string.IsNullOrWhiteSpace(category.Name)) throw new ArgumentException("Category name is required");
+            if (string.IsNullOrWhiteSpace(category.CategoryName)) throw new ArgumentException("Category name is required");
             repository.Add(category);
         }
 

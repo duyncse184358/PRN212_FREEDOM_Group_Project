@@ -7,10 +7,9 @@ using BusinessObject;
 
 namespace Services
 {
-    public interface IUserService
+    public interface IRoleService
     {
-        List<User> GetAllUsers();
-        User GetUserById(int id);
-        User Login(string username, string passwordHash);
+        List<Role> GetAllRoles();
+        Role GetRoleById(int id);
     }
 }

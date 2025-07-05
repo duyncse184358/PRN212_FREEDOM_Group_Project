@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessObject\BusinessObject.csproj" />
+    <ProjectReference Include="..\Reponsitories\Reponsitories.csproj" />
+  </ItemGroup>
+
 </Project>
