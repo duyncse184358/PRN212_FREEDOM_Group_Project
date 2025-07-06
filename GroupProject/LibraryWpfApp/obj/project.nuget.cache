@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xC23o78kWUo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\LibraryWpfApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VicTus\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.301\\microsoft.net.sdk.compilers.toolset.9.0.301.nupkg.sha512"
+  ],
+  "logs": []
+}

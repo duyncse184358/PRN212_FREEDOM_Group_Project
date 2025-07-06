@@ -1,6 +1,0 @@
-C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\DataAccessObjects\obj\Debug\net9.0\DataAccessLayer.csproj.AssemblyReference.cache
-C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\DataAccessObjects\obj\Debug\net9.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\DataAccessObjects\obj\Debug\net9.0\DataAccessLayer.AssemblyInfoInputs.cache
-C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\DataAccessObjects\obj\Debug\net9.0\DataAccessLayer.AssemblyInfo.cs
-C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\DataAccessObjects\obj\Debug\net9.0\DataAccessLayer.csproj.CoreCompileInputs.cache
-C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\LibraryBookManagement\DataAccessObjects\obj\Debug\net9.0\DataAccessLayer.sourcelink.json

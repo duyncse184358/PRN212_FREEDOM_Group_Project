@@ -1,0 +1,11 @@
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.deps.json
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.dll
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.pdb
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfoInputs.cache
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfo.cs
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.csproj.CoreCompileInputs.cache
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.dll
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\refint\BusinessObject.dll
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.pdb
+C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\ref\BusinessObject.dll
