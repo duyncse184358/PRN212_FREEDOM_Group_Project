@@ -20,6 +20,8 @@ namespace LibraryWpfApp.ViewModels
         public Book? SelectedBook { get; set; }
         public string SearchKeyword { get; set; } = "";
 
+        public bool CanManageBooks => AppContext.IsAdmin || AppContext.IsLibrarian || AppContext.IsStaff;
+
         public ICommand SearchCommand { get; }
         public ICommand AddCommand { get; }
         public ICommand EditCommand { get; }
@@ -29,6 +31,16 @@ namespace LibraryWpfApp.ViewModels
         public ICommand MarkLostCommand { get; }
         public ICommand MarkDamagedCommand { get; }
 
+        // Constructor mặc định (public parameterless constructor) cho XAML
+        public BookViewModel() : this(
+            (Application.Current as App)?.Services.GetRequiredService<IBookService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<ICategoryService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IPatronService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IBorrowingService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IFineService>()!
+        )
+        {
+        }
 
         public BookViewModel(IBookService bookService, ICategoryService categoryService, IPatronService patronService, IBorrowingService borrowingService, IFineService fineService)
         {
@@ -66,9 +78,11 @@ namespace LibraryWpfApp.ViewModels
         private void Add()
         {
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.BookDialog>();
-            // ĐÃ SỬA LỖI: Truyền ICategoryService khi lấy BookDialogViewModel
-            dialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<BookDialogViewModel>(
-                new object[] { _categoryService });
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<BookDialogViewModel>(
+                (Application.Current as App)?.Services!, // ServiceProvider
+                _categoryService // Tham số cho constructor của BookDialogViewModel
+            );
 
             if (dialog.ShowDialog() == true)
             {
@@ -91,8 +105,12 @@ namespace LibraryWpfApp.ViewModels
             }
 
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.BookDialog>();
-            dialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<BookDialogViewModel>(
-                new object[] { SelectedBook!, _categoryService });
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<BookDialogViewModel>(
+                (Application.Current as App)?.Services!, // ServiceProvider
+                SelectedBook!, // Tham số Book
+                _categoryService // Tham số ICategoryService
+            );
 
             if (dialog.ShowDialog() == true)
             {
@@ -142,8 +160,14 @@ namespace LibraryWpfApp.ViewModels
             }
 
             var borrowDialog = (Application.Current as App)?.Services.GetRequiredService<Views.BorrowBookDialog>();
-            dialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<BorrowBookDialogViewModel>(
-                new object[] { _bookService, _patronService, _borrowingService, SelectedBook! });
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            borrowDialog!.DataContext = ActivatorUtilities.CreateInstance<BorrowBookDialogViewModel>(
+                (Application.Current as App)?.Services!, // ServiceProvider
+                _bookService,
+                _patronService,
+                _borrowingService,
+                SelectedBook!
+            );
 
             if (borrowDialog.ShowDialog() == true)
             {
@@ -155,8 +179,14 @@ namespace LibraryWpfApp.ViewModels
         private void ReturnBook()
         {
             var returnDialog = (Application.Current as App)?.Services.GetRequiredService<Views.ReturnBookDialog>();
-            returnDialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<ReturnBookDialogViewModel>(
-                new object[] { _bookService, _borrowingService, _patronService, _fineService });
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            returnDialog!.DataContext = ActivatorUtilities.CreateInstance<ReturnBookDialogViewModel>(
+                (Application.Current as App)?.Services!, // ServiceProvider
+                _bookService,
+                _borrowingService,
+                _patronService,
+                _fineService
+            );
 
             if (returnDialog.ShowDialog() == true)
             {
@@ -172,7 +202,7 @@ namespace LibraryWpfApp.ViewModels
                 MessageBox.Show("Please select a book to mark as lost.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            if (MessageBox.Show($"Are you sure you want to mark '{SelectedBook.Title}' as LOST? This will reduce available copies.", "Confirm Lost", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (MessageBox.Show($"Are you sure you want to mark '{SelectedBook.Title}' as LOST? This will reduce available copies.", "Confirm Lost", MessageBoxButton.YesNo, (MessageBoxImage)MessageBoxButton.YesNo, (MessageBoxResult)MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 _bookService.MarkBookStatus(SelectedBook.BookId, "Lost");
                 LoadBooks();

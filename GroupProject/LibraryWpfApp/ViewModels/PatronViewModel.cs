@@ -25,11 +25,23 @@ namespace LibraryWpfApp.ViewModels
 
         public string SearchKeyword { get; set; } = "";
 
+        public bool CanManagePatrons => AppContext.IsAdmin || AppContext.IsLibrarian || AppContext.IsStaff;
+
         public ICommand SearchCommand { get; }
         public ICommand AddCommand { get; }
         public ICommand EditCommand { get; }
         public ICommand DeleteCommand { get; }
         public ICommand ViewBorrowingHistoryCommand { get; }
+
+        // Constructor mặc định (public parameterless constructor) cho XAML
+        public PatronViewModel() : this(
+            (Application.Current as App)?.Services.GetRequiredService<IPatronService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IBorrowingService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IBookService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IFineService>()!
+        )
+        {
+        }
 
         public PatronViewModel(IPatronService patronService, IBorrowingService borrowingService, IBookService bookService, IFineService fineService)
         {
@@ -65,7 +77,10 @@ namespace LibraryWpfApp.ViewModels
         private void Add()
         {
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.PatronDialog>();
-            dialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<PatronDialogViewModel>();
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<PatronDialogViewModel>(
+                (Application.Current as App)?.Services! // ServiceProvider
+            );
 
             if (dialog.ShowDialog() == true)
             {
@@ -87,8 +102,11 @@ namespace LibraryWpfApp.ViewModels
             }
 
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.PatronDialog>();
-            dialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<PatronDialogViewModel>(
-                new object[] { SelectedPatron! });
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<PatronDialogViewModel>(
+                (Application.Current as App)?.Services!, // ServiceProvider
+                SelectedPatron! // Tham số cho constructor của PatronDialogViewModel
+            );
 
             if (dialog.ShowDialog() == true)
             {
@@ -132,8 +150,15 @@ namespace LibraryWpfApp.ViewModels
             }
 
             var historyWindow = (Application.Current as App)?.Services.GetRequiredService<Views.PatronBorrowingHistoryWindow>();
-            historyWindow!.DataContext = (Application.Current as App)?.Services.GetRequiredService<PatronBorrowingHistoryViewModel>(
-                new object[] { SelectedPatron.PatronId, _borrowingService, _bookService, _patronService, _fineService });
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            historyWindow!.DataContext = ActivatorUtilities.CreateInstance<PatronBorrowingHistoryViewModel>(
+                (Application.Current as App)?.Services!, // ServiceProvider
+                SelectedPatron.PatronId,
+                _borrowingService,
+                _bookService,
+                _patronService,
+                _fineService
+            );
 
             historyWindow.Show();
         }

@@ -15,6 +15,8 @@ namespace LibraryWpfApp
         public static bool IsAdmin => CurrentUserRole.Equals("Administrator", System.StringComparison.OrdinalIgnoreCase);
         public static bool IsLibrarian => CurrentUserRole.Equals("Librarian", System.StringComparison.OrdinalIgnoreCase);
         public static bool IsStaff => CurrentUserRole.Equals("Staff", System.StringComparison.OrdinalIgnoreCase);
+        public static bool IsMember => CurrentUserRole.Equals("Member", System.StringComparison.OrdinalIgnoreCase) ||
+                                       CurrentUserRole.Equals("Student", System.StringComparison.OrdinalIgnoreCase);
 
 
         public static void Reset()

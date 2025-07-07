@@ -97,7 +97,7 @@ namespace LibraryWpfApp
             // Đăng ký ViewModels
             serviceCollection.AddTransient<ViewModels.LoginViewModel>();
             serviceCollection.AddTransient<ViewModels.MainViewModel>();
-           /* serviceCollection.AddTransient<ViewModels.BookViewModel>();
+            serviceCollection.AddTransient<ViewModels.BookViewModel>();
             serviceCollection.AddTransient<ViewModels.BookDialogViewModel>();
             serviceCollection.AddTransient<ViewModels.PatronViewModel>();
             serviceCollection.AddTransient<ViewModels.PatronDialogViewModel>();
@@ -105,7 +105,7 @@ namespace LibraryWpfApp
             serviceCollection.AddTransient<ViewModels.OverdueBooksViewModel>();
             serviceCollection.AddTransient<ViewModels.ReportViewModel>();
             serviceCollection.AddTransient<ViewModels.FineManagementViewModel>();
-            serviceCollection.AddTransient<ViewModels.ProfileViewModel>();
+           // serviceCollection.AddTransient<ViewModels.ProfileViewModel>();
             serviceCollection.AddTransient<ViewModels.BorrowBookDialogViewModel>();
             serviceCollection.AddTransient<ViewModels.ReturnBookDialogViewModel>();
             serviceCollection.AddTransient<ViewModels.PatronBorrowingHistoryViewModel>();
@@ -113,13 +113,13 @@ namespace LibraryWpfApp
             serviceCollection.AddTransient<ViewModels.UserViewModel>();
             serviceCollection.AddTransient<ViewModels.UserDialogViewModel>();
             serviceCollection.AddTransient<ViewModels.CategoryViewModel>();
-            serviceCollection.AddTransient<ViewModels.CategoryDialogViewModel>();*/
+            serviceCollection.AddTransient<ViewModels.CategoryDialogViewModel>();
 
 
             // Đăng ký Views
             serviceCollection.AddTransient<Views.LoginWindow>();
             serviceCollection.AddTransient<Views.MainWindow>();
-           /* serviceCollection.AddTransient<Views.BookWindow>();
+            serviceCollection.AddTransient<Views.BookWindow>();
             serviceCollection.AddTransient<Views.BookDialog>();
             serviceCollection.AddTransient<Views.PatronWindow>();
             serviceCollection.AddTransient<Views.PatronDialog>();
@@ -127,7 +127,7 @@ namespace LibraryWpfApp
             serviceCollection.AddTransient<Views.OverdueBooksWindow>();
             serviceCollection.AddTransient<Views.ReportWindow>();
             serviceCollection.AddTransient<Views.FineManagementWindow>();
-            serviceCollection.AddTransient<Views.ProfileWindow>();
+          //  serviceCollection.AddTransient<Views.ProfileWindow>();
             serviceCollection.AddTransient<Views.BorrowBookDialog>();
             serviceCollection.AddTransient<Views.ReturnBookDialog>();
             serviceCollection.AddTransient<Views.PatronBorrowingHistoryWindow>();
@@ -135,7 +135,7 @@ namespace LibraryWpfApp
             serviceCollection.AddTransient<Views.UserManagementWindow>();
             serviceCollection.AddTransient<Views.UserDialog>();
             serviceCollection.AddTransient<Views.CategoryWindow>();
-            serviceCollection.AddTransient<Views.CategoryDialog>();*/
+            serviceCollection.AddTransient<Views.CategoryDialog>();
 
 
             Services = serviceCollection.BuildServiceProvider();

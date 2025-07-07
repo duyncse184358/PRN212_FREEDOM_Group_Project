@@ -6,8 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessObject;
 using Services;
+using LibraryWpfApp.ViewModels;
+using System.Windows; // Đảm bảo namespace này khớp với project của bạn
 
-namespace LibraryWpfApp.ViewModels
+namespace LibraryWpfApp.ViewModels // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.ViewModels
 {
     public class BookDialogViewModel : BaseViewModel
     {
@@ -21,6 +23,11 @@ namespace LibraryWpfApp.ViewModels
             "Available", "Borrowed", "Lost", "Damaged", "Missing"
         };
 
+        // Constructor mặc định (public parameterless constructor) cho XAML
+        public BookDialogViewModel()
+            
+        {
+        }
 
         public BookDialogViewModel(ICategoryService categoryService)
         {
@@ -47,7 +54,6 @@ namespace LibraryWpfApp.ViewModels
                 AvailableCopies = originalBook.AvailableCopies,
                 ShelfLocation = originalBook.ShelfLocation,
                 Status = originalBook.Status,
-                // CoverImageUrl = originalBook.CoverImageUrl, // Đã xóa
                 CategoryId = originalBook.CategoryId
             };
             LoadCategories();

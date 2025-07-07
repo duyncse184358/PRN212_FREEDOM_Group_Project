@@ -24,6 +24,13 @@ namespace LibraryWpfApp.ViewModels
         public ICommand EditCommand { get; }
         public ICommand DeleteCommand { get; }
 
+        // Constructor mặc định (public parameterless constructor) cho XAML
+        public UserViewModel() : this(
+            (Application.Current as App)?.Services.GetRequiredService<IUserService>()!
+        )
+        {
+        }
+
         public UserViewModel(IUserService userService) // Removed IRoleService as Role is string now
         {
             _userService = userService;
@@ -45,7 +52,10 @@ namespace LibraryWpfApp.ViewModels
         private void Add()
         {
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.UserDialog>();
-            dialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<UserDialogViewModel>();
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<UserDialogViewModel>(
+                (Application.Current as App)?.Services! // ServiceProvider
+            );
 
             if (dialog.ShowDialog() == true)
             {
@@ -68,8 +78,11 @@ namespace LibraryWpfApp.ViewModels
             }
 
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.UserDialog>();
-            dialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<UserDialogViewModel>(
-                new object[] { SelectedUser! });
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<UserDialogViewModel>(
+                (Application.Current as App)?.Services!, // ServiceProvider
+                SelectedUser! // Tham số cho constructor của UserDialogViewModel
+            );
 
             if (dialog.ShowDialog() == true)
             {

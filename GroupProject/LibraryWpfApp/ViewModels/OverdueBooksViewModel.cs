@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BusinessObject;
-using NguyênChiDuyWPF.Commands; // Đã cập nhật namespace
-using NguyênChiDuyWPF.Models; // Đã cập nhật namespace
+﻿using System.Collections.ObjectModel;
 using Services;
 using System.Windows.Input;
 using System.Windows; // Cần thêm using System.Windows
 using Microsoft.Extensions.DependencyInjection;
 using LibraryWpfApp.Commands;
 using LibraryWpfApp.Models;
-using LibraryWpfApp.ViewModels;
-using LibraryWpfApp;
 
 namespace LibraryWpfApp.ViewModels // Đã cập nhật namespace
 {

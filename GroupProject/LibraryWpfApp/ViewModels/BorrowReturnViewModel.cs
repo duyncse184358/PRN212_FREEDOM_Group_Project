@@ -25,6 +25,10 @@ namespace LibraryWpfApp.ViewModels
         public ICommand ViewOverdueCommand { get; }
         public ICommand CalculateAndAddFineCommand { get; }
 
+        public BorrowReturnViewModel()
+        {
+           
+        }
         public BorrowReturnViewModel(IBorrowingService borrowingService, IBookService bookService, IPatronService patronService, IFineService fineService)
         {
             _borrowingService = borrowingService;

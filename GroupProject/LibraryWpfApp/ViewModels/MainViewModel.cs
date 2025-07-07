@@ -34,15 +34,15 @@ namespace LibraryWpfApp.ViewModels
             WelcomeMessage = $"Welcome, {AppContext.CurrentUserName} ({AppContext.CurrentUserRole})";
 
            LogoutCommand = new RelayCommand(Logout);
-           /* OpenBookManagementCommand = new RelayCommand(() => GetWindow<Views.BookWindow>()?.Show());
+            OpenBookManagementCommand = new RelayCommand(() => GetWindow<Views.BookWindow>()?.Show());
             OpenPatronManagementCommand = new RelayCommand(() => GetWindow<Views.PatronWindow>()?.Show());
             OpenBorrowReturnCommand = new RelayCommand(() => GetWindow<Views.BorrowReturnWindow>()?.Show());
             OpenFineManagementCommand = new RelayCommand(() => GetWindow<Views.FineManagementWindow>()?.Show());
             OpenUserManagementCommand = new RelayCommand(() => GetWindow<Views.UserManagementWindow>()?.Show());
             OpenCategoryManagementCommand = new RelayCommand(() => GetWindow<Views.CategoryWindow>()?.Show());
             OpenReportsCommand = new RelayCommand(() => GetWindow<Views.ReportWindow>()?.Show());
-            OpenProfileCommand = new RelayCommand(() => GetWindow<Views.ProfileWindow>()?.Show());
-            OpenOverdueBooksCommand = new RelayCommand(() => GetWindow<Views.OverdueBooksWindow>()?.Show());*/
+        //    OpenProfileCommand = new RelayCommand(() => GetWindow<Views.ProfileWindow>()?.Show());
+            OpenOverdueBooksCommand = new RelayCommand(() => GetWindow<Views.OverdueBooksWindow>()?.Show());
         }
 
         private T? GetWindow<T>() where T : Window

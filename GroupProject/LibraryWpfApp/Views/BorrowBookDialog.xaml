@@ -1,0 +1,41 @@
+﻿<Window x:Class="LibraryWpfApp.Views.BorrowBookDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
+        Title="Borrow Book" Height="250" Width="400"
+        WindowStartupLocation="CenterOwner">
+
+    <Window.DataContext>
+        <vm:BorrowBookDialogViewModel />
+    </Window.DataContext>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Title -->
+            <RowDefinition Height="Auto"/>
+            <!-- Book Title Label -->
+            <RowDefinition Height="Auto"/>
+            <!-- Select Patron Label -->
+            <RowDefinition Height="*"/>
+            <!-- Spacer -->
+            <RowDefinition Height="Auto"/>
+            <!-- Buttons -->
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Borrow Book" Grid.Row="0"
+                   FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+        <Label Content="Book Title:" Grid.Row="1"/>
+        <TextBlock Grid.Row="2" Text="{Binding BookToBorrow.Title}" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <Label Content="Select Patron:" Grid.Row="3"/>
+        <ComboBox Grid.Row="4" ItemsSource="{Binding Patrons}" SelectedItem="{Binding SelectedPatron}"
+                  DisplayMemberPath="FullName" Style="{StaticResource ModernComboBoxStyle}"/>
+
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="Confirm Borrow" Click="Save_Click" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+            <Button Content="Cancel" Click="Close_Click" Style="{StaticResource ModernButtonStyle}"/>
+        </StackPanel>
+    </Grid>
+</Window>

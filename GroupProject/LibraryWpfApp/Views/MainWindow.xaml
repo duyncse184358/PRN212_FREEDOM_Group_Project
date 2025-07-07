@@ -1,7 +1,7 @@
 ﻿<Window x:Class="LibraryWpfApp.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
+        xmlns:vm="clr-namespace:NguyênChiDuyWPF.ViewModels"
         xmlns:conv="clr-namespace:LibraryWpfApp.Converters"
         Title="Library Book Management System" Height="450" Width="800"
         WindowStartupLocation="CenterScreen">
@@ -17,11 +17,13 @@
                 <MenuItem Header="Exit" Click="Exit_Click"/>
             </MenuItem>
 
+            <!-- Menu Administration: Chỉ hiển thị nếu người dùng là Admin -->
             <MenuItem Header="Administration" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVisibility}}">
                 <MenuItem Header="User Management" Command="{Binding OpenUserManagementCommand}"/>
                 <MenuItem Header="Category Management" Command="{Binding OpenCategoryManagementCommand}"/>
             </MenuItem>
 
+            <!-- Menu Operations: Hiển thị nếu người dùng là Librarian hoặc Staff -->
             <MenuItem Header="Operations" Visibility="{Binding IsLibrarian, Converter={StaticResource BoolToVisibility}}">
                 <MenuItem Header="Book Management" Command="{Binding OpenBookManagementCommand}"/>
                 <MenuItem Header="Patron Management" Command="{Binding OpenPatronManagementCommand}"/>
@@ -30,10 +32,18 @@
                 <MenuItem Header="Overdue Books" Command="{Binding OpenOverdueBooksCommand}"/>
             </MenuItem>
 
+            <!-- Menu Member Operations: Chỉ hiển thị nếu người dùng là Member/Student -->
+            <MenuItem Header="Member Operations" Visibility="{Binding IsMember, Converter={StaticResource BoolToVisibility}}">
+                <MenuItem Header="View Books" Command="{Binding OpenMemberBookListCommand}"/>
+                <MenuItem Header="My Borrowing History" Command="{Binding OpenMyBorrowingHistoryCommand}"/>
+            </MenuItem>
+
+            <!-- Menu Reports: Có thể hiển thị cho tất cả các vai trò có quyền xem báo cáo -->
             <MenuItem Header="Reports">
                 <MenuItem Header="View Reports" Command="{Binding OpenReportsCommand}"/>
             </MenuItem>
 
+            <!-- My Account: Hiển thị cho tất cả người dùng đã đăng nhập -->
             <MenuItem Header="My Account">
                 <MenuItem Header="My Profile" Command="{Binding OpenProfileCommand}"/>
             </MenuItem>

@@ -1,22 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BusinessObject;
-using NguyênChiDuyWPF.Commands;
-using NguyênChiDuyWPF.Models; // Cần cho BorrowingDisplayModel
+﻿using BusinessObject;
 using Services;
 using System.Windows.Input;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using LibraryWpfApp.Commands;
 using LibraryWpfApp.Models;
-using LibraryWpfApp.ViewModels;
-using LibraryWpfApp;
 
-namespace NguyênChiDuyWPF.ViewModels
+namespace LibraryWpfApp.ViewModels
 {
     public class ReturnBookDialogViewModel : BaseViewModel
     {
@@ -30,6 +20,11 @@ namespace NguyênChiDuyWPF.ViewModels
 
         public ICommand SearchBorrowingCommand { get; }
         public ICommand ConfirmReturnCommand { get; }
+
+        public ReturnBookDialogViewModel()
+        {
+            
+        }
 
         public ReturnBookDialogViewModel(IBookService bookService, IBorrowingService borrowingService, IPatronService patronService, IFineService fineService)
         {
@@ -114,7 +109,11 @@ namespace NguyênChiDuyWPF.ViewModels
                     }
                 }
 
-                Application.Current.Windows.OfType<LibraryWpfApp.Views.ReturnBookDialog>().FirstOrDefault(w => w.DataContext == this)?.DialogResult = true;
+                var dialog = Application.Current.Windows.OfType<Views.ReturnBookDialog>().FirstOrDefault(w => w.DataContext == this);
+                if (dialog != null)
+                {
+                    dialog.DialogResult = true; // Fix: Ensure the assignment is made to a valid property
+                }
             }
             catch (InvalidOperationException ex)
             {

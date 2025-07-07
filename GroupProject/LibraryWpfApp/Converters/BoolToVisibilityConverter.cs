@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Data;
 using System.Windows;
+using System.Windows.Data;
 
-namespace LibraryWpfApp.Converters
+namespace LibraryWpfApp.Converters // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.Converters
 {
     public class BoolToVisibilityConverter : IValueConverter
     {

@@ -1,0 +1,45 @@
+﻿<Window x:Class="LibraryWpfApp.Views.PatronBorrowingHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
+        Title="Patron Borrowing History" Height="500" Width="900"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <vm:PatronBorrowingHistoryViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style x:Key="RightAlignedText" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Right"/>
+        </Style>
+    </Window.Resources>
+
+    <DockPanel Margin="10">
+        <StackPanel DockPanel.Dock="Top" Orientation="Vertical" Margin="0,0,0,10">
+            <TextBlock Text="Patron Borrowing History" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+            <TextBlock HorizontalAlignment="Center">
+                <Run Text="Patron: " FontWeight="SemiBold"/>
+                <Run Text="{Binding Patron.FullName}"/>
+                <Run Text=" (ID: "/>
+                <Run Text="{Binding Patron.PatronId}"/>
+                <Run Text=", Membership: "/>
+                <Run Text="{Binding Patron.MembershipType}"/>
+                <Run Text=")"/>
+            </TextBlock>
+        </StackPanel>
+
+        <DataGrid ItemsSource="{Binding BorrowingHistory}" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Borrowing ID" Binding="{Binding BorrowingID}" Width="Auto"/>
+                <DataGridTextColumn Header="Book Title" Binding="{Binding BookTitle}" Width="2*"/>
+                <DataGridTextColumn Header="Borrow Date" Binding="{Binding BorrowDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
+                <DataGridTextColumn Header="Due Date" Binding="{Binding DueDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
+                <DataGridTextColumn Header="Return Date" Binding="{Binding ReturnDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto"/>
+                <DataGridTextColumn Header="Fine" Binding="{Binding FineAmount, StringFormat=C}" Width="Auto"/>
+                <DataGridCheckBoxColumn Header="Fine Paid" Binding="{Binding IsFinePaid}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Window>

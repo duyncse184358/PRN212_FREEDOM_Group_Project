@@ -1,0 +1,50 @@
+﻿<Window x:Class="LibraryWpfApp.Views.PatronWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:NguyênChiDuyWPF.ViewModels"
+        xmlns:conv="clr-namespace:LibraryWpfApp.Converters"
+        Title="Patron Management" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <vm:PatronViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style x:Key="RightAlignedText" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Right"/>
+        </Style>
+        <!-- ModernDatePickerStyle đã được định nghĩa trong App.xaml -->
+    </Window.Resources>
+
+    <DockPanel Margin="10">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBox Width="300" Text="{Binding SearchKeyword}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}"/>
+            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+
+            <!-- Các nút quản lý chỉ hiển thị nếu CanManagePatrons là true (Admin/Librarian/Staff) -->
+            <Button Content="Add New" Command="{Binding AddCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
+                    Visibility="{Binding CanManagePatrons, Converter={StaticResource BoolToVisibility}}"/>
+            <Button Content="Edit Selected" Command="{Binding EditCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
+                    Visibility="{Binding CanManagePatrons, Converter={StaticResource BoolToVisibility}}"/>
+            <Button Content="Delete Selected" Command="{Binding DeleteCommand}" Style="{StaticResource ModernButtonStyle}"
+                    Visibility="{Binding CanManagePatrons, Converter={StaticResource BoolToVisibility}}"/>
+
+            <Button Content="View Borrowing History" Command="{Binding ViewBorrowingHistoryCommand}" Margin="20,0,0,0" Style="{StaticResource ModernButtonStyle}"/>
+        </StackPanel>
+
+        <DataGrid ItemsSource="{Binding Patrons}"
+                  SelectedItem="{Binding SelectedPatron}"
+                  AutoGenerateColumns="False" IsReadOnly="True"
+                  Style="{StaticResource ModernDataGridStyle}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding PatronId}" Width="Auto"/>
+                <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" Width="*"/>
+                <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="Auto"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
+                <DataGridTextColumn Header="Membership" Binding="{Binding MembershipType}" Width="Auto"/>
+                <DataGridTextColumn Header="Registration Date" Binding="{Binding RegistrationDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Window>

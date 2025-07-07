@@ -24,6 +24,12 @@ namespace LibraryWpfApp.ViewModels
         public ICommand EditCommand { get; }
         public ICommand DeleteCommand { get; }
 
+        // Constructor mặc định (public parameterless constructor) cho XAML
+        public CategoryViewModel() 
+           
+        { }
+     
+
         public CategoryViewModel(ICategoryService categoryService)
         {
             _categoryService = categoryService;
@@ -44,7 +50,10 @@ namespace LibraryWpfApp.ViewModels
         private void Add()
         {
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.CategoryDialog>();
-            dialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<CategoryDialogViewModel>();
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<CategoryDialogViewModel>(
+                (Application.Current as App)?.Services! // ServiceProvider
+            );
 
             if (dialog.ShowDialog() == true)
             {
@@ -66,8 +75,11 @@ namespace LibraryWpfApp.ViewModels
             }
 
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.CategoryDialog>();
-            dialog!.DataContext = (Application.Current as App)?.Services.GetRequiredService<CategoryDialogViewModel>(
-                new object[] { SelectedCategory! });
+            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<CategoryDialogViewModel>(
+                (Application.Current as App)?.Services!, // ServiceProvider
+                SelectedCategory! // Tham số cho constructor của CategoryDialogViewModel
+            );
 
             if (dialog.ShowDialog() == true)
             {

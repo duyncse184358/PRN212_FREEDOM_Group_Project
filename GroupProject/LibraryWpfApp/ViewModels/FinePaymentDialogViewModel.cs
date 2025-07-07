@@ -7,6 +7,7 @@ using LibraryWpfApp.Commands;
 using Services;
 using System.Windows.Input;
 using System.Windows;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LibraryWpfApp.ViewModels
 {
@@ -23,6 +24,14 @@ namespace LibraryWpfApp.ViewModels
 
         public ICommand ProcessPaymentCommand { get; }
 
+        // Constructor mặc định (public parameterless constructor) cho XAML
+        public FinePaymentDialogViewModel() : this(
+            (Application.Current as App)?.Services.GetRequiredService<IFineService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IPatronService>()!
+        )
+        {
+        }
+
         public FinePaymentDialogViewModel(IFineService fineService, IPatronService patronService)
         {
             _fineService = fineService;
@@ -31,13 +40,14 @@ namespace LibraryWpfApp.ViewModels
             ProcessPaymentCommand = new RelayCommand(ProcessPayment);
         }
 
+        // ĐÃ THÊM LẠI PHƯƠNG THỨC SETUP NÀY
         public void Setup(int borrowingId, int patronId, decimal amount, string patronName)
         {
             BorrowingID = borrowingId;
             PatronID = patronId;
             FineAmount = amount;
             PatronName = patronName;
-            IsPaid = false;
+            IsPaid = false; // Mặc định là chưa trả khi setup
             OnPropertyChanged(nameof(BorrowingID));
             OnPropertyChanged(nameof(PatronID));
             OnPropertyChanged(nameof(FineAmount));
@@ -77,7 +87,11 @@ namespace LibraryWpfApp.ViewModels
                     MessageBox.Show("New fine record and payment processed successfully!", "Payment Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
 
-                Application.Current.Windows.OfType<Views.FinePaymentDialog>().FirstOrDefault(w => w.DataContext == this)?.DialogResult = true;
+                var dialog = Application.Current.Windows.OfType<Views.FinePaymentDialog>().FirstOrDefault(w => w.DataContext == this);
+                if (dialog != null)
+                {
+                    dialog.DialogResult = true;
+                }
             }
             catch (Exception ex)
             {

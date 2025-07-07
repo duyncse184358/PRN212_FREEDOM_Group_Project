@@ -13,9 +13,9 @@ namespace LibraryWpfApp.ViewModels
 
         public CategoryDialogViewModel()
         {
-            Category = new BusinessObject.Category();
+            Category = new Category();
         }
-
+        
         public CategoryDialogViewModel(Category original)
         {
             Category = new BusinessObject.Category

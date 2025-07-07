@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\App.xaml
-2-1457342498
+20-1981805335
 
-35-586896053
+53-1691829116
 2391480344420
-Views\LoginWindow.xaml;Views\MainWindow.xaml;
+Views\BookDialog.xaml;Views\BookWindow.xaml;Views\BorrowBookDialog.xaml;Views\BorrowReturnWindow.xaml;Views\CategoryDialog.xaml;Views\CategoryWindow.xaml;Views\FineManagementWindow.xaml;Views\FinePaymentDialog.xaml;Views\GenreDialog.xaml;Views\GenreManagementWindow.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\OverdueBooksWindow.xaml;Views\PatronBorrowingHistoryWindow.xaml;Views\PatronDialog.xaml;Views\PatronWindow.xaml;Views\ReportWindow.xaml;Views\ReturnBookDialog.xaml;Views\UserDialog.xaml;Views\UserManagementWindow.xaml;
 
-False
+True
 

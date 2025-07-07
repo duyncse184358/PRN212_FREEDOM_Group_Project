@@ -1,0 +1,48 @@
+﻿<Window x:Class="LibraryWpfApp.Views.ReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
+        Title="Library Report" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <vm:ReportViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style x:Key="RightAlignedText" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Right"/>
+        </Style>
+    </Window.Resources>
+
+    <DockPanel Margin="10">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Content="From Date:"/>
+            <DatePicker SelectedDate="{Binding FromDate}" Margin="0,0,10,0" Style="{StaticResource ModernDatePickerStyle}"/>
+            <Label Content="To Date:"/>
+            <DatePicker SelectedDate="{Binding ToDate}" Margin="0,0,10,0" Style="{StaticResource ModernDatePickerStyle}"/>
+            <Button Content="Generate Report" Command="{Binding GenerateReportCommand}" Style="{StaticResource ModernButtonStyle}"/>
+        </StackPanel>
+
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Vertical" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <TextBlock Margin="0,2,0,2"><Run FontWeight="Bold">Total Borrowed Books:</Run> <Run Text="{Binding TotalBorrowedBooks}"/></TextBlock>
+            <TextBlock Margin="0,2,0,2"><Run FontWeight="Bold">Total Overdue Books:</Run> <Run Text="{Binding TotalOverdueBooks}" Foreground="Red"/></TextBlock>
+            <TextBlock Margin="0,2,0,2"><Run FontWeight="Bold">Total Fines:</Run> <Run Text="{Binding TotalFinesAmount, StringFormat=C}"/></TextBlock>
+        </StackPanel>
+
+        <DataGrid ItemsSource="{Binding BorrowingsReport}" AutoGenerateColumns="False" IsReadOnly="True"
+                  Style="{StaticResource ModernDataGridStyle}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Borrowing ID" Binding="{Binding BorrowingID}" Width="Auto"/>
+                <DataGridTextColumn Header="Book Title" Binding="{Binding BookTitle}" Width="2*"/>
+                <DataGridTextColumn Header="Patron Name" Binding="{Binding PatronName}" Width="*"/>
+                <DataGridTextColumn Header="Borrow Date" Binding="{Binding BorrowDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
+                <DataGridTextColumn Header="Due Date" Binding="{Binding DueDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
+                <DataGridTextColumn Header="Return Date" Binding="{Binding ReturnDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto"/>
+                <DataGridTextColumn Header="Fine" Binding="{Binding FineAmount, StringFormat=C}" Width="Auto"/>
+                <DataGridCheckBoxColumn Header="Fine Paid" Binding="{Binding IsFinePaid}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Window>
