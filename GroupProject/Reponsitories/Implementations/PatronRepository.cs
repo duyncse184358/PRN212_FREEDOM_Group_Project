@@ -18,6 +18,11 @@ namespace Reponsitories.Implementations
         public void Add(Patron patron) => _patronDao.Add(patron);
         public void Update(Patron patron) => _patronDao.Update(patron);
         public void Delete(int id) => _patronDao.Delete(id);
-        public List<Patron> Search(string keyword) => _patronDao.Search(keyword);
+
+        public List<Patron> Search(string keyword)
+        {
+            throw new NotImplementedException();
+        }
+        //   public List<Patron> Search(string keyword) => _patronDao.Search(keyword);
     }
 }

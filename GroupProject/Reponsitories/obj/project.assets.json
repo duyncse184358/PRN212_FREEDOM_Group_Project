@@ -1125,7 +1125,6 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "BusinessObject": "1.0.0",
-          "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.6",
           "Microsoft.Extensions.Configuration": "9.0.6",
           "Microsoft.Extensions.Configuration.Json": "9.0.6"
@@ -3155,16 +3154,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

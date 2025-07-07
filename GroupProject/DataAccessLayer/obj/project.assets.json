@@ -4981,7 +4981,6 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "BusinessObject >= 1.0.0",
-      "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.6",
       "Microsoft.Extensions.Configuration >= 9.0.6",
@@ -5022,9 +5021,6 @@
           "projectReferences": {
             "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
               "projectPath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\BusinessObject.csproj"
-            },
-            "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj": {
-              "projectPath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj"
             }
           }
         }
@@ -5089,16 +5085,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

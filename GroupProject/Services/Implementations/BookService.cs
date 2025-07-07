@@ -48,7 +48,7 @@ namespace Services.Implementations
                 throw new InvalidOperationException("This book is not currently borrowed or already returned.");
             }
 
-            borrowing.ReturnDate = DateOnly;
+            borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
             borrowing.Status = "Returned";
             borrowing.IsReturned = true;
             _borrowingRepo.Update(borrowing);

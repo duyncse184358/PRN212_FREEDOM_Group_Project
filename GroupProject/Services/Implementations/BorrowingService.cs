@@ -27,7 +27,7 @@ namespace Services.Implementations
             var borrowing = _repo.GetById(borrowingId);
             if (borrowing != null)
             {
-                borrowing.ReturnDate = DateTime.Now;
+                borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
                 borrowing.IsReturned = true;
                 borrowing.Status = "Returned";
                 _repo.Update(borrowing);
@@ -47,22 +47,31 @@ namespace Services.Implementations
                 }
             }
         }
-        public List<Borrowing> GetOverdueBorrowings() => _repo.GetAll().Where(b => (b.Status == "Borrowed" || b.Status == "Overdue") && (b.IsReturned == null || b.IsReturned == false) && b.DueDate < DateTime.Now).ToList();
+        public List<Borrowing> GetOverdueBorrowings() =>
+            _repo.GetAll().Where(b => (b.Status == "Borrowed" || b.Status == "Overdue")
+                                   && (b.IsReturned == null || b.IsReturned == false)
+                                   && b.DueDate < DateOnly.FromDateTime(DateTime.Now)).ToList();
 
         public bool IsOverdue(Borrowing borrowing)
         {
-            return (borrowing.Status == "Borrowed" || borrowing.Status == "Overdue") && (borrowing.IsReturned == null || borrowing.IsReturned == false) && borrowing.DueDate < DateTime.Now;
+            return (borrowing.Status == "Borrowed" || borrowing.Status == "Overdue")
+                   && (borrowing.IsReturned == null || borrowing.IsReturned == false)
+                   && borrowing.DueDate < DateOnly.FromDateTime(DateTime.Now);
         }
 
         public decimal CalculateFine(Borrowing borrowing)
         {
+            // ĐÃ SỬA LỖI: Bỏ .Date cho DateOnly
             if ((borrowing.Status != "Returned" && !IsOverdue(borrowing)) || !borrowing.ReturnDate.HasValue) return 0M;
 
-            DateTime actualReturnDate = borrowing.ReturnDate ?? DateTime.Now;
+            // Chuyển đổi DateOnly sang DateTime để tính TimeSpan
+            DateTime actualReturnDateTime = borrowing.ReturnDate.Value.ToDateTime(TimeOnly.MinValue);
+            DateTime dueDateTime = borrowing.DueDate.ToDateTime(TimeOnly.MinValue);
 
-            if (actualReturnDate.Date > borrowing.DueDate.Date)
+            // ĐÃ SỬA LỖI: Bỏ .Date cho DateTime (vì đã chuyển sang DateTime)
+            if (actualReturnDateTime > dueDateTime) // So sánh trực tiếp DateTime
             {
-                TimeSpan daysOverdue = actualReturnDate.Date - borrowing.DueDate.Date;
+                TimeSpan daysOverdue = actualReturnDateTime - dueDateTime;
                 decimal fineRatePerDay = 0.5M;
                 return daysOverdue.Days * fineRatePerDay;
             }

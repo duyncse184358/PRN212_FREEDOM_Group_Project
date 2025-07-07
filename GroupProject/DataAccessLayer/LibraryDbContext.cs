@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using BusinessObject;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System.IO;
+using System.IO; // Cần thêm using System.IO
 
 namespace DataAccessLayer
 {
@@ -30,7 +30,8 @@ namespace DataAccessLayer
         {
             if (!optionsBuilder.IsConfigured)
             {
-                string basePath = AppContext.BaseDirectory;
+                // ĐÃ SỬA LỖI: Sử dụng Directory.GetCurrentDirectory() thay vì AppContext.BaseDirectory
+                string basePath = Directory.GetCurrentDirectory();
 
                 IConfigurationRoot configuration = new ConfigurationBuilder()
                     .SetBasePath(basePath)

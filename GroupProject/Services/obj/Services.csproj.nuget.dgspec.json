@@ -105,9 +105,6 @@
             "projectReferences": {
               "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
                 "projectPath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\BusinessObject.csproj"
-              },
-              "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj"
               }
             }
           }

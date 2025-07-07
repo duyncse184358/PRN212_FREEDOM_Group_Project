@@ -1,9 +1,106 @@
 ﻿<Application x:Class="LibraryWpfApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:LibraryWpfApp"
-             StartupUri="MainWindow.xaml">
+             xmlns:conv="clr-namespace:LibraryWpfApp.Converters"
+             xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels">
+    <!-- StartupUri đã được loại bỏ để kiểm soát khởi động bằng code-behind (App.xaml.cs) -->
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Thêm các resource dictionary khác nếu cần -->
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Converters -->
+            <conv:BoolToVisibilityConverter x:Key="BoolToVisibility"/>
+            <conv:DaysOverdueConverter x:Key="DaysOverdueConverter"/>
+            <conv:NullToBooleanConverter x:Key="NullToBooleanConverter"/>
+            <conv:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+            <conv:ZeroToVisibilityConverter x:Key="ZeroToVisibilityConverter"/>
+
+            <!-- ============================================================== -->
+            <!-- ĐỊNH NGHĨA MODERN STYLES DÙNG CHUNG Ở ĐÂY (CHO TOÀN BỘ APP) -->
+            <!-- ============================================================== -->
+
+            <!-- Style cho Label -->
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="Foreground" Value="#FF333333"/>
+                <Setter Property="FontWeight" Value="SemiBold"/>
+                <Setter Property="Margin" Value="0,5,0,0"/>
+            </Style>
+
+            <!-- Style cho TextBox -->
+            <Style x:Key="ModernTextBoxStyle" TargetType="TextBox">
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="Margin" Value="0,2,0,5"/>
+                <Setter Property="BorderBrush" Value="LightGray"/>
+                <Setter Property="BorderThickness" Value="1"/>
+            </Style>
+
+            <!-- Style cho PasswordBox -->
+            <Style x:Key="ModernPasswordBoxStyle" TargetType="{x:Type PasswordBox}">
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="Margin" Value="0,2,0,5"/>
+                <Setter Property="BorderBrush" Value="LightGray"/>
+                <Setter Property="BorderThickness" Value="1"/>
+            </Style>
+
+            <!-- Style cho Button -->
+            <Style x:Key="ModernButtonStyle" TargetType="Button">
+                <Setter Property="Background" Value="#FF007ACC"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Padding" Value="8,4"/>
+                <Setter Property="Margin" Value="0,2,0,5"/>
+                <Setter Property="BorderThickness" Value="0"/>
+            </Style>
+
+            <!-- Style cho ComboBox -->
+            <Style x:Key="ModernComboBoxStyle" TargetType="{x:Type ComboBox}">
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="Margin" Value="0,2,0,5"/>
+                <Setter Property="BorderBrush" Value="LightGray"/>
+                <Setter Property="BorderThickness" Value="1"/>
+            </Style>
+
+            <!-- Style cho DatePicker -->
+            <Style x:Key="ModernDatePickerStyle" TargetType="{x:Type DatePicker}">
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="Margin" Value="0,2,0,5"/>
+                <Setter Property="BorderBrush" Value="LightGray"/>
+                <Setter Property="BorderThickness" Value="1"/>
+            </Style>
+
+            <!-- Style cho DataGrid -->
+            <Style x:Key="ModernDataGridStyle" TargetType="{x:Type DataGrid}">
+                <Setter Property="BorderBrush" Value="LightGray"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+                <Setter Property="HorizontalGridLinesBrush" Value="LightGray"/>
+                <Setter Property="HeadersVisibility" Value="Column"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="AlternatingRowBackground" Value="#FFF5F5F5"/>
+                <Setter Property="RowBackground" Value="White"/>
+                <Setter Property="ColumnHeaderStyle">
+                    <Setter.Value>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="#FF007ACC"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                            <Setter Property="Padding" Value="5"/>
+                        </Style>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="CellStyle">
+                    <Setter.Value>
+                        <Style TargetType="{x:Type DataGridCell}">
+                            <Setter Property="Padding" Value="5"/>
+                        </Style>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="RightAlignedText" TargetType="TextBlock">
+                <Setter Property="TextAlignment" Value="Right"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

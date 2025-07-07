@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "kZ1CcjBEpC0=",
-  "success": false,
+  "dgSpecHash": "MaIfsYO9pE0=",
+  "success": true,
   "projectFilePath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Reponsitories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VicTus\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -67,15 +67,5 @@
     "C:\\Users\\VicTus\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\VicTus\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.301\\microsoft.net.sdk.compilers.toolset.9.0.301.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessObject\\BusinessObject.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  "logs": []
 }

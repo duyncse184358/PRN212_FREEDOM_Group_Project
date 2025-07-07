@@ -17,7 +17,7 @@ namespace LibraryWpfApp.ViewModels
         private readonly IUserService _userService;
 
         public string Username { get; set; } = "";
-        public string Password { get; set; } = ""; // This will be the plain text password from UI
+        public string Password { get; set; } = ""; // Thuộc tính này sẽ được cập nhật từ PasswordBox_PasswordChanged
 
         public ICommand LoginCommand { get; }
 
@@ -26,51 +26,73 @@ namespace LibraryWpfApp.ViewModels
             _userService = userService;
             LoginCommand = new RelayCommand(LoginUser);
         }
-        public LoginViewModel()
-        {
-           
-        }
 
+        public LoginViewModel() : this((Application.Current as App)?.Services.GetRequiredService<IUserService>()!)
+        {
+            // Constructor này được gọi bởi XAML.
+            // Nó ủy quyền việc khởi tạo thực tế cho constructor có tham số,
+            // lấy IUserService từ DI container.
+        }
         private void LoginUser()
         {
+            Console.WriteLine("LoginUser method started."); // Debug: Ghi vào Output Window
+
             if (string.IsNullOrWhiteSpace(Username) || string.IsNullOrWhiteSpace(Password))
             {
                 MessageBox.Show("Please enter both username and password.", "Login Required", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Console.WriteLine("Login failed: Username or password is empty."); // Debug
                 return;
             }
 
-            // Hash the plain text password from UI for comparison with PasswordHash in DB
-            string hashedPassword = HashPassword(Password);
+            Console.WriteLine($"Attempting login for Username: {Username}, Password: {Password}"); // Debug
 
-            var user = _userService.LoginUser(Username, hashedPassword); // Pass hashed password to service
+            BusinessObject.User? user = null;
+            try
+            {
+                // Gọi Service để kiểm tra đăng nhập
+                user = _userService.LoginUser(Username, Password);
+                Console.WriteLine($"_userService.LoginUser returned: {(user != null ? user.UserName : "null")}"); // Debug
+            }
+            catch (Exception ex)
+            {
+                // Ghi lỗi chi tiết vào Console và hiển thị MessageBox
+                Console.WriteLine($"ERROR calling _userService.LoginUser: {ex.Message}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                MessageBox.Show($"An error occurred during login: {ex.Message}\n\nCheck Output Window for details.", "Login Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
             if (user != null)
             {
                 AppContext.CurrentUserID = user.UserId;
-                AppContext.CurrentUserName = user.Username;
-               
+                AppContext.CurrentUserName = user.UserName;
+                AppContext.CurrentUserRole = user.Role ?? "Guest";
 
-                (Application.Current as App)?.Services.GetRequiredService<MainWindow>()?.Show();
-                CloseLoginWindow();
+                Console.WriteLine($"Login successful! User: {AppContext.CurrentUserName}, Role: {AppContext.CurrentUserRole}"); // Debug
+
+                // Mở MainWindow và đóng LoginWindow
+                var mainWindow = (Application.Current as App)?.Services.GetRequiredService<Views.MainWindow>();
+                if (mainWindow != null)
+                {
+                    mainWindow.Show();
+                    Console.WriteLine("Main Window opened."); // Debug
+                }
+                else
+                {
+                    Console.WriteLine("Error: Main Window could not be resolved from DI."); // Debug
+                }
+
+                // Đóng tất cả các cửa sổ Login đang mở
+                foreach (Window window in Application.Current.Windows.OfType<Views.LoginWindow>().ToList())
+                {
+                    window.Close();
+                    Console.WriteLine("Login Window closed."); // Debug
+                }
             }
             else
             {
                 MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private void CloseLoginWindow()
-        {
-            Application.Current.Windows.OfType<LoginWindow>().FirstOrDefault()?.Close();
-        }
-
-        // Simple SHA256 hashing function (for demo purposes only, use a stronger library in production)
-        private string HashPassword(string password)
-        {
-            using (var sha256 = System.Security.Cryptography.SHA256.Create())
-            {
-                var hashedBytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
-                return BitConverter.ToString(hashedBytes).Replace("-", "").ToLowerInvariant();
+                Console.WriteLine("Login failed: Invalid username or password."); // Debug
             }
         }
     }

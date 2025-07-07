@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using System.ComponentModel;
 using LibraryWpfApp.ViewModels;
 
 namespace LibraryWpfApp.Models
@@ -23,18 +21,18 @@ namespace LibraryWpfApp.Models
             set => SetProperty(ref _bookTitle, value);
         }
 
-        private int _patronID;
-        public int PatronID
-        {
-            get => _patronID;
-            set => SetProperty(ref _patronID, value);
-        }
-
         private string _patronName = string.Empty;
         public string PatronName
         {
             get => _patronName;
             set => SetProperty(ref _patronName, value);
+        }
+
+        private int _patronID; // Đã thêm PatronID
+        public int PatronID
+        {
+            get => _patronID;
+            set => SetProperty(ref _patronID, value);
         }
 
         private DateTime _borrowDate;
@@ -72,8 +70,8 @@ namespace LibraryWpfApp.Models
             set => SetProperty(ref _fineAmount, value);
         }
 
-        private bool _isFinePaid;
-        public bool IsFinePaid
+        private bool _isFinePaid; // Trường backing field
+        public bool IsFinePaid // ĐÃ SỬA LẠI TÊN THUỘC TÍNH THÀNH IsFinePaid
         {
             get => _isFinePaid;
             set => SetProperty(ref _isFinePaid, value);

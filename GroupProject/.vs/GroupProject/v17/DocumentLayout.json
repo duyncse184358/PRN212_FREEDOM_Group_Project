@@ -3,24 +3,152 @@
   "WorkspaceRootPath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\bookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\bookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\patronservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\patronservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\fineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\fineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\patrondialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\patrondialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\patronviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\patronviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\reportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\reportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\finepaymentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\finepaymentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\finemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\finemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\librarywpfapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\librarywpfapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\borrowbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\borrowbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\overduebooksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\overduebooksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\returnbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\returnbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\userdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\userdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\patronborrowinghistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\patronborrowinghistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\borrowreturnviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\borrowreturnviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\models\\borrowingdisplaymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\models\\borrowingdisplaymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\categorydialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\categorydialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\obj\\Debug\\net9.0-windows\\Views\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LibraryWpfApp\\obj\\Debug\\net9.0-windows\\Views\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\groupproject\\reponsitories\\implementations\\patronrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\patronrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\patrondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\patrondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +159,36 @@
       "RelativeMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|solutionrelative:businessobject\\borrowing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\converters\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\converters\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\groupproject\\businessobject\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|solutionrelative:businessobject\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\patronservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\patronservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\fineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\fineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,10 +217,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\groupproject\\reponsitories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\groupproject\\reponsitories\\implementations\\patronrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\patronrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\source\\repos\\groupproject\\reponsitories\\implementations\\finerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,28 +263,12 @@
       "RelativeMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\patrondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\patrondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\finedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\finedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dao\\bookdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\bookdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|c:\\users\\victus\\source\\repos\\groupproject\\businessobject\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -157,26 +289,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\source\\repos\\groupproject\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\source\\repos\\groupproject\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\librarywpfapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\librarywpfapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\source\\repos\\groupproject\\librarywpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -186,541 +298,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\UserService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\UserService.cs",
-              "RelativeToolTip": "Services\\Implementations\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:45:40.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PatronService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\PatronService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\PatronService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\PatronService.cs",
-              "RelativeToolTip": "Services\\Implementations\\PatronService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:44:21.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FineService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\FineService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\FineService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\FineService.cs",
-              "RelativeToolTip": "Services\\Implementations\\FineService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:43:59.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\CategoryService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\CategoryService.cs",
-              "RelativeToolTip": "Services\\Implementations\\CategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:43:29.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BorrowingService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\BorrowingService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
-              "RelativeToolTip": "Services\\Implementations\\BorrowingService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA4wB0AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:40:21.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\BookService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\BookService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\BookService.cs",
-              "RelativeToolTip": "Services\\Implementations\\BookService.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAqwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:37:46.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Services\\IUserService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IUserService.cs",
-              "RelativeToolTip": "Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:36:57.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IPatronService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IPatronService.cs",
-              "RelativeDocumentMoniker": "Services\\IPatronService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IPatronService.cs",
-              "RelativeToolTip": "Services\\IPatronService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:36:38.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IFineService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IFineService.cs",
-              "RelativeDocumentMoniker": "Services\\IFineService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IFineService.cs",
-              "RelativeToolTip": "Services\\IFineService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:36:16.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "Services\\ICategoryService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\ICategoryService.cs",
-              "RelativeToolTip": "Services\\ICategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:35:08.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IBorrowingService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IBorrowingService.cs",
-              "RelativeDocumentMoniker": "Services\\IBorrowingService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IBorrowingService.cs",
-              "RelativeToolTip": "Services\\IBorrowingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:34:26.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\UserRepository.cs",
-              "RelativeToolTip": "Reponsitories\\Implementations\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:33:37.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PatronRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\PatronRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\PatronRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\PatronRepository.cs",
-              "RelativeToolTip": "Reponsitories\\Implementations\\PatronRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:33:13.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FineRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\FineRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\FineRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\FineRepository.cs",
-              "RelativeToolTip": "Reponsitories\\Implementations\\FineRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:32:53.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Book.cs",
-              "RelativeDocumentMoniker": "BusinessObject\\Book.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Book.cs",
-              "RelativeToolTip": "BusinessObject\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T16:48:50.199Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Borrowing.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Borrowing.cs",
-              "RelativeDocumentMoniker": "BusinessObject\\Borrowing.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Borrowing.cs",
-              "RelativeToolTip": "BusinessObject\\Borrowing.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T16:48:45.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BorrowingDAO.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\BorrowingDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\BorrowingDAO.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\BorrowingDAO.cs",
-              "RelativeToolTip": "DataAccessLayer\\DAO\\BorrowingDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:15:53.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\CategoryRepository.cs",
-              "RelativeToolTip": "Reponsitories\\Implementations\\CategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:32:31.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BorrowingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\BorrowingRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\BorrowingRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\BorrowingRepository.cs",
-              "RelativeToolTip": "Reponsitories\\Implementations\\BorrowingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:31:42.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\BookRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\BookRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\BookRepository.cs",
-              "RelativeToolTip": "Reponsitories\\Implementations\\BookRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:31:18.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IUserRepository.cs",
-              "RelativeToolTip": "Reponsitories\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:30:43.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IPatronRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IPatronRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\IPatronRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IPatronRepository.cs",
-              "RelativeToolTip": "Reponsitories\\IPatronRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:30:07.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IFineRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IFineRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\IFineRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IFineRepository.cs",
-              "RelativeToolTip": "Reponsitories\\IFineRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:29:28.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\ICategoryRepository.cs",
-              "RelativeToolTip": "Reponsitories\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:28:57.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IBookService.cs",
-              "RelativeDocumentMoniker": "Services\\IBookService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IBookService.cs",
-              "RelativeToolTip": "Services\\IBookService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T16:36:45.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IBookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IBookRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\IBookRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IBookRepository.cs",
-              "RelativeToolTip": "Reponsitories\\IBookRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:19:07.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserDAO.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\UserDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\UserDAO.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\UserDAO.cs",
-              "RelativeToolTip": "DataAccessLayer\\DAO\\UserDAO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:17:06.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "PatronDAO.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\PatronDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\PatronDAO.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\PatronDAO.cs",
-              "RelativeToolTip": "DataAccessLayer\\DAO\\PatronDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:16:47.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "FineDAO.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\FineDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\FineDAO.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\FineDAO.cs",
-              "RelativeToolTip": "DataAccessLayer\\DAO\\FineDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:16:29.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CategoryDAO.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\CategoryDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\CategoryDAO.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\CategoryDAO.cs",
-              "RelativeToolTip": "DataAccessLayer\\DAO\\CategoryDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:16:12.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "BookDAO.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\BookDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\BookDAO.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\BookDAO.cs",
-              "RelativeToolTip": "DataAccessLayer\\DAO\\BookDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwDAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:09:19.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\User.cs",
-              "RelativeDocumentMoniker": "BusinessObject\\User.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\User.cs",
-              "RelativeToolTip": "BusinessObject\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:02:55.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Patron.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Patron.cs",
-              "RelativeDocumentMoniker": "BusinessObject\\Patron.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Patron.cs",
-              "RelativeToolTip": "BusinessObject\\Patron.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:02:51.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Fine.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Fine.cs",
-              "RelativeDocumentMoniker": "BusinessObject\\Fine.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Fine.cs",
-              "RelativeToolTip": "BusinessObject\\Fine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:02:47.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Category.cs",
-              "RelativeDocumentMoniker": "BusinessObject\\Category.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Category.cs",
-              "RelativeToolTip": "BusinessObject\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:02:43.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Reponsitories",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Reponsitories.csproj",
-              "RelativeDocumentMoniker": "Reponsitories\\Reponsitories.csproj",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Reponsitories.csproj",
-              "RelativeToolTip": "Reponsitories\\Reponsitories.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-06T16:51:56.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IBorrowingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IBorrowingRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\IBorrowingRepository.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IBorrowingRepository.cs",
-              "RelativeToolTip": "Reponsitories\\IBorrowingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T16:36:13.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "LibraryWpfApp",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\LibraryWpfApp.csproj",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\LibraryWpfApp.csproj",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\LibraryWpfApp.csproj",
-              "RelativeToolTip": "LibraryWpfApp\\LibraryWpfApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-06T16:51:07.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "LibraryDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\LibraryDbContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\LibraryDbContext.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\LibraryDbContext.cs",
-              "RelativeToolTip": "DataAccessLayer\\LibraryDbContext.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAqwLQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T16:47:30.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Services",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Services.csproj",
-              "RelativeDocumentMoniker": "Services\\Services.csproj",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Services.csproj",
-              "RelativeToolTip": "Services\\Services.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-06T16:44:24.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "DataAccessLayer",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-06T16:41:07.371Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -739,7 +318,135 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAD4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:08:03.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FinePaymentDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:19:15.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\ReportViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\ReportViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\ReportViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\ReportViewModel.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAmwD8AAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:23:23.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PatronViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\PatronViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\PatronViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\PatronViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\PatronViewModel.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIYAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:22:40.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatronDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\PatronDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\PatronDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\PatronDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\PatronDialogViewModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:22:14.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T06:35:51.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BookDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BookDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BookDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BookDialogViewModel.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDEAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:03:52.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BookViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BookViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BookViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BookViewModel.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAmwF0AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:04:22.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FineManagementViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAQwGkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:18:34.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\CategoryViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\CategoryViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\CategoryViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\CategoryViewModel.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAEwEQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:16:54.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\appsettings.json",
               "RelativeDocumentMoniker": "LibraryWpfApp\\appsettings.json",
@@ -747,33 +454,737 @@
               "RelativeToolTip": "LibraryWpfApp\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-06T16:40:48.745Z",
+              "WhenOpened": "2025-07-06T16:40:48.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\LibraryDbContext.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\LibraryDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\LibraryDbContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwCUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T16:47:30.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Views\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Views\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAjwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:00:40.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LibraryWpfApp.csproj",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\LibraryWpfApp.csproj",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\LibraryWpfApp.csproj",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\LibraryWpfApp.csproj",
+              "RelativeToolTip": "LibraryWpfApp\\LibraryWpfApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-06T16:51:07.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoryDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\CategoryDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\CategoryDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\CategoryDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\CategoryDAO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:16:12.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BorrowBookDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAUwDoAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:05:30.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Views\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Views\\LoginWindow.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-07T07:01:55.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppContext.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\AppContext.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\AppContext.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\AppContext.cs",
+              "RelativeToolTip": "LibraryWpfApp\\AppContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T06:38:44.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OverdueBooksViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\OverdueBooksViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\OverdueBooksViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\OverdueBooksViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\OverdueBooksViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:19:52.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\UserDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\UserDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\UserDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\UserDialogViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:24:51.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReturnBookDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\ReturnBookDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\ReturnBookDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\ReturnBookDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\ReturnBookDialogViewModel.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAqwHEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:24:16.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PatronBorrowingHistoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\PatronBorrowingHistoryViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\PatronBorrowingHistoryViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\PatronBorrowingHistoryViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\PatronBorrowingHistoryViewModel.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwDcAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:21:35.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BorrowReturnViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwEQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:15:38.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:34:09.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BorrowingDisplayModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Models\\BorrowingDisplayModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Models\\BorrowingDisplayModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Models\\BorrowingDisplayModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\Models\\BorrowingDisplayModel.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwE4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:35:14.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BorrowingService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\BorrowingService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
+              "RelativeToolTip": "Services\\Implementations\\BorrowingService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:40:21.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\UserViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\UserViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAArwF0AAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:25:37.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CategoryDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\CategoryDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\CategoryDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\CategoryDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\CategoryDialogViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T08:16:27.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T06:36:34.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\App.xaml.cs",
+              "RelativeToolTip": "LibraryWpfApp\\App.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswEYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T06:48:04.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\BookService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\BookService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\BookService.cs",
+              "RelativeToolTip": "Services\\Implementations\\BookService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwDIAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:37:46.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-07T07:08:14.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\MainWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\MainWindow.xaml",
+              "DocumentIndex": 30,
+              "Title": "MainWindow.g.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\obj\\Debug\\net9.0-windows\\Views\\MainWindow.g.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\obj\\Debug\\net9.0-windows\\Views\\MainWindow.g.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\obj\\Debug\\net9.0-windows\\Views\\MainWindow.g.cs",
+              "RelativeToolTip": "LibraryWpfApp\\obj\\Debug\\net9.0-windows\\Views\\MainWindow.g.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAuwC0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:14:45.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DataAccessLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-06T16:41:07.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PatronRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\PatronRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\PatronRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\PatronRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\PatronRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:33:13.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PatronDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\PatronDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\PatronDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\PatronDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\PatronDAO.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:16:47.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\App.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\App.xaml",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\App.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-06T16:37:18.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T06:38:55.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\UserDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\UserDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\UserDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\UserDAO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:17:06.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "BoolToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Converters\\BoolToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Converters\\BoolToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Converters\\BoolToVisibilityConverter.cs",
+              "RelativeToolTip": "LibraryWpfApp\\Converters\\BoolToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T06:35:07.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Commands\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "LibraryWpfApp\\Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T06:32:39.41Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 43,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\LibraryWpfApp\\MainWindow.xaml.cs",
-              "RelativeToolTip": "LibraryWpfApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PatronService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\PatronService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\PatronService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\PatronService.cs",
+              "RelativeToolTip": "Services\\Implementations\\PatronService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T16:37:18.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T17:44:21.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Borrowing.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Borrowing.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\Borrowing.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Borrowing.cs",
+              "RelativeToolTip": "BusinessObject\\Borrowing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T16:48:45.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "FineService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\FineService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\FineService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\FineService.cs",
+              "RelativeToolTip": "Services\\Implementations\\FineService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:43:59.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\UserService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:45:40.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\CategoryService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Implementations\\CategoryService.cs",
+              "RelativeToolTip": "Services\\Implementations\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:43:29.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IFineService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IFineService.cs",
+              "RelativeDocumentMoniker": "Services\\IFineService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IFineService.cs",
+              "RelativeToolTip": "Services\\IFineService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:36:16.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "Services\\ICategoryService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\ICategoryService.cs",
+              "RelativeToolTip": "Services\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:35:08.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IBorrowingService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IBorrowingService.cs",
+              "RelativeDocumentMoniker": "Services\\IBorrowingService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IBorrowingService.cs",
+              "RelativeToolTip": "Services\\IBorrowingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:34:26.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:33:37.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Book.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\Book.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Book.cs",
+              "RelativeToolTip": "BusinessObject\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T16:48:50.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IPatronService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IPatronService.cs",
+              "RelativeDocumentMoniker": "Services\\IPatronService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IPatronService.cs",
+              "RelativeToolTip": "Services\\IPatronService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:36:38.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IUserService.cs",
+              "RelativeToolTip": "Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:36:57.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "FineRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\FineRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\FineRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\FineRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\FineRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:32:53.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "BorrowingDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:15:53.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\CategoryRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:32:31.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "BorrowingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:31:42.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\BookRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Implementations\\BookRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\BookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:31:18.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IUserRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:30:43.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IPatronRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IPatronRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IPatronRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IPatronRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IPatronRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:30:07.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "IFineRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IFineRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IFineRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IFineRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IFineRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:29:28.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\ICategoryRepository.cs",
+              "RelativeToolTip": "Reponsitories\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:28:57.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IBookService.cs",
+              "RelativeDocumentMoniker": "Services\\IBookService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\IBookService.cs",
+              "RelativeToolTip": "Services\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T16:36:45.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "IBookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IBookRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IBookRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IBookRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IBookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:19:07.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "FineDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\FineDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\FineDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\FineDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\FineDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:16:29.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "BookDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\BookDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\BookDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DAO\\BookDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\BookDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:09:19.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\User.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\User.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\User.cs",
+              "RelativeToolTip": "BusinessObject\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:02:55.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Patron.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Patron.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\Patron.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Patron.cs",
+              "RelativeToolTip": "BusinessObject\\Patron.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:02:51.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Fine.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Fine.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\Fine.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Fine.cs",
+              "RelativeToolTip": "BusinessObject\\Fine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:02:47.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Category.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\Category.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\Category.cs",
+              "RelativeToolTip": "BusinessObject\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:02:43.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Reponsitories.csproj",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Reponsitories.csproj",
+              "RelativeDocumentMoniker": "Reponsitories\\Reponsitories.csproj",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\Reponsitories.csproj",
+              "RelativeToolTip": "Reponsitories\\Reponsitories.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-06T16:51:56.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "IBorrowingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IBorrowingRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IBorrowingRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Reponsitories\\IBorrowingRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IBorrowingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T16:36:13.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Services.csproj",
+              "DocumentMoniker": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "Services\\Services.csproj",
+              "ToolTip": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\Services\\Services.csproj",
+              "RelativeToolTip": "Services\\Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-06T16:44:24.817Z"
             }
           ]
         }

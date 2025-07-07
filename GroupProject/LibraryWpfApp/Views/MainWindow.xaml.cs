@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using LibraryWpfApp.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LibraryWpfApp.Views
 {
@@ -23,7 +24,7 @@ namespace LibraryWpfApp.Views
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new MainViewModel();
+            this.DataContext = (Application.Current as App)?.Services.GetRequiredService<MainViewModel>();
         }
         private void DragWindow(object sender, MouseButtonEventArgs e)
         {
@@ -33,13 +34,11 @@ namespace LibraryWpfApp.Views
             }
         }
 
-        // Phương thức xử lý nút Minimize
         private void MinimizeWindow(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
         }
 
-        // Phương thức xử lý nút Maximize/Restore
         private void MaximizeRestoreWindow(object sender, RoutedEventArgs e)
         {
             if (this.WindowState == WindowState.Maximized)
@@ -52,13 +51,11 @@ namespace LibraryWpfApp.Views
             }
         }
 
-        // Phương thức xử lý nút Close
         private void CloseWindow(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        // Phương thức xử lý nút Exit trong menu File
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
