@@ -55,8 +55,8 @@
         </StackPanel>
 
         <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
-            <Button Content="Confirm Return" Command="{Binding ConfirmReturnCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Cancel" Click="Close_Click" Style="{StaticResource ModernButtonStyle}"/>
+            <Button Content="Confirm Return" Command="{Binding ConfirmReturnCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}" Height="56" Width="127"/>
+            <Button Content="Cancel" Click="Close_Click" Style="{StaticResource ModernButtonStyle}" Height="53" Width="77"/>
         </StackPanel>
     </Grid>
 </Window>

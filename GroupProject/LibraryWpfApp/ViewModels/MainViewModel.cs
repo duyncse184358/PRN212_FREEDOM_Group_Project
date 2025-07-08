@@ -17,6 +17,7 @@ namespace LibraryWpfApp.ViewModels
         public bool IsAdmin => AppContext.IsAdmin;
         public bool IsLibrarian => AppContext.IsLibrarian;
         public bool IsStaff => AppContext.IsStaff;
+        public bool IsMember => AppContext.IsMember; // Bổ sung
 
         public ICommand LogoutCommand { get; }
         public ICommand OpenBookManagementCommand { get; }
@@ -28,12 +29,14 @@ namespace LibraryWpfApp.ViewModels
         public ICommand OpenReportsCommand { get; }
         public ICommand OpenProfileCommand { get; }
         public ICommand OpenOverdueBooksCommand { get; }
+        public ICommand OpenMemberBookListCommand { get; } // Bổ sung
+        public ICommand OpenMyBorrowingHistoryCommand { get; } // Bổ sung
 
         public MainViewModel()
         {
             WelcomeMessage = $"Welcome, {AppContext.CurrentUserName} ({AppContext.CurrentUserRole})";
 
-           LogoutCommand = new RelayCommand(Logout);
+            LogoutCommand = new RelayCommand(Logout);
             OpenBookManagementCommand = new RelayCommand(() => GetWindow<Views.BookWindow>()?.Show());
             OpenPatronManagementCommand = new RelayCommand(() => GetWindow<Views.PatronWindow>()?.Show());
             OpenBorrowReturnCommand = new RelayCommand(() => GetWindow<Views.BorrowReturnWindow>()?.Show());
@@ -41,8 +44,10 @@ namespace LibraryWpfApp.ViewModels
             OpenUserManagementCommand = new RelayCommand(() => GetWindow<Views.UserManagementWindow>()?.Show());
             OpenCategoryManagementCommand = new RelayCommand(() => GetWindow<Views.CategoryWindow>()?.Show());
             OpenReportsCommand = new RelayCommand(() => GetWindow<Views.ReportWindow>()?.Show());
-        //    OpenProfileCommand = new RelayCommand(() => GetWindow<Views.ProfileWindow>()?.Show());
+            // OpenProfileCommand = new RelayCommand(() => GetWindow<Views.ProfileWindow>()?.Show());
             OpenOverdueBooksCommand = new RelayCommand(() => GetWindow<Views.OverdueBooksWindow>()?.Show());
+            OpenMemberBookListCommand = new RelayCommand(() => GetWindow<Views.BookWindow>()?.Show()); // Bổ sung
+            OpenMyBorrowingHistoryCommand = new RelayCommand(() => GetWindow<Views.PatronBorrowingHistoryWindow>()?.Show()); // Bổ sung
         }
 
         private T? GetWindow<T>() where T : Window

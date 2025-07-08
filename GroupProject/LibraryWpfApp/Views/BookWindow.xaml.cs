@@ -24,7 +24,7 @@ namespace LibraryWpfApp.Views
         public BookWindow()
         {
             InitializeComponent();
-            this.DataContext = new BookViewModel();
+            this.DataContext = (Application.Current as App)?.Services.GetRequiredService<BookViewModel>();
         }
     }
 }

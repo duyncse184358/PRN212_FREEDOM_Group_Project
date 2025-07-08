@@ -47,7 +47,7 @@
                    FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
 
         <Label Content="Username" Grid.Row="1" Style="{StaticResource LabelStyle}"/>
-        <TextBox Grid.Row="2" Text="{Binding User.Username}" Style="{StaticResource ModernTextBoxStyle}" />
+        <TextBox Grid.Row="2" Text="{Binding User.UserName}" Style="{StaticResource ModernTextBoxStyle}" />
 
         <Label Content="Password" Grid.Row="3" Style="{StaticResource LabelStyle}"/>
         <TextBox Grid.Row="4" Text="{Binding User.Password}" Style="{StaticResource ModernTextBoxStyle}" ToolTip="Leave blank to keep current password"/>

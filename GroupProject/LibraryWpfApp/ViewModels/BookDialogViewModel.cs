@@ -1,38 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using BusinessObject;
 using Services;
-using LibraryWpfApp.ViewModels;
-using System.Windows; // Đảm bảo namespace này khớp với project của bạn
 
-namespace LibraryWpfApp.ViewModels // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.ViewModels
+namespace LibraryWpfApp.ViewModels
 {
     public class BookDialogViewModel : BaseViewModel
     {
-        private readonly ICategoryService _categoryService;
-        public Book Book { get; set; }
-        public ObservableCollection<Category> Categories { get; set; }
-        public Category? SelectedCategory { get; set; }
+        private readonly ICategoryService? _categoryService;
 
-        public ObservableCollection<string> BookStatuses { get; set; } = new ObservableCollection<string>
+        private Book _book = new Book();
+        public Book Book
+        {
+            get => _book;
+            set => SetProperty(ref _book, value);
+        }
+
+        private ObservableCollection<Category> _categories = new();
+        public ObservableCollection<Category> Categories
+        {
+            get => _categories;
+            set => SetProperty(ref _categories, value);
+        }
+
+        private Category? _selectedCategory;
+        public Category? SelectedCategory
+        {
+            get => _selectedCategory;
+            set
+            {
+                if (SetProperty(ref _selectedCategory, value) && value != null)
+                {
+                    Book.CategoryId = value.CategoryId;
+                }
+            }
+        }
+
+        public ObservableCollection<string> BookStatuses { get; set; } = new()
         {
             "Available", "Borrowed", "Lost", "Damaged", "Missing"
         };
 
-        // Constructor mặc định (public parameterless constructor) cho XAML
         public BookDialogViewModel()
-            
         {
+            Book = new Book();
+            Categories = new ObservableCollection<Category>();
         }
 
         public BookDialogViewModel(ICategoryService categoryService)
         {
             _categoryService = categoryService;
-            Book = new BusinessObject.Book();
+            Book = new Book();
             LoadCategories();
             SelectedCategory = Categories.FirstOrDefault();
             Book.Status = BookStatuses.FirstOrDefault() ?? "Available";
@@ -41,7 +59,7 @@ namespace LibraryWpfApp.ViewModels // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.
         public BookDialogViewModel(Book originalBook, ICategoryService categoryService)
         {
             _categoryService = categoryService;
-            Book = new BusinessObject.Book
+            Book = new Book
             {
                 BookId = originalBook.BookId,
                 Isbn = originalBook.Isbn,
@@ -62,7 +80,8 @@ namespace LibraryWpfApp.ViewModels // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.
 
         private void LoadCategories()
         {
-            Categories = new ObservableCollection<Category>(_categoryService.GetAllCategories());
+            if (_categoryService != null)
+                Categories = new ObservableCollection<Category>(_categoryService.GetAllCategories());
         }
     }
 }

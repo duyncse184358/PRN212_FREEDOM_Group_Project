@@ -1,7 +1,7 @@
 ﻿<Window x:Class="LibraryWpfApp.Views.PatronWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="clr-namespace:NguyênChiDuyWPF.ViewModels"
+        xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
         xmlns:conv="clr-namespace:LibraryWpfApp.Converters"
         Title="Patron Management" Height="600" Width="1000"
         WindowStartupLocation="CenterScreen">

@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
 using LibraryWpfApp.Commands;
 using LibraryWpfApp.Models;
 using Services;
-using System.Windows.Input;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LibraryWpfApp.ViewModels
 {
@@ -19,15 +18,43 @@ namespace LibraryWpfApp.ViewModels
         private readonly IFineService _fineService;
 
         public ObservableCollection<BorrowingDisplayModel> BorrowingsReport { get; set; } = new();
-        public DateTime FromDate { get; set; } = DateTime.Today.AddDays(-30);
-        public DateTime ToDate { get; set; } = DateTime.Today;
 
-        public int TotalBorrowedBooks => BorrowingsReport.Count(b => b.Status == "Borrowed" || b.Status == "Overdue");
-        public int TotalOverdueBooks => BorrowingsReport.Count(b => b.Status == "Overdue");
-        public decimal TotalFinesAmount => BorrowingsReport.Sum(b => b.FineAmount);
+        private DateTime _fromDate = DateTime.Today.AddDays(-30);
+        public DateTime FromDate
+        {
+            get => _fromDate;
+            set
+            {
+                if (SetProperty(ref _fromDate, value))
+                {
+                    GenerateReport();
+                }
+            }
+        }
 
+        private DateTime _toDate = DateTime.Today;
+        public DateTime ToDate
+        {
+            get => _toDate;
+            set
+            {
+                if (SetProperty(ref _toDate, value))
+                {
+                    GenerateReport();
+                }
+            }
+        }
+
+        public string TotalBorrowedBooksText => (BorrowingsReport?.Count(b => b.Status == "Borrowed" || b.Status == "Overdue") ?? 0).ToString();
+        public string TotalOverdueBooksText => (BorrowingsReport?.Count(b => b.Status == "Overdue") ?? 0).ToString();
+        public string TotalFinesAmountText => (BorrowingsReport?.Sum(b => b.FineAmount) ?? 0M).ToString("C");
 
         public ICommand GenerateReportCommand { get; }
+
+        // Constructor mặc định (public parameterless constructor) cho XAML
+        public ReportViewModel()
+        {
+        }
 
         public ReportViewModel(IBorrowingService borrowingService, IBookService bookService, IPatronService patronService, IFineService fineService)
         {
@@ -42,34 +69,52 @@ namespace LibraryWpfApp.ViewModels
 
         private void GenerateReport()
         {
-            BorrowingsReport.Clear();
-            var result = _borrowingService.GetAllBorrowings()
-                // ĐÃ SỬA LỖI: Bỏ .Date cho DateOnly và so sánh trực tiếp
-                .Where(b => b.BorrowDate >= DateOnly.FromDateTime(FromDate) && b.BorrowDate <= DateOnly.FromDateTime(ToDate))
-                .OrderByDescending(b => b.BorrowDate).ToList();
-
-            foreach (var b in result)
+            try
             {
-                var book = _bookService.GetBookById(b.BookId ?? 0);
-                var patron = _patronService.GetPatronById(b.PatronId ?? 0);
-                var fine = _fineService.GetAllFines().FirstOrDefault(f => f.BorrowingId == b.BorrowingId);
+                BorrowingsReport.Clear();
+                var allBorrowings = _borrowingService?.GetAllBorrowings();
 
-                BorrowingsReport.Add(new BorrowingDisplayModel
+                if (allBorrowings == null)
                 {
-                    BorrowingID = b.BorrowingId,
-                    BookTitle = book?.Title ?? "Unknown Book",
-                    PatronName = patron?.FullName ?? "Unknown Patron",
-                    BorrowDate = b.BorrowDate.ToDateTime(TimeOnly.MinValue), // CHUYỂN ĐỔI TẠI ĐÂY
-                    DueDate = b.DueDate.ToDateTime(TimeOnly.MinValue), // CHUYỂN ĐỔI TẠI ĐÂY
-                    ReturnDate = b.ReturnDate?.ToDateTime(TimeOnly.MinValue), // CHUYỂN ĐỔI TẠI ĐÂY
-                    Status = b.Status ?? "Unknown",
-                    FineAmount = fine?.FineAmount ?? 0M,
-                    IsFinePaid = fine?.Paid ?? false
-                });
+                    Console.WriteLine("Warning: _borrowingService.GetAllBorrowings() returned null or service is null.");
+                    return;
+                }
+
+                var result = allBorrowings
+                    .Where(b => b.BorrowDate >= DateOnly.FromDateTime(FromDate) && b.BorrowDate <= DateOnly.FromDateTime(ToDate))
+                    .OrderByDescending(b => b.BorrowDate).ToList();
+
+                foreach (var b in result)
+                {
+                    var book = _bookService?.GetBookById(b.BookId ?? 0);
+                    var patron = _patronService?.GetPatronById(b.PatronId ?? 0);
+                    var fine = _fineService?.GetAllFines().FirstOrDefault(f => f.BorrowingId == b.BorrowingId);
+
+                    BorrowingsReport.Add(new BorrowingDisplayModel
+                    {
+                        BorrowingID = b.BorrowingId,
+                        BookTitle = book?.Title ?? "Unknown Book",
+                        PatronName = patron?.FullName ?? "Unknown Patron",
+                        PatronID = b.PatronId ?? 0,
+                        BorrowDate = b.BorrowDate.ToDateTime(TimeOnly.MinValue),
+                        DueDate = b.DueDate.ToDateTime(TimeOnly.MinValue),
+                        ReturnDate = b.ReturnDate?.ToDateTime(TimeOnly.MinValue),
+                        Status = b.Status ?? "Unknown",
+                        FineAmount = fine?.FineAmount ?? 0M,
+                        IsFinePaid = fine?.Paid ?? false
+                    });
+                }
+                // Thông báo cho UI rằng các thuộc tính đã thay đổi
+                OnPropertyChanged(nameof(TotalBorrowedBooksText));
+                OnPropertyChanged(nameof(TotalOverdueBooksText));
+                OnPropertyChanged(nameof(TotalFinesAmountText));
             }
-            OnPropertyChanged(nameof(TotalBorrowedBooks));
-            OnPropertyChanged(nameof(TotalOverdueBooks));
-            OnPropertyChanged(nameof(TotalFinesAmount));
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ERROR in GenerateReport: {ex.Message}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                MessageBox.Show($"An error occurred while generating report: {ex.Message}\n\nCheck Output Window for details.", "Report Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

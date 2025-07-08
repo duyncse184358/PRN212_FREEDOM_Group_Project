@@ -17,8 +17,20 @@ namespace LibraryWpfApp.ViewModels
         private readonly IFineService _fineService;
 
         public ObservableCollection<Book> Books { get; set; } = new();
-        public Book? SelectedBook { get; set; }
-        public string SearchKeyword { get; set; } = "";
+
+        private Book? _selectedBook;
+        public Book? SelectedBook
+        {
+            get => _selectedBook;
+            set => SetProperty(ref _selectedBook, value);
+        }
+
+        private string _searchKeyword = "";
+        public string SearchKeyword
+        {
+            get => _searchKeyword;
+            set => SetProperty(ref _searchKeyword, value);
+        }
 
         public bool CanManageBooks => AppContext.IsAdmin || AppContext.IsLibrarian || AppContext.IsStaff;
 
@@ -31,18 +43,25 @@ namespace LibraryWpfApp.ViewModels
         public ICommand MarkLostCommand { get; }
         public ICommand MarkDamagedCommand { get; }
 
-        // Constructor mặc định (public parameterless constructor) cho XAML
+        // Parameterless constructor for XAML (not used with DI)
         public BookViewModel() : this(
-            (Application.Current as App)?.Services.GetRequiredService<IBookService>()!,
-            (Application.Current as App)?.Services.GetRequiredService<ICategoryService>()!,
-            (Application.Current as App)?.Services.GetRequiredService<IPatronService>()!,
-            (Application.Current as App)?.Services.GetRequiredService<IBorrowingService>()!,
-            (Application.Current as App)?.Services.GetRequiredService<IFineService>()!
+            (Application.Current as App)?.Services?.GetService<IBookService>()!,
+            (Application.Current as App)?.Services?.GetService<ICategoryService>()!,
+            (Application.Current as App)?.Services?.GetService<IPatronService>()!,
+            (Application.Current as App)?.Services?.GetService<IBorrowingService>()!,
+            (Application.Current as App)?.Services?.GetService<IFineService>()!
         )
         {
+            if (_bookService == null) Console.WriteLine("BookService is null in BookViewModel parameterless constructor!");
+            if (_categoryService == null) Console.WriteLine("CategoryService is null in BookViewModel parameterless constructor!");
         }
 
-        public BookViewModel(IBookService bookService, ICategoryService categoryService, IPatronService patronService, IBorrowingService borrowingService, IFineService fineService)
+        public BookViewModel(
+            IBookService bookService,
+            ICategoryService categoryService,
+            IPatronService patronService,
+            IBorrowingService borrowingService,
+            IFineService fineService)
         {
             _bookService = bookService;
             _categoryService = categoryService;
@@ -65,11 +84,25 @@ namespace LibraryWpfApp.ViewModels
         private void LoadBooks()
         {
             Books.Clear();
-            _bookService.GetAllBooks().ForEach(b => Books.Add(b));
+            if (_bookService != null)
+            {
+                _bookService.GetAllBooks().ForEach(b => Books.Add(b));
+               
+            }
+            else
+            {
+                Console.WriteLine("Error: _bookService is null when trying to load books.");
+                MessageBox.Show("Cannot load books: Service not initialized. Please restart application.", "Initialization Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void Search()
         {
+            if (_bookService == null)
+            {
+                MessageBox.Show("Service not available. Cannot search books.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             var result = _bookService.SearchBooks(SearchKeyword);
             Books.Clear();
             result.ForEach(b => Books.Add(b));
@@ -77,11 +110,17 @@ namespace LibraryWpfApp.ViewModels
 
         private void Add()
         {
+            if (!CanManageBooks)
+            {
+                MessageBox.Show("You do not have permission to add books.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if ((Application.Current as App)?.Services == null) return;
+
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.BookDialog>();
-            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
-            dialog!.DataContext = ActivatorUtilities.CreateInstance<BookDialogViewModel>(
-                (Application.Current as App)?.Services!, // ServiceProvider
-                _categoryService // Tham số cho constructor của BookDialogViewModel
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<ViewModels.BookDialogViewModel>(
+                (Application.Current as App)?.Services!,
+                _categoryService
             );
 
             if (dialog.ShowDialog() == true)
@@ -98,18 +137,23 @@ namespace LibraryWpfApp.ViewModels
 
         private void Edit()
         {
+            if (!CanManageBooks)
+            {
+                MessageBox.Show("You do not have permission to edit books.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             if (SelectedBook == null)
             {
                 MessageBox.Show("Please select a book to edit.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
+            if ((Application.Current as App)?.Services == null) return;
 
             var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.BookDialog>();
-            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
-            dialog!.DataContext = ActivatorUtilities.CreateInstance<BookDialogViewModel>(
-                (Application.Current as App)?.Services!, // ServiceProvider
-                SelectedBook!, // Tham số Book
-                _categoryService // Tham số ICategoryService
+            dialog!.DataContext = ActivatorUtilities.CreateInstance<ViewModels.BookDialogViewModel>(
+                (Application.Current as App)?.Services!,
+                SelectedBook!,
+                _categoryService
             );
 
             if (dialog.ShowDialog() == true)
@@ -117,7 +161,6 @@ namespace LibraryWpfApp.ViewModels
                 var vm = dialog.DataContext as BookDialogViewModel;
                 if (vm != null)
                 {
-                    vm.Book.CategoryId = vm.SelectedCategory?.CategoryId;
                     _bookService.UpdateBook(vm.Book);
                     LoadBooks();
                 }
@@ -126,6 +169,11 @@ namespace LibraryWpfApp.ViewModels
 
         private void Delete()
         {
+            if (!CanManageBooks)
+            {
+                MessageBox.Show("You do not have permission to delete books.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             if (SelectedBook == null)
             {
                 MessageBox.Show("Please select a book to delete.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -148,6 +196,12 @@ namespace LibraryWpfApp.ViewModels
 
         private void BorrowBook()
         {
+            if (!AppContext.IsMember && !AppContext.IsLibrarian && !AppContext.IsStaff)
+            {
+                MessageBox.Show("You do not have permission to borrow books.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             if (SelectedBook == null)
             {
                 MessageBox.Show("Please select a book to borrow.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -159,10 +213,11 @@ namespace LibraryWpfApp.ViewModels
                 return;
             }
 
+            if ((Application.Current as App)?.Services == null) return;
+
             var borrowDialog = (Application.Current as App)?.Services.GetRequiredService<Views.BorrowBookDialog>();
-            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
-            borrowDialog!.DataContext = ActivatorUtilities.CreateInstance<BorrowBookDialogViewModel>(
-                (Application.Current as App)?.Services!, // ServiceProvider
+            borrowDialog!.DataContext = ActivatorUtilities.CreateInstance<ViewModels.BorrowBookDialogViewModel>(
+                (Application.Current as App)?.Services!,
                 _bookService,
                 _patronService,
                 _borrowingService,
@@ -178,10 +233,16 @@ namespace LibraryWpfApp.ViewModels
 
         private void ReturnBook()
         {
+            if (!CanManageBooks)
+            {
+                MessageBox.Show("You do not have permission to return books.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if ((Application.Current as App)?.Services == null) return;
+
             var returnDialog = (Application.Current as App)?.Services.GetRequiredService<Views.ReturnBookDialog>();
-            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
-            returnDialog!.DataContext = ActivatorUtilities.CreateInstance<ReturnBookDialogViewModel>(
-                (Application.Current as App)?.Services!, // ServiceProvider
+            returnDialog!.DataContext = ActivatorUtilities.CreateInstance<ViewModels.ReturnBookDialogViewModel>(
+                (Application.Current as App)?.Services!,
                 _bookService,
                 _borrowingService,
                 _patronService,
@@ -197,12 +258,17 @@ namespace LibraryWpfApp.ViewModels
 
         private void MarkLost()
         {
+            if (!CanManageBooks)
+            {
+                MessageBox.Show("You do not have permission to mark books as lost.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             if (SelectedBook == null)
             {
                 MessageBox.Show("Please select a book to mark as lost.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            if (MessageBox.Show($"Are you sure you want to mark '{SelectedBook.Title}' as LOST? This will reduce available copies.", "Confirm Lost", MessageBoxButton.YesNo, (MessageBoxImage)MessageBoxButton.YesNo, (MessageBoxResult)MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (MessageBox.Show($"Are you sure you want to mark '{SelectedBook.Title}' as LOST? This will reduce available copies.", "Confirm Lost", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 _bookService.MarkBookStatus(SelectedBook.BookId, "Lost");
                 LoadBooks();
@@ -212,6 +278,11 @@ namespace LibraryWpfApp.ViewModels
 
         private void MarkDamaged()
         {
+            if (!CanManageBooks)
+            {
+                MessageBox.Show("You do not have permission to mark books as damaged.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             if (SelectedBook == null)
             {
                 MessageBox.Show("Please select a book to mark as damaged.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);

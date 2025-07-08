@@ -16,5 +16,5 @@ C:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\App.xaml
 2391480344420
 Views\BookDialog.xaml;Views\BookWindow.xaml;Views\BorrowBookDialog.xaml;Views\BorrowReturnWindow.xaml;Views\CategoryDialog.xaml;Views\CategoryWindow.xaml;Views\FineManagementWindow.xaml;Views\FinePaymentDialog.xaml;Views\GenreDialog.xaml;Views\GenreManagementWindow.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\OverdueBooksWindow.xaml;Views\PatronBorrowingHistoryWindow.xaml;Views\PatronDialog.xaml;Views\PatronWindow.xaml;Views\ReportWindow.xaml;Views\ReturnBookDialog.xaml;Views\UserDialog.xaml;Views\UserManagementWindow.xaml;
 
-True
+False
 

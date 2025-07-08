@@ -27,12 +27,7 @@ namespace LibraryWpfApp.ViewModels // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.
 
         // Constructor mặc định (public parameterless constructor) cho XAML
         public BorrowBookDialogViewModel()
-            : this(
-                (Application.Current as App)?.Services.GetRequiredService<IBookService>()!,
-                (Application.Current as App)?.Services.GetRequiredService<IPatronService>()!,
-                (Application.Current as App)?.Services.GetRequiredService<IBorrowingService>()!,
-                new BusinessObject.Book() // Cung cấp một Book mặc định nếu không có
-            )
+           
         {
             // Constructor này được gọi bởi XAML.
             // Nó ủy quyền việc khởi tạo thực tế cho constructor có tham số,

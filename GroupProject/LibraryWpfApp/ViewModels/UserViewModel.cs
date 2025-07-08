@@ -25,9 +25,7 @@ namespace LibraryWpfApp.ViewModels
         public ICommand DeleteCommand { get; }
 
         // Constructor mặc định (public parameterless constructor) cho XAML
-        public UserViewModel() : this(
-            (Application.Current as App)?.Services.GetRequiredService<IUserService>()!
-        )
+        public UserViewModel() 
         {
         }
 

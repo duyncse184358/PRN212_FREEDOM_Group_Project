@@ -6,22 +6,20 @@
         Title="Book Management" Height="650" Width="1000"
         WindowStartupLocation="CenterScreen">
 
-    <Window.DataContext>
-        <vm:BookViewModel />
-    </Window.DataContext>
+    <!-- Đã loại bỏ Window.DataContext để dùng DI hoặc code-behind -->
 
     <Window.Resources>
         <Style x:Key="RightAlignedText" TargetType="TextBlock">
             <Setter Property="TextAlignment" Value="Right"/>
         </Style>
+        <conv:BoolToVisibilityConverter x:Key="BoolToVisibility"/>
     </Window.Resources>
 
     <DockPanel Margin="10">
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
-            <TextBox Width="300" Text="{Binding SearchKeyword}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}"/>
+            <TextBox Width="300" Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}"/>
             <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
 
-            <!-- Các nút quản lý chỉ hiển thị nếu CanManageBooks là true (Admin/Librarian/Staff) -->
             <Button Content="Add New" Command="{Binding AddCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
                     Visibility="{Binding CanManageBooks, Converter={StaticResource BoolToVisibility}}"/>
             <Button Content="Edit Selected" Command="{Binding EditCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
@@ -31,11 +29,8 @@
         </StackPanel>
 
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,0">
-            <!-- Nút Borrow Book hiển thị cho tất cả các vai trò có quyền mượn sách -->
             <Button Content="Borrow Book" Command="{Binding BorrowBookCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
             <Button Content="Return Book" Command="{Binding ReturnBookCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-
-            <!-- Các nút Mark Lost/Damaged chỉ hiển thị nếu CanManageBooks là true -->
             <Button Content="Mark Lost" Command="{Binding MarkLostCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
                     Visibility="{Binding CanManageBooks, Converter={StaticResource BoolToVisibility}}"/>
             <Button Content="Mark Damaged" Command="{Binding MarkDamagedCommand}" Style="{StaticResource ModernButtonStyle}"
@@ -43,7 +38,7 @@
         </StackPanel>
 
         <DataGrid ItemsSource="{Binding Books}"
-                  SelectedItem="{Binding SelectedBook}"
+                  SelectedItem="{Binding SelectedBook, Mode=TwoWay}"
                   AutoGenerateColumns="False" IsReadOnly="True"
                   Style="{StaticResource ModernDataGridStyle}">
             <DataGrid.Columns>

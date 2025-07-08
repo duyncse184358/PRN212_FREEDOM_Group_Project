@@ -5,9 +5,7 @@
         Title="Library Report" Height="600" Width="1000"
         WindowStartupLocation="CenterScreen">
 
-    <Window.DataContext>
-        <vm:ReportViewModel />
-    </Window.DataContext>
+    <!-- ĐÃ BỎ Window.DataContext để dùng DataContext từ code-behind -->
 
     <Window.Resources>
         <Style x:Key="RightAlignedText" TargetType="TextBlock">
@@ -25,9 +23,18 @@
         </StackPanel>
 
         <StackPanel DockPanel.Dock="Bottom" Orientation="Vertical" HorizontalAlignment="Right" Margin="0,10,0,0">
-            <TextBlock Margin="0,2,0,2"><Run FontWeight="Bold">Total Borrowed Books:</Run> <Run Text="{Binding TotalBorrowedBooks}"/></TextBlock>
-            <TextBlock Margin="0,2,0,2"><Run FontWeight="Bold">Total Overdue Books:</Run> <Run Text="{Binding TotalOverdueBooks}" Foreground="Red"/></TextBlock>
-            <TextBlock Margin="0,2,0,2"><Run FontWeight="Bold">Total Fines:</Run> <Run Text="{Binding TotalFinesAmount, StringFormat=C}"/></TextBlock>
+            <TextBlock Margin="0,2,0,2">
+                <Run FontWeight="Bold" Text="Total Borrowed Books: "/>
+                <Run Text="{Binding TotalBorrowedBooksText, Mode=OneWay}"/>
+            </TextBlock>
+            <TextBlock Margin="0,2,0,2">
+                <Run FontWeight="Bold" Text="Total Overdue Books: "/>
+                <Run Text="{Binding TotalOverdueBooksText, Mode=OneWay}" Foreground="Red"/>
+            </TextBlock>
+            <TextBlock Margin="0,2,0,2">
+                <Run FontWeight="Bold" Text="Total Fines: "/>
+                <Run Text="{Binding TotalFinesAmountText, Mode=OneWay}"/>
+            </TextBlock>
         </StackPanel>
 
         <DataGrid ItemsSource="{Binding BorrowingsReport}" AutoGenerateColumns="False" IsReadOnly="True"

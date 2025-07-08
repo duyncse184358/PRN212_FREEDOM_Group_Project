@@ -4,7 +4,6 @@
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
         Title="Borrow Book" Height="250" Width="400"
         WindowStartupLocation="CenterOwner">
-
     <Window.DataContext>
         <vm:BorrowBookDialogViewModel />
     </Window.DataContext>
@@ -16,7 +15,11 @@
             <RowDefinition Height="Auto"/>
             <!-- Book Title Label -->
             <RowDefinition Height="Auto"/>
+            <!-- Book Title TextBlock -->
+            <RowDefinition Height="Auto"/>
             <!-- Select Patron Label -->
+            <RowDefinition Height="Auto"/>
+            <!-- Select Patron ComboBox -->
             <RowDefinition Height="*"/>
             <!-- Spacer -->
             <RowDefinition Height="Auto"/>
@@ -33,7 +36,7 @@
         <ComboBox Grid.Row="4" ItemsSource="{Binding Patrons}" SelectedItem="{Binding SelectedPatron}"
                   DisplayMemberPath="FullName" Style="{StaticResource ModernComboBoxStyle}"/>
 
-        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
             <Button Content="Confirm Borrow" Click="Save_Click" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
             <Button Content="Cancel" Click="Close_Click" Style="{StaticResource ModernButtonStyle}"/>
         </StackPanel>
