@@ -1,23 +1,24 @@
-﻿C:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.i.cs
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\App.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\BookDialog.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\BookWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\BorrowBookDialog.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\BorrowReturnWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\CategoryDialog.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\CategoryWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\FineManagementWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\FinePaymentDialog.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\GenreDialog.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\GenreManagementWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\LoginWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\MainWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\OverdueBooksWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\PatronBorrowingHistoryWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\PatronDialog.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\PatronWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\ReportWindow.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\ReturnBookDialog.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\UserDialog.xaml;;
-FC:\Users\VicTus\source\repos\GroupProject\LibraryWpfApp\Views\UserManagementWindow.xaml;;
+﻿D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.i.cs
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\App.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\MainWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\BookDialog.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\BookWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\BorrowBookDialog.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\BorrowReturnWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\CategoryDialog.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\CategoryWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\FineManagementWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\FinePaymentDialog.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\GenreDialog.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\GenreManagementWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\LoginWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\MainWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\OverdueBooksWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\PatronBorrowingHistoryWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\PatronDialog.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\PatronWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\ReportWindow.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\ReturnBookDialog.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\UserDialog.xaml;;
+FD:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\UserManagementWindow.xaml;;
 

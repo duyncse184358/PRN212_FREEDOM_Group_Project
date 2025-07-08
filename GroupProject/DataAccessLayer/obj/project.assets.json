@@ -4988,23 +4988,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\VicTus\\.nuget\\packages\\": {},
+    "C:\\Users\\trihi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "D:\\fpt ki5\\PRN212\\project cuoi ky\\code\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\VicTus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\DataAccessLayer\\obj\\",
+      "projectPath": "D:\\fpt ki5\\PRN212\\project cuoi ky\\code\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\trihi\\.nuget\\packages\\",
+      "outputPath": "D:\\fpt ki5\\PRN212\\project cuoi ky\\code\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\VicTus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\trihi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5019,8 +5019,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\BusinessObject.csproj"
+            "D:\\fpt ki5\\PRN212\\project cuoi ky\\code\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "D:\\fpt ki5\\PRN212\\project cuoi ky\\code\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj"
             }
           }
         }
@@ -5035,7 +5035,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -5071,18 +5071,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-            "version": "[9.0.301, 9.0.301]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
