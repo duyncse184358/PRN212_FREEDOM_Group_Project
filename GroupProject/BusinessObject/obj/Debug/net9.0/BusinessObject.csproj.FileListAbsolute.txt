@@ -9,3 +9,15 @@ C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\Busine
 C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\refint\BusinessObject.dll
 C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.pdb
 C:\Users\VicTus\source\repos\GroupProject\BusinessObject\obj\Debug\net9.0\ref\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.deps.json
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfoInputs.cache
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfo.cs
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.sourcelink.json
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\refint\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\ref\BusinessObject.dll

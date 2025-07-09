@@ -43,7 +43,7 @@ namespace DataAccessLayer
                 if (string.IsNullOrEmpty(connectionString))
                 {
                     Console.WriteLine("Connection string 'DefaultConnection' not found in appsettings.json. Using fallback for DbContext.");
-                    optionsBuilder.UseSqlServer("server=LAPTOP-CMSU7LK1;database=LibraryDB;uid=sa;pwd=12345; TrustServerCertificate=True");
+                    optionsBuilder.UseSqlServer("server=localhost;database=LibraryDB;uid=sa;pwd=12345; TrustServerCertificate=True");
                 }
                 else
                 {

@@ -5,10 +5,7 @@
         Title="Fine Management" Height="600" Width="1000"
         WindowStartupLocation="CenterScreen">
 
-    <Window.DataContext>
-        <vm:FineManagementViewModel />
-    </Window.DataContext>
-
+  
     <Window.Resources>
         <Style x:Key="RightAlignedText" TargetType="TextBlock">
             <Setter Property="TextAlignment" Value="Right"/>

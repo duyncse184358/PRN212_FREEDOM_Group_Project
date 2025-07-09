@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UTIsbJqcc9k=",
+  "dgSpecHash": "ave4OqCY8Os=",
   "success": true,
-  "projectFilePath": "C:\\Users\\VicTus\\source\\repos\\GroupProject\\BusinessObject\\BusinessObject.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\VicTus\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.301\\microsoft.net.sdk.compilers.toolset.9.0.301.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

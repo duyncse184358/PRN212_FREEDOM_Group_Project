@@ -233,13 +233,17 @@ namespace LibraryWpfApp.ViewModels
 
         private void ReturnBook()
         {
-            if (!CanManageBooks)
+            // Cho phép trả sách nếu người dùng là thành viên hoặc có quyền quản lý (admin, librarian, staff)
+            if (!(AppContext.IsMember || CanManageBooks))
             {
-                MessageBox.Show("You do not have permission to return books.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Bạn không có quyền trả sách.", "Không đủ quyền hạn", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            if ((Application.Current as App)?.Services == null) return;
 
+            if ((Application.Current as App)?.Services == null)
+                return;
+
+            // Tạo dialog trả sách sử dụng DI
             var returnDialog = (Application.Current as App)?.Services.GetRequiredService<Views.ReturnBookDialog>();
             returnDialog!.DataContext = ActivatorUtilities.CreateInstance<ViewModels.ReturnBookDialogViewModel>(
                 (Application.Current as App)?.Services!,
@@ -249,10 +253,12 @@ namespace LibraryWpfApp.ViewModels
                 _fineService
             );
 
+            // Hiển thị dialog. Nếu dialog trả về true (tức là xử lý trả sách thành công)
             if (returnDialog.ShowDialog() == true)
             {
+                // Làm mới danh sách sách
                 LoadBooks();
-                MessageBox.Show("Book return processed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Quá trình trả sách đã được xử lý thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 
@@ -295,5 +301,7 @@ namespace LibraryWpfApp.ViewModels
                 MessageBox.Show("Book marked as damaged.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
+
+
     }
 }

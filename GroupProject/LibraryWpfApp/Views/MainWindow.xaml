@@ -27,19 +27,12 @@
                 <MenuItem Header="Category Management" Command="{Binding OpenCategoryManagementCommand}"/>
             </MenuItem>
 
-            <!-- Menu Operations: Hiển thị nếu người dùng là Librarian hoặc Staff -->
-            <MenuItem Header="Operations" Visibility="{Binding IsLibrarian, Converter={StaticResource BoolToVisibility}}">
-                <MenuItem Header="Book Management" Command="{Binding OpenBookManagementCommand}"/>
-                <MenuItem Header="Patron Management" Command="{Binding OpenPatronManagementCommand}"/>
-                <MenuItem Header="Borrowing &amp; Returns" Command="{Binding OpenBorrowReturnCommand}"/>
-                <MenuItem Header="Fine Management" Command="{Binding OpenFineManagementCommand}"/>
-                <MenuItem Header="Overdue Books" Command="{Binding OpenOverdueBooksCommand}"/>
-            </MenuItem>
 
             <!-- Menu Member Operations: Chỉ hiển thị nếu người dùng là Member/Student -->
             <MenuItem Header="Member Operations" Visibility="{Binding IsMember, Converter={StaticResource BoolToVisibility}}">
                 <MenuItem Header="View Books" Command="{Binding OpenMemberBookListCommand}"/>
                 <MenuItem Header="My Borrowing History" Command="{Binding OpenMyBorrowingHistoryCommand}"/>
+
             </MenuItem>
 
             <!-- Menu Reports: Có thể hiển thị cho tất cả các vai trò có quyền xem báo cáo -->

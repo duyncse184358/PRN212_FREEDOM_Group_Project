@@ -18,6 +18,7 @@ namespace LibraryWpfApp
         public static bool IsMember => CurrentUserRole.Equals("Member", System.StringComparison.OrdinalIgnoreCase) ||
                                        CurrentUserRole.Equals("Student", System.StringComparison.OrdinalIgnoreCase);
 
+        public static int CurrentPatronId { get; internal set; }
 
         public static void Reset()
         {

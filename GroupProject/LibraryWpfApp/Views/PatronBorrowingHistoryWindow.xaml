@@ -5,9 +5,6 @@
         Title="Patron Borrowing History" Height="500" Width="900"
         WindowStartupLocation="CenterScreen">
 
-    <Window.DataContext>
-        <vm:PatronBorrowingHistoryViewModel />
-    </Window.DataContext>
 
     <Window.Resources>
         <Style x:Key="RightAlignedText" TargetType="TextBlock">

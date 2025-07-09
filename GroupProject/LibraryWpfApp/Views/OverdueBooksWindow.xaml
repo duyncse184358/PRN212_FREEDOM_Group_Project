@@ -7,9 +7,7 @@
     Title="Overdue Books" Height="500" Width="900"
         WindowStartupLocation="CenterScreen">
 
-    <Window.DataContext>
-        <vm:OverdueBooksViewModel />
-    </Window.DataContext>
+  
 
     <Window.Resources>
         <Style x:Key="RightAlignedText" TargetType="TextBlock">
