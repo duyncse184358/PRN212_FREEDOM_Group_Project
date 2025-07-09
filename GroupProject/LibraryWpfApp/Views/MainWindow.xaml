@@ -27,20 +27,18 @@
                 <MenuItem Header="Category Management" Command="{Binding OpenCategoryManagementCommand}"/>
             </MenuItem>
 
-
-            <!-- Menu Member Operations: Chỉ hiển thị nếu người dùng là Member/Student -->
-            <MenuItem Header="Member Operations" Visibility="{Binding IsMember, Converter={StaticResource BoolToVisibility}}">
+            <!-- Menu Member Operations: Hiển thị cho tất cả tài khoản đăng nhập -->
+            <MenuItem Header="Member Operations">
                 <MenuItem Header="View Books" Command="{Binding OpenMemberBookListCommand}"/>
                 <MenuItem Header="My Borrowing History" Command="{Binding OpenMyBorrowingHistoryCommand}"/>
-
             </MenuItem>
 
-            <!-- Menu Reports: Có thể hiển thị cho tất cả các vai trò có quyền xem báo cáo -->
+            <!-- Menu Reports: Hiển thị cho tất cả -->
             <MenuItem Header="Reports">
                 <MenuItem Header="View Reports" Command="{Binding OpenReportsCommand}"/>
             </MenuItem>
 
-            <!-- My Account: Hiển thị cho tất cả người dùng đã đăng nhập -->
+            <!-- My Account: Hiển thị cho tất cả -->
             <MenuItem Header="My Account">
                 <MenuItem Header="My Profile" Command="{Binding OpenProfileCommand}"/>
             </MenuItem>
