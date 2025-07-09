@@ -196,7 +196,7 @@ namespace LibraryWpfApp.ViewModels
 
         private void BorrowBook()
         {
-            if (!AppContext.IsMember && !AppContext.IsLibrarian && !AppContext.IsStaff)
+            if (!AppContext.IsAdmin)
             {
                 MessageBox.Show("You do not have permission to borrow books.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;

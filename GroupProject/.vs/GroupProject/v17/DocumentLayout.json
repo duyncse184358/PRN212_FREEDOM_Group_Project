@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\dataaccesslayer\\dao\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\dataaccesslayer\\dao\\patrondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\patrondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\bookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\bookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\borrowbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\borrowbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\dataaccesslayer\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\bookwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\bookwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\businessobject\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|solutionrelative:businessobject\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\borrowbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\borrowbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\bookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\bookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\bookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\bookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\returnbookdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -118,7 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,31 +182,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BorrowBookDialogViewModel.cs",
-              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
-              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
-              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAADsAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BorrowingDAO.cs",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T12:08:04.049Z"
+              "WhenOpened": "2025-07-09T14:50:39.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BookService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\BookService.cs",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BookService.cs",
+              "RelativeToolTip": "Services\\Implementations\\BookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:43:49.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Patron.cs",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\Patron.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\Patron.cs",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\Patron.cs",
+              "RelativeToolTip": "BusinessObject\\Patron.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:16:03.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BookViewModel.cs",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BookViewModel.cs",
               "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BookViewModel.cs",
               "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BookViewModel.cs",
               "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BookViewModel.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAIA7wDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAnwMYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T12:07:43.569Z"
+              "WhenOpened": "2025-07-09T12:07:43.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookWindow.xaml",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BookWindow.xaml",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookWindow.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\BookWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-09T11:58:02.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserDAO.cs",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\UserDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\UserDAO.cs",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\UserDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\UserDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:16:15.727Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PatronDAO.cs",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\PatronDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\PatronDAO.cs",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\PatronDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\PatronDAO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:16:12.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BookWindow.xaml.cs",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookWindow.xaml.cs",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BookWindow.xaml.cs",
@@ -199,6 +280,29 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\MainWindow.xaml",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-09T12:01:12.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BorrowBookDialogViewModel.cs",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAADsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T12:08:04.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\MainViewModel.cs",
@@ -210,19 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\MainWindow.xaml",
-              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T12:01:12.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "AppContext.cs",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\AppContext.cs",
               "RelativeDocumentMoniker": "LibraryWpfApp\\AppContext.cs",
@@ -234,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "BookDialogViewModel.cs",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BookDialogViewModel.cs",
               "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BookDialogViewModel.cs",
@@ -246,18 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookWindow.xaml",
-              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BookWindow.xaml",
-              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\BookWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:58:02.476Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "BookDialog.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookDialog.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BookDialog.xaml",
@@ -268,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "ReturnBookDialog.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\ReturnBookDialog.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\ReturnBookDialog.xaml",
@@ -279,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "BorrowBookDialog.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BorrowBookDialog.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BorrowBookDialog.xaml",
@@ -290,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "OverdueBooksWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\OverdueBooksWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\OverdueBooksWindow.xaml",
@@ -301,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "PatronBorrowingHistoryWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml",
@@ -312,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "PatronBorrowingHistoryWindow.xaml.cs",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml.cs",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml.cs",
@@ -324,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "PatronWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\PatronWindow.xaml",
@@ -335,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\LoginWindow.xaml",
@@ -346,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "UserDialog.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\UserDialog.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\UserDialog.xaml",
@@ -357,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "UserManagementWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\UserManagementWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\UserManagementWindow.xaml",
@@ -368,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "PatronDialog.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronDialog.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\PatronDialog.xaml",
@@ -379,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\MainWindow.xaml",
@@ -390,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "BorrowReturnWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BorrowReturnWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BorrowReturnWindow.xaml",
@@ -401,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "ReportWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\ReportWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\ReportWindow.xaml",
@@ -412,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "GenreDialog.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\GenreDialog.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\GenreDialog.xaml",
@@ -423,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "FinePaymentDialog.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
@@ -434,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "FineManagementWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FineManagementWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\FineManagementWindow.xaml",
@@ -445,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "GenreManagementWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\GenreManagementWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\GenreManagementWindow.xaml",
@@ -456,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "CategoryWindow.xaml",
               "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\CategoryWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\CategoryWindow.xaml",

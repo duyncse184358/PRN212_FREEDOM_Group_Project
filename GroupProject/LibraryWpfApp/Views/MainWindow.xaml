@@ -25,6 +25,7 @@
             <MenuItem Header="Administration" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVisibility}}">
                 <MenuItem Header="User Management" Command="{Binding OpenUserManagementCommand}"/>
                 <MenuItem Header="Category Management" Command="{Binding OpenCategoryManagementCommand}"/>
+                <MenuItem Header="Patrons Management" Command="{Binding OpenPatronManagementCommand}"/>
             </MenuItem>
 
             <!-- Menu Member Operations: Hiển thị cho tất cả tài khoản đăng nhập -->

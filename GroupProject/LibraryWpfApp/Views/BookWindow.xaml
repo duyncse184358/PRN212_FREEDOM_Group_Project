@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
         xmlns:conv="clr-namespace:LibraryWpfApp.Converters"
-        Title="Book Management" Height="650" Width="1000"
+        Title="Quản lý sách" Height="650" Width="1000"
         WindowStartupLocation="CenterScreen">
 
     <!-- Đã loại bỏ Window.DataContext để dùng DI hoặc code-behind -->
@@ -18,23 +18,18 @@
     <DockPanel Margin="10">
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
             <TextBox Width="300" Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}"/>
-            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+            <Button Content="Tìm kiếm" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
 
-            <Button Content="Add New" Command="{Binding AddCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
-                    Visibility="{Binding CanManageBooks, Converter={StaticResource BoolToVisibility}}"/>
-            <Button Content="Edit Selected" Command="{Binding EditCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
-                    Visibility="{Binding CanManageBooks, Converter={StaticResource BoolToVisibility}}"/>
-            <Button Content="Delete Selected" Command="{Binding DeleteCommand}" Style="{StaticResource ModernButtonStyle}"
-                    Visibility="{Binding CanManageBooks, Converter={StaticResource BoolToVisibility}}"/>
+            <Button Content="Thêm mới" Command="{Binding AddCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+            <Button Content="Sửa đã chọn" Command="{Binding EditCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+            <Button Content="Xóa đã chọn" Command="{Binding DeleteCommand}" Style="{StaticResource ModernButtonStyle}"/>
         </StackPanel>
 
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,0">
-            <Button Content="Borrow Book" Command="{Binding BorrowBookCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Return Book" Command="{Binding ReturnBookCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Mark Lost" Command="{Binding MarkLostCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
-                    Visibility="{Binding CanManageBooks, Converter={StaticResource BoolToVisibility}}"/>
-            <Button Content="Mark Damaged" Command="{Binding MarkDamagedCommand}" Style="{StaticResource ModernButtonStyle}"
-                    Visibility="{Binding CanManageBooks, Converter={StaticResource BoolToVisibility}}"/>
+            <Button Content="Mượn sách" Command="{Binding BorrowBookCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+            <Button Content="Trả sách" Command="{Binding ReturnBookCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+            <Button Content="Đánh dấu mất" Command="{Binding MarkLostCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+            <Button Content="Đánh dấu hư hỏng" Command="{Binding MarkDamagedCommand}" Style="{StaticResource ModernButtonStyle}"/>
         </StackPanel>
 
         <DataGrid ItemsSource="{Binding Books}"
@@ -42,17 +37,17 @@
                   AutoGenerateColumns="False" IsReadOnly="True"
                   Style="{StaticResource ModernDataGridStyle}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding BookId}" Width="Auto"/>
+                <DataGridTextColumn Header="Mã sách" Binding="{Binding BookId}" Width="Auto"/>
                 <DataGridTextColumn Header="ISBN" Binding="{Binding Isbn}" Width="Auto"/>
-                <DataGridTextColumn Header="Title" Binding="{Binding Title}" Width="2*"/>
-                <DataGridTextColumn Header="Author" Binding="{Binding Author}" Width="*"/>
-                <DataGridTextColumn Header="Publisher" Binding="{Binding Publisher}" Width="*"/>
-                <DataGridTextColumn Header="Year" Binding="{Binding PublicationYear}" Width="Auto"/>
-                <DataGridTextColumn Header="Category" Binding="{Binding Category.CategoryName}" Width="Auto"/>
-                <DataGridTextColumn Header="Total Copies" Binding="{Binding NumberOfCopies}" Width="Auto"/>
-                <DataGridTextColumn Header="Available" Binding="{Binding AvailableCopies}" Width="Auto"/>
-                <DataGridTextColumn Header="Location" Binding="{Binding ShelfLocation}" Width="Auto"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto"/>
+                <DataGridTextColumn Header="Tiêu đề" Binding="{Binding Title}" Width="2*"/>
+                <DataGridTextColumn Header="Tác giả" Binding="{Binding Author}" Width="*"/>
+                <DataGridTextColumn Header="Nhà xuất bản" Binding="{Binding Publisher}" Width="*"/>
+                <DataGridTextColumn Header="Năm XB" Binding="{Binding PublicationYear}" Width="Auto"/>
+                <DataGridTextColumn Header="Thể loại" Binding="{Binding Category.CategoryName}" Width="Auto"/>
+                <DataGridTextColumn Header="Tổng số" Binding="{Binding NumberOfCopies}" Width="Auto"/>
+                <DataGridTextColumn Header="Còn lại" Binding="{Binding AvailableCopies}" Width="Auto"/>
+                <DataGridTextColumn Header="Vị trí" Binding="{Binding ShelfLocation}" Width="Auto"/>
+                <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>
     </DockPanel>
