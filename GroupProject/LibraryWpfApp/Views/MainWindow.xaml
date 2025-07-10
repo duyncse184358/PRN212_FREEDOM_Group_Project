@@ -21,31 +21,25 @@
                 <MenuItem Header="Exit" Click="Exit_Click"/>
             </MenuItem>
 
-            <!-- Menu Administration: Chỉ hiển thị nếu người dùng là Admin -->
-            <MenuItem Header="Administration" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVisibility}}">
+            <MenuItem Header="Library Operations">
+                <MenuItem Header="View Books" Command="{Binding OpenMemberBookListCommand}"/>
+                <MenuItem Header="Manage Borrow/Return" Command="{Binding OpenBorrowReturnCommand}"/>
+                <MenuItem Header="My Borrowing History" Command="{Binding OpenMyBorrowingHistoryCommand}"/>
+                <MenuItem Header="Manage Fines" Command="{Binding OpenFineManagementCommand}"/>
+                <MenuItem Header="Reports" Command="{Binding OpenReportsCommand}"/>
+            </MenuItem>
+
+            <MenuItem Header="Administration">
                 <MenuItem Header="User Management" Command="{Binding OpenUserManagementCommand}"/>
                 <MenuItem Header="Category Management" Command="{Binding OpenCategoryManagementCommand}"/>
-                <MenuItem Header="Patrons Management" Command="{Binding OpenPatronManagementCommand}"/>
-
-                <MenuItem Header="Fine Management" Command="{Binding OpenFineManagementCommand}" />
+                <MenuItem Header="Patron Management" Command="{Binding OpenPatronManagementCommand}"/>
             </MenuItem>
 
-            <!-- Menu Member Operations: Hiển thị cho tất cả tài khoản đăng nhập -->
-            <MenuItem Header="Member Operations">
-                <MenuItem Header="View Books" Command="{Binding OpenMemberBookListCommand}"/>
-                <MenuItem Header="My Borrowing History" Command="{Binding OpenMyBorrowingHistoryCommand}"/>
-            </MenuItem>
-
-            <!-- Menu Reports: Hiển thị cho tất cả -->
-            <MenuItem Header="Reports">
-                <MenuItem Header="View Reports" Command="{Binding OpenReportsCommand}"/>
-            </MenuItem>
-
-            <!-- My Account: Hiển thị cho tất cả -->
             <MenuItem Header="My Account">
-                <MenuItem Header="My Profile" Command="{Binding OpenProfileCommand}"/>
+                <MenuItem Header="Profile" Command="{Binding OpenProfileCommand}"/>
             </MenuItem>
         </Menu>
+
 
         <Grid>
             <TextBlock Text="{Binding WelcomeMessage}"

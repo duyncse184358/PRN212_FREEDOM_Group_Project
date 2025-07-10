@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\services\\implementations\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -37,10 +50,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
@@ -50,6 +59,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BorrowingService.cs",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\BorrowingService.cs",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
+              "RelativeToolTip": "Services\\Implementations\\BorrowingService.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAA4wFcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T20:16:03.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\MainWindow.xaml",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-10T20:15:34.303Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -23,29 +23,15 @@ namespace LibraryWpfApp.Views
 
     public partial class PatronBorrowingHistoryWindow : Window
     {
-        public PatronBorrowingHistoryWindow(int patronId) // Constructor khi mở cửa sổ với PatronId
-        {
-            InitializeComponent();
-
-            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
-            this.DataContext = ActivatorUtilities.CreateInstance<PatronBorrowingHistoryViewModel>(
-                (Application.Current as App)?.Services!, // Lấy ServiceProvider
-                patronId,
-                (Application.Current as App)?.Services.GetRequiredService<IBorrowingService>()!,
-                (Application.Current as App)?.Services.GetRequiredService<IBookService>()!,
-                (Application.Current as App)?.Services.GetRequiredService<IPatronService>()!,
-                (Application.Current as App)?.Services.GetRequiredService<IFineService>()!
-            );
-        }
 
         // Overload constructor không tham số nếu có nơi gọi không truyền ID
         public PatronBorrowingHistoryWindow()
         {
             InitializeComponent();
 
-            // Nếu không có PatronId cụ thể, sử dụng CurrentUserID từ AppContext
+            // Lấy dịch vụ và khởi tạo ViewModel bằng ActivatorUtilities
             this.DataContext = ActivatorUtilities.CreateInstance<PatronBorrowingHistoryViewModel>(
-                (Application.Current as App)?.Services!, // Lấy ServiceProvider
+                (Application.Current as App)?.Services!,
                 AppContext.CurrentUserID,
                 (Application.Current as App)?.Services.GetRequiredService<IBorrowingService>()!,
                 (Application.Current as App)?.Services.GetRequiredService<IBookService>()!,

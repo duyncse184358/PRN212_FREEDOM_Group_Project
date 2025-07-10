@@ -4,6 +4,7 @@ using Services;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace Services.Implementations
 {
@@ -61,21 +62,23 @@ namespace Services.Implementations
                 _bookRepo.Update(book);
             }
         }
-
         public void MarkBookStatus(int bookId, string status)
         {
             var book = _bookRepo.GetById(bookId);
-            if (book == null) return;
-
-            if (status == "Lost" || status == "Damaged" || status == "Missing")
+            if (book != null)
             {
-                if (book.AvailableCopies > 0)
+                book.Status = status;
+
+                // Nếu mất sách thì trừ AvailableCopies
+                if (status == "Lost" && book.AvailableCopies > 0)
                 {
                     book.AvailableCopies--;
                 }
+
+                _bookRepo.Update(book); // ✅ dùng repository để lưu
             }
-            book.Status = status;
-            _bookRepo.Update(book);
         }
+
+
     }
 }

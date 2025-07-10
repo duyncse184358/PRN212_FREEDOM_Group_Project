@@ -14,5 +14,9 @@ namespace Services
         List<Borrowing> GetOverdueBorrowings();
         bool IsOverdue(Borrowing borrowing);
         decimal CalculateFine(Borrowing borrowing);
+
+        void MarkBookCopyAsLost(int borrowingId);
+        void MarkBookCopyAsDamaged(int borrowingId);
+
     }
 }

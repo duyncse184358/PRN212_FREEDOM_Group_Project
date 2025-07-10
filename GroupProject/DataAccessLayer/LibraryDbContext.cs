@@ -24,6 +24,8 @@ namespace DataAccessLayer
         public virtual DbSet<Fine> Fines { get; set; } = null!;
         public virtual DbSet<Patron> Patrons { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
+        public virtual DbSet<BookCopy> BookCopies { get; set; } = null!;
+
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -173,6 +175,22 @@ namespace DataAccessLayer
                     .HasMaxLength(50)
                     .IsUnicode(false);
             });
+
+            modelBuilder.Entity<BookCopy>(entity =>
+            {
+                entity.HasKey(e => e.CopyId).HasName("PK__BookCopy__CopyID");
+
+                entity.Property(e => e.Status)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasDefaultValue("Available");
+
+                entity.HasOne(e => e.Book)
+                    .WithMany(b => b.BookCopies)
+                    .HasForeignKey(e => e.BookId)
+                    .HasConstraintName("FK__BookCopies__BookID");
+            });
+
 
             OnModelCreatingPartial(modelBuilder);
         }

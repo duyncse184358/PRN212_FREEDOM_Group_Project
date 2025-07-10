@@ -24,6 +24,8 @@ namespace LibraryWpfApp.ViewModels
         public ICommand MarkReturnedCommand { get; }
         public ICommand ViewOverdueCommand { get; }
         public ICommand CalculateAndAddFineCommand { get; }
+        public ICommand MarkLostCommand { get; }
+        public ICommand MarkDamagedCommand { get; }
 
         public BorrowReturnViewModel()
         {
@@ -40,7 +42,19 @@ namespace LibraryWpfApp.ViewModels
             MarkReturnedCommand = new RelayCommand(MarkReturned);
             ViewOverdueCommand = new RelayCommand(ViewOverdue);
             CalculateAndAddFineCommand = new RelayCommand(CalculateAndAddFine);
+            // trong constructor:
+            // Truyền luôn item hiện tại qua CommandParameter
+            MarkLostCommand = new RelayCommand(obj =>
+            {
+                if (obj is BorrowingDisplayModel item)
+                    OnMarkLost(item);
+            });
 
+            MarkDamagedCommand = new RelayCommand(obj =>
+            {
+                if (obj is BorrowingDisplayModel item)
+                    OnMarkDamaged(item);
+            });
             LoadBorrowings();
         }
 
@@ -201,5 +215,119 @@ namespace LibraryWpfApp.ViewModels
                 MessageBox.Show("No fine to apply for this borrowing record.", "No Fine", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
+
+        private void MarkLost()
+        {
+            if (SelectedBorrowing == null)
+            {
+                MessageBox.Show("Please select a borrowing record.", "No Record Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            if (SelectedBorrowing.Status == "Lost")
+            {
+                MessageBox.Show("Sách này đã được đánh dấu là mất.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+
+            var borrowing = _borrowingService.GetBorrowingById(SelectedBorrowing.BorrowingID);
+            if (borrowing == null)
+            {
+                MessageBox.Show("Borrowing record not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            try
+            {
+                _borrowingService.MarkBookCopyAsLost(borrowing.BorrowingId);
+                LoadBorrowings();
+                MessageBox.Show($"Đã đánh dấu sách \"{SelectedBorrowing.BookTitle}\" là mất.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to mark lost: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+
+        private void MarkDamaged()
+        {
+            if (SelectedBorrowing == null)
+            {
+                MessageBox.Show("Please select a borrowing record.", "No Record Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            var borrowing = _borrowingService.GetBorrowingById(SelectedBorrowing.BorrowingID);
+            if (borrowing == null)
+            {
+                MessageBox.Show("Borrowing record not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            try
+            {
+                _borrowingService.MarkBookCopyAsDamaged(borrowing.BorrowingId);
+                LoadBorrowings();
+                MessageBox.Show("Marked book as damaged.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to mark damaged: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void OnMarkLost(BorrowingDisplayModel item)
+        {
+            if (item.Status == "Lost")
+            {
+                MessageBox.Show("Sách này đã được đánh dấu là mất.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+            var b = _borrowingService.GetBorrowingById(item.BorrowingID);
+            if (b == null)
+            {
+                MessageBox.Show("Không tìm thấy bản ghi mượn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            try
+            {
+                _borrowingService.MarkBookCopyAsLost(b.BorrowingId);
+                LoadBorrowings();
+                MessageBox.Show($"Đã đánh dấu sách \"{item.BookTitle}\" là mất.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi đánh dấu mất: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void OnMarkDamaged(BorrowingDisplayModel item)
+        {
+            if (item.Status == "Damaged")
+            {
+                MessageBox.Show("Sách này đã được đánh dấu là hư hỏng.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+            var b = _borrowingService.GetBorrowingById(item.BorrowingID);
+            if (b == null)
+            {
+                MessageBox.Show("Không tìm thấy bản ghi mượn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            try
+            {
+                _borrowingService.MarkBookCopyAsDamaged(b.BorrowingId);
+                LoadBorrowings();
+                MessageBox.Show($"Đã đánh dấu sách \"{item.BookTitle}\" là hư hỏng.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi đánh dấu hư hỏng: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+
     }
 }

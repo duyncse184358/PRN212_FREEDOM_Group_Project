@@ -30,8 +30,11 @@ public partial class Book
     public string? Status { get; set; }
 
 
+    public decimal? Price { get; set; } // Thêm dòng này
 
     public virtual ICollection<Borrowing> Borrowings { get; set; } = new List<Borrowing>();
 
     public virtual Category? Category { get; set; }
+    public virtual ICollection<BookCopy> BookCopies { get; set; } = new List<BookCopy>();
+
 }

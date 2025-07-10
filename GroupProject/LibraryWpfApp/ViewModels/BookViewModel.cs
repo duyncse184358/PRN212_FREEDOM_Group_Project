@@ -286,25 +286,53 @@ namespace LibraryWpfApp.ViewModels
             }
         }
 
+        //private void MarkLost()
+        //{
+        //    if (!CanManageBooks)
+        //    {
+        //        MessageBox.Show("You do not have permission to mark books as lost.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        return;
+        //    }
+        //    if (SelectedBook == null)
+        //    {
+        //        MessageBox.Show("Please select a book to mark as lost.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        return;
+        //    }
+        //    if (MessageBox.Show($"Are you sure you want to mark '{SelectedBook.Title}' as LOST? This will reduce available copies.", "Confirm Lost", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+        //    {
+        //        _bookService.MarkBookStatus(SelectedBook.BookId, "Lost");
+        //        LoadBooks();
+        //        MessageBox.Show("Book marked as lost.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+        //    }
+        //}
+
         private void MarkLost()
         {
             if (!CanManageBooks)
             {
-                MessageBox.Show("You do not have permission to mark books as lost.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Bạn không có quyền đánh dấu sách là mất.", "Không đủ quyền hạn", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
+
             if (SelectedBook == null)
             {
-                MessageBox.Show("Please select a book to mark as lost.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Vui lòng chọn một cuốn sách để đánh dấu là mất.", "Chưa chọn sách", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            if (MessageBox.Show($"Are you sure you want to mark '{SelectedBook.Title}' as LOST? This will reduce available copies.", "Confirm Lost", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+
+            if (MessageBox.Show($"Bạn có chắc muốn đánh dấu sách \"{SelectedBook.Title}\" là MẤT? Việc này sẽ giảm số bản còn lại.",
+                "Xác nhận mất sách", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
+                // Gọi Service để thay đổi trạng thái sách
                 _bookService.MarkBookStatus(SelectedBook.BookId, "Lost");
+
+                // Làm mới danh sách sách
                 LoadBooks();
-                MessageBox.Show("Book marked as lost.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                MessageBox.Show("Đã đánh dấu sách là MẤT.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
+
 
         private void MarkDamaged()
         {

@@ -4,6 +4,8 @@ using Services;
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using DataAccessLayer.DAO;
+using DataAccessLayer;
 
 namespace Services.Implementations
 {
@@ -11,11 +13,16 @@ namespace Services.Implementations
     {
         private readonly IBorrowingRepository _repo;
         private readonly IFineService _fineService;
+        private readonly BorrowingDAO _borrowingDAO;
+        private readonly BookCopyDAO _bookCopyDAO;
 
-        public BorrowingService(IBorrowingRepository repo, IFineService fineService)
+        public BorrowingService(IBorrowingRepository repo, IFineService fineService, LibraryDbContext context)
         {
             _repo = repo;
             _fineService = fineService;
+
+            _borrowingDAO = new BorrowingDAO(context);
+            _bookCopyDAO = new BookCopyDAO(context);
         }
 
         public List<Borrowing> GetAllBorrowings() => _repo.GetAll();
@@ -77,5 +84,34 @@ namespace Services.Implementations
             }
             return 0M;
         }
+
+      public void MarkBookCopyAsLost(int borrowingId)
+        {
+            // Thay GetBorrowingById thành GetById
+            var borrowing = _borrowingDAO.GetById(borrowingId);
+            if (borrowing == null) throw new Exception("Borrowing record not found.");
+
+            borrowing.Status = "Lost";
+            borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
+
+            // Thay UpdateBorrowing thành Update
+            _borrowingDAO.Update(borrowing);
+
+            _bookCopyDAO.UpdateFirstAvailableCopyStatusByBookId(borrowing.BookId ?? 0, "Lost");
+        }
+
+        public void MarkBookCopyAsDamaged(int borrowingId)
+        {
+            var borrowing = _borrowingDAO.GetById(borrowingId);
+            if (borrowing == null) throw new Exception("Borrowing record not found.");
+
+            borrowing.Status = "Damaged";
+            borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
+            _borrowingDAO.Update(borrowing);
+
+            _bookCopyDAO.UpdateFirstAvailableCopyStatusByBookId(borrowing.BookId ?? 0, "Damaged");
+        }
+
+
     }
 }

@@ -11,6 +11,8 @@ using Services.Implementations;
 using Services;
 using Microsoft.EntityFrameworkCore;
 using System.IO;
+using Repositories;
+using Repositories.Implementations;
 
 namespace LibraryWpfApp
 {
@@ -75,25 +77,26 @@ namespace LibraryWpfApp
             serviceCollection.AddTransient<FineDAO>();
             serviceCollection.AddTransient<PatronDAO>();
             serviceCollection.AddTransient<UserDAO>();
+            serviceCollection.AddTransient<BookCopyDAO>();
 
             // Đăng ký Repositories
-            
+
             serviceCollection.AddTransient<IBookRepository, BookRepository>();
             serviceCollection.AddTransient<IBorrowingRepository, BorrowingRepository>();
             serviceCollection.AddTransient<ICategoryRepository, CategoryRepository>();
             serviceCollection.AddTransient<IFineRepository, FineRepository>();
             serviceCollection.AddTransient<IPatronRepository, PatronRepository>();
             serviceCollection.AddTransient<IUserRepository, UserRepository>();
-
+            serviceCollection.AddTransient<IBookCopyRepository, BookCopyRepository>();
             // Đăng ký Services 
-           
+
             serviceCollection.AddTransient<IBookService, BookService>();
             serviceCollection.AddTransient<IBorrowingService, BorrowingService>();
             serviceCollection.AddTransient<ICategoryService, CategoryService>();
             serviceCollection.AddTransient<IFineService, FineService>();
             serviceCollection.AddTransient<IPatronService, PatronService>();
             serviceCollection.AddTransient<IUserService, UserService>();
-
+            serviceCollection.AddTransient<IBookCopyService, BookCopyService>();
             // Đăng ký ViewModels
             serviceCollection.AddTransient<ViewModels.LoginViewModel>();
             serviceCollection.AddTransient<ViewModels.MainViewModel>();

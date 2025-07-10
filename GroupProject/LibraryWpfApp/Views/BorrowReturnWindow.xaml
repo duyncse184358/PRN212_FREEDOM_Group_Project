@@ -2,18 +2,18 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
-        Title="Borrowing &amp; Return Management" Height="600" Width="1000"
+        Title="Borrowing &amp; Return Management" Height="1000" Width="1000"
         WindowStartupLocation="CenterScreen">
 
     <!-- KHÔNG có Window.DataContext ở đây -->
 
     <DockPanel Margin="10">
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
-            <TextBox Width="300" Text="{Binding SearchKeyword}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}"/>
-            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Mark Returned" Command="{Binding MarkReturnedCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="View Overdue Books" Command="{Binding ViewOverdueCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Process Fine" Command="{Binding CalculateAndAddFineCommand}" Style="{StaticResource ModernButtonStyle}"/>
+            <TextBox Width="300" Text="{Binding SearchKeyword}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}" />
+            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}" />
+            <Button Content="Mark Returned" Command="{Binding MarkReturnedCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}" />
+            <Button Content="View Overdue Books" Command="{Binding ViewOverdueCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}" />
+            <Button Content="Process Fine" Command="{Binding CalculateAndAddFineCommand}" Style="{StaticResource ModernButtonStyle}" />
         </StackPanel>
 
         <DataGrid ItemsSource="{Binding Borrowings}"
@@ -21,14 +21,37 @@
                   AutoGenerateColumns="False" IsReadOnly="True"
                   Style="{StaticResource ModernDataGridStyle}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Borrowing ID" Binding="{Binding BorrowingID}" Width="Auto"/>
-                <DataGridTextColumn Header="Book Title" Binding="{Binding BookTitle}" Width="2*"/>
-                <DataGridTextColumn Header="Patron Name" Binding="{Binding PatronName}" Width="*"/>
-                <DataGridTextColumn Header="Borrow Date" Binding="{Binding BorrowDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
-                <DataGridTextColumn Header="Due Date" Binding="{Binding DueDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
-                <DataGridTextColumn Header="Return Date" Binding="{Binding ReturnDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto"/>
-                <DataGridTextColumn Header="Fine" Binding="{Binding FineAmount, StringFormat=C}" Width="Auto"/>
+                <DataGridTextColumn Header="Borrowing ID" Binding="{Binding BorrowingID}" Width="Auto" />
+                <DataGridTextColumn Header="Book Title" Binding="{Binding BookTitle}" Width="2*" />
+                <DataGridTextColumn Header="Patron Name" Binding="{Binding PatronName}" Width="*" />
+                <DataGridTextColumn Header="Borrow Date" Binding="{Binding BorrowDate, StringFormat=dd/MM/yyyy}" Width="Auto" />
+                <DataGridTextColumn Header="Due Date" Binding="{Binding DueDate, StringFormat=dd/MM/yyyy}" Width="Auto" />
+                <DataGridTextColumn Header="Return Date" Binding="{Binding ReturnDate, StringFormat=dd/MM/yyyy}" Width="Auto" />
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto" />
+                <DataGridTextColumn Header="Fine" Binding="{Binding FineAmount, StringFormat=C}" Width="Auto" />
+
+                <!-- ✅ Cột nút đánh dấu mất -->
+                <DataGridTemplateColumn Header="Actions">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Đánh dấu mất"
+                Command="{Binding DataContext.MarkLostCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                CommandParameter="{Binding}"
+                Style="{StaticResource ModernButtonStyle}"
+                Margin="2" />
+
+                                <Button Content="Đánh dấu hư hỏng"
+                Command="{Binding DataContext.MarkDamagedCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                CommandParameter="{Binding}"
+                Style="{StaticResource ModernButtonStyle}"
+                Margin="2" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
             </DataGrid.Columns>
         </DataGrid>
     </DockPanel>

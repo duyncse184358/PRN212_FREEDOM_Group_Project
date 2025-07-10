@@ -5,8 +5,6 @@
         Title="Book Details" Height="880" Width="750"
         WindowStartupLocation="CenterOwner">
 
-    <!-- Đã loại bỏ Window.DataContext để dùng DI hoặc code-behind -->
-
     <Window.Resources>
         <Style x:Key="LabelStyle" TargetType="Label">
             <Setter Property="Foreground" Value="#FF333333"/>
@@ -15,31 +13,59 @@
         </Style>
     </Window.Resources>
 
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <!-- 0: Title -->
             <RowDefinition Height="Auto"/>
+            <!-- 1: Label Title -->
             <RowDefinition Height="Auto"/>
+            <!-- 2: Input Title -->
             <RowDefinition Height="Auto"/>
+            <!-- 3: Label Author -->
             <RowDefinition Height="Auto"/>
+            <!-- 4: Input Author -->
             <RowDefinition Height="Auto"/>
+            <!-- 5: Label Publisher -->
             <RowDefinition Height="Auto"/>
+            <!-- 6: Input Publisher -->
             <RowDefinition Height="Auto"/>
+            <!-- 7: Label Year -->
             <RowDefinition Height="Auto"/>
+            <!-- 8: Input Year -->
             <RowDefinition Height="Auto"/>
+            <!-- 9: Label Category -->
             <RowDefinition Height="Auto"/>
+            <!-- 10: ComboBox Category -->
             <RowDefinition Height="Auto"/>
+            <!-- 11: Label ISBN -->
             <RowDefinition Height="Auto"/>
+            <!-- 12: Input ISBN -->
             <RowDefinition Height="Auto"/>
+            <!-- 13: Label Total Copies -->
             <RowDefinition Height="Auto"/>
+            <!-- 14: Input Total Copies -->
             <RowDefinition Height="Auto"/>
+            <!-- 15: Label Available Copies -->
             <RowDefinition Height="Auto"/>
+            <!-- 16: Input Available Copies -->
             <RowDefinition Height="Auto"/>
+            <!-- 17: Label Shelf -->
             <RowDefinition Height="Auto"/>
+            <!-- 18: Input Shelf -->
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <!-- 19: Label Price -->
             <RowDefinition Height="Auto"/>
+            <!-- 20: Input Price -->
+            <RowDefinition Height="Auto"/>
+            <!-- 21: Label Status -->
+            <RowDefinition Height="Auto"/>
+            <!-- 22: ComboBox Status -->
+            <RowDefinition Height="Auto"/>
+            <!-- 23: Buttons -->
         </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
@@ -75,13 +101,17 @@
         <Label Content="Shelf Location" Grid.Row="17" Style="{StaticResource LabelStyle}"/>
         <TextBox Grid.Row="18" Text="{Binding Book.ShelfLocation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource ModernTextBoxStyle}" />
 
-        <Label Content="Status" Grid.Row="19" Style="{StaticResource LabelStyle}"/>
-        <ComboBox Grid.Row="20" ItemsSource="{Binding BookStatuses}" SelectedItem="{Binding Book.Status, Mode=TwoWay}" 
+        <Label Content="Giá tiền (VNĐ)" Grid.Row="19" Style="{StaticResource LabelStyle}"/>
+        <TextBox Grid.Row="20" Text="{Binding Book.Price, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource ModernTextBoxStyle}" />
+
+        <Label Content="Tình trạng" Grid.Row="21" Style="{StaticResource LabelStyle}"/>
+        <ComboBox Grid.Row="22" ItemsSource="{Binding BookStatuses}" SelectedItem="{Binding Book.Status, Mode=TwoWay}" 
                   Style="{StaticResource ModernComboBoxStyle}"/>
 
-        <StackPanel Grid.Row="21" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+        <StackPanel Grid.Row="23" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
             <Button Content="Save" Style="{StaticResource ModernButtonStyle}" Click="Save_Click" Margin="0,0,10,0" Height="41" Width="114"/>
             <Button Content="Cancel" Style="{StaticResource ModernButtonStyle}" Click="Close_Click" Height="38" Width="113"/>
         </StackPanel>
     </Grid>
+    </ScrollViewer>
 </Window>

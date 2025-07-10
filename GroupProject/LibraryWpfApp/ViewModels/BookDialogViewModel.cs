@@ -72,7 +72,8 @@ namespace LibraryWpfApp.ViewModels
                 AvailableCopies = originalBook.AvailableCopies,
                 ShelfLocation = originalBook.ShelfLocation,
                 Status = originalBook.Status,
-                CategoryId = originalBook.CategoryId
+                CategoryId = originalBook.CategoryId,
+                Price = originalBook.Price // thêm dòng này
             };
             LoadCategories();
             SelectedCategory = Categories.FirstOrDefault(c => c.CategoryId == Book.CategoryId);

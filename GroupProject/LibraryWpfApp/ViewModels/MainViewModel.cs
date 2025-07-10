@@ -15,8 +15,10 @@ namespace LibraryWpfApp.ViewModels
     public class MainViewModel : BaseViewModel
     {
         public string WelcomeMessage { get; set; }
+
         //public bool IsAdmin => AppContext.IsAdmin;
         public bool IsLibrarian => AppContext.IsLibrarian;
+
         public bool IsStaff => AppContext.IsStaff;
         public bool IsMember => AppContext.IsMember; // Bổ sung
 
@@ -45,11 +47,10 @@ namespace LibraryWpfApp.ViewModels
             OpenUserManagementCommand = new RelayCommand(() => GetWindow<Views.UserManagementWindow>()?.Show());
             OpenCategoryManagementCommand = new RelayCommand(() => GetWindow<Views.CategoryWindow>()?.Show());
             OpenReportsCommand = new RelayCommand(() => GetWindow<Views.ReportWindow>()?.Show());
-            // OpenProfileCommand = new RelayCommand(() => GetWindow<Views.ProfileWindow>()?.Show());
             OpenOverdueBooksCommand = new RelayCommand(() => GetWindow<Views.OverdueBooksWindow>()?.Show());
             OpenMemberBookListCommand = new RelayCommand(() => GetWindow<Views.BookWindow>()?.Show()); // Bổ sung
-            //OpenMyBorrowingHistoryCommand = new RelayCommand(() => GetWindow<Views.PatronBorrowingHistoryWindow>()?.Show()); // Bổ sung
-           OpenMyBorrowingHistoryCommand = new RelayCommand(OpenMyBorrowingHistory);
+
+            OpenMyBorrowingHistoryCommand = new RelayCommand(OpenMyBorrowingHistory);
         }
 
         private T? GetWindow<T>() where T : Window
@@ -73,25 +74,16 @@ namespace LibraryWpfApp.ViewModels
 
         private void OpenMyBorrowingHistory()
         {
-            // Lấy patronId từ AppContext (đảm bảo bạn có thuộc tính này, ví dụ: AppContext.CurrentPatronId)
             int patronId = AppContext.CurrentPatronId;
 
-            // Lấy các service từ DI Container
             var app = Application.Current as App;
             var borrowingService = app.Services.GetRequiredService<IBorrowingService>();
             var bookService = app.Services.GetRequiredService<IBookService>();
             var patronService = app.Services.GetRequiredService<IPatronService>();
             var fineService = app.Services.GetRequiredService<IFineService>();
 
-            // Tạo ViewModel cho cửa sổ lịch sử mượn
-            var viewModel = new PatronBorrowingHistoryViewModel(patronId, borrowingService, bookService, patronService, fineService);
-
-            // Lấy cửa sổ từ DI Container và gán DataContext
-            var window = app.Services.GetRequiredService<PatronBorrowingHistoryWindow>();
-            window.DataContext = viewModel;
-            window.ShowDialog();
+            var window = (Application.Current as App)?.Services.GetRequiredService<PatronBorrowingHistoryWindow>();
+            window?.ShowDialog();
         }
-
-
     }
 }
