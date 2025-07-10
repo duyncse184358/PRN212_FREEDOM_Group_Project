@@ -207,6 +207,7 @@ namespace LibraryWpfApp.ViewModels
                 MessageBox.Show("Please select a book to borrow.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
+
             if (SelectedBook.AvailableCopies <= 0 || SelectedBook.Status != "Available")
             {
                 MessageBox.Show("This book is not available for borrowing.", "Not Available", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -227,7 +228,30 @@ namespace LibraryWpfApp.ViewModels
             if (borrowDialog.ShowDialog() == true)
             {
                 LoadBooks();
-                MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                var vm = borrowDialog.DataContext as BorrowBookDialogViewModel;
+                if (vm != null && vm.LastBorrowedRecord != null)
+                {
+                    var record = vm.LastBorrowedRecord;
+                    var patron = _patronService.GetPatronById(record.PatronId ?? 0);
+                    var book = _bookService.GetBookById(record.BookId ?? 0);
+
+                    string info = $"📚 **Thông tin mượn sách**\n" +
+                                  $"- Mã mượn: {record.BorrowingId}\n" +
+                                  $"- Tên sách: {book?.Title}\n" +
+                                  $"- Ngày mượn: {record.BorrowDate:dd/MM/yyyy}\n" +
+                                  $"- Hạn trả: {record.DueDate:dd/MM/yyyy}\n\n" +
+                                  $"👤 **Người mượn**\n" +
+                                  $"- Mã bạn đọc: {patron?.PatronId}\n" +
+                                  $"- Họ tên: {patron?.FullName}\n" +
+                                  $"- Email: {patron?.Email}";
+
+                    MessageBox.Show(info, "Mượn sách thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
             }
         }
 

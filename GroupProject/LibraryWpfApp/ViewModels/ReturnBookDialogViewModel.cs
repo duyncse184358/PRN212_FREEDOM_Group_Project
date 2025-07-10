@@ -91,7 +91,7 @@ namespace LibraryWpfApp.ViewModels
             try
             {
                 _borrowingService.ReturnBook(SelectedBorrowingInfo.BorrowingID);
-                MessageBox.Show("Book returned successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                //MessageBox.Show("Book returned successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 if (SelectedBorrowingInfo.FineAmount > 0 && !SelectedBorrowingInfo.IsFinePaid)
                 {

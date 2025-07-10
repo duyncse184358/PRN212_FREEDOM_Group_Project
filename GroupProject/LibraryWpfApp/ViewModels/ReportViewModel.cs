@@ -82,7 +82,9 @@ namespace LibraryWpfApp.ViewModels
 
                 var result = allBorrowings
                     .Where(b => b.BorrowDate >= DateOnly.FromDateTime(FromDate) && b.BorrowDate <= DateOnly.FromDateTime(ToDate))
-                    .OrderByDescending(b => b.BorrowDate).ToList();
+                    //.OrderByDescending(b => b.BorrowDate).ToList();
+                    .OrderByDescending(b => b.BorrowingId).ToList();
+
 
                 foreach (var b in result)
                 {

@@ -119,7 +119,7 @@ namespace LibraryWpfApp.ViewModels
                 _borrowingService.ReturnBook(SelectedBorrowing.BorrowingID);
                 LoadBorrowings();
 
-                MessageBox.Show("Book marked as returned successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                //MessageBox.Show("Book marked as returned successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 var originalBorrowing = _borrowingService.GetBorrowingById(SelectedBorrowing.BorrowingID);
                 if (originalBorrowing != null)

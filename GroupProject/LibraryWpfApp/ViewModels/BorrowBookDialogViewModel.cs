@@ -24,6 +24,8 @@ namespace LibraryWpfApp.ViewModels
         public Patron? SelectedPatron { get; set; }
 
         public ICommand ConfirmBorrowCommand { get; }
+        public Borrowing? LastBorrowedRecord { get; private set; }
+
 
         // Constructor mặc định cho XAML (không dùng thực tế)
         public BorrowBookDialogViewModel()
@@ -57,6 +59,7 @@ namespace LibraryWpfApp.ViewModels
 
         private void ConfirmBorrow()
         {
+
             if (SelectedPatron == null)
             {
                 MessageBox.Show("Please select a patron.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -81,10 +84,10 @@ namespace LibraryWpfApp.ViewModels
                     Status = "Borrowed"
                 };
                 _borrowingService.BorrowBook(newBorrowing);
+                LastBorrowedRecord = newBorrowing;
 
                 System.Diagnostics.Debug.WriteLine($"[BorrowBookDialogViewModel] Borrowed BookId={BookToBorrow.BookId} for PatronId={SelectedPatron.PatronId}");
 
-                MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 // Đóng dialog (thiết lập DialogResult)
                 var dialog = Application.Current.Windows.OfType<Views.BorrowBookDialog>().FirstOrDefault(w => w.DataContext == this);
                 if (dialog != null)

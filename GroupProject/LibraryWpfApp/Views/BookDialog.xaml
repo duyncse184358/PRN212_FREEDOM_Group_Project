@@ -70,7 +70,7 @@
         <TextBox Grid.Row="14" Text="{Binding Book.NumberOfCopies, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource ModernTextBoxStyle}" />
 
         <Label Content="Available Copies" Grid.Row="15" Style="{StaticResource LabelStyle}"/>
-        <TextBox Grid.Row="16" Text="{Binding Book.AvailableCopies}" Style="{StaticResource ModernTextBoxStyle}" IsEnabled="False" />
+        <TextBox Grid.Row="16" Text="{Binding Book.AvailableCopies}" Style="{StaticResource ModernTextBoxStyle}" />
 
         <Label Content="Shelf Location" Grid.Row="17" Style="{StaticResource LabelStyle}"/>
         <TextBox Grid.Row="18" Text="{Binding Book.ShelfLocation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource ModernTextBoxStyle}" />
