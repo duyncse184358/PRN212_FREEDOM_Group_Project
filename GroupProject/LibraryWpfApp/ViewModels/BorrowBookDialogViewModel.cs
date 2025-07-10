@@ -5,39 +5,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessObject;
-using LibraryWpfApp.Commands; // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.Commands
+using LibraryWpfApp.Commands;
 using Services;
 using System.Windows.Input;
-using System.Windows; // Cần thêm using System.Windows
-using Microsoft.Extensions.DependencyInjection; // Cần cho GetRequiredService
+using System.Windows;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace LibraryWpfApp.ViewModels // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.ViewModels
+namespace LibraryWpfApp.ViewModels
 {
     public class BorrowBookDialogViewModel : BaseViewModel
     {
-        private readonly IBookService _bookService;
-        private readonly IPatronService _patronService;
-        private readonly IBorrowingService _borrowingService;
+        private readonly IBookService? _bookService;
+        private readonly IPatronService? _patronService;
+        private readonly IBorrowingService? _borrowingService;
 
-        public Book BookToBorrow { get; set; }
+        public Book BookToBorrow { get; set; } = new Book();
         public ObservableCollection<Patron> Patrons { get; set; } = new();
         public Patron? SelectedPatron { get; set; }
 
         public ICommand ConfirmBorrowCommand { get; }
 
-        // Constructor mặc định (public parameterless constructor) cho XAML
+        // Constructor mặc định cho XAML (không dùng thực tế)
         public BorrowBookDialogViewModel()
-           
         {
-            
+            ConfirmBorrowCommand = new RelayCommand(() =>
+            {
+                MessageBox.Show("Vui lòng không mở dialog này trực tiếp từ XAML!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+            });
         }
 
+        // Constructor thực tế dùng DI
         public BorrowBookDialogViewModel(IBookService bookService, IPatronService patronService, IBorrowingService borrowingService, Book book)
         {
             _bookService = bookService;
             _patronService = patronService;
             _borrowingService = borrowingService;
-            BookToBorrow = book;
+            BookToBorrow = book ?? new Book();
 
             LoadPatrons();
             ConfirmBorrowCommand = new RelayCommand(ConfirmBorrow);
@@ -45,8 +48,11 @@ namespace LibraryWpfApp.ViewModels // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.
 
         private void LoadPatrons()
         {
-            Patrons = new ObservableCollection<Patron>(_patronService.GetAllPatrons());
-            SelectedPatron = Patrons.FirstOrDefault();
+            if (_patronService != null)
+            {
+                Patrons = new ObservableCollection<Patron>(_patronService.GetAllPatrons());
+                SelectedPatron = Patrons.FirstOrDefault();
+            }
         }
 
         private void ConfirmBorrow()
@@ -54,6 +60,12 @@ namespace LibraryWpfApp.ViewModels // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.
             if (SelectedPatron == null)
             {
                 MessageBox.Show("Please select a patron.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (_borrowingService == null)
+            {
+                MessageBox.Show("Borrowing service is not available.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
@@ -69,6 +81,8 @@ namespace LibraryWpfApp.ViewModels // ĐÃ SỬA NAMESPACE THÀNH LibraryWpfApp.
                     Status = "Borrowed"
                 };
                 _borrowingService.BorrowBook(newBorrowing);
+
+                System.Diagnostics.Debug.WriteLine($"[BorrowBookDialogViewModel] Borrowed BookId={BookToBorrow.BookId} for PatronId={SelectedPatron.PatronId}");
 
                 MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 // Đóng dialog (thiết lập DialogResult)

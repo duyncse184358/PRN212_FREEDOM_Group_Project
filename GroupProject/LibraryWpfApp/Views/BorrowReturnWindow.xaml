@@ -5,9 +5,7 @@
         Title="Borrowing &amp; Return Management" Height="600" Width="1000"
         WindowStartupLocation="CenterScreen">
 
-    <Window.DataContext>
-        <vm:BorrowReturnViewModel />
-    </Window.DataContext>
+    <!-- KHÔNG có Window.DataContext ở đây -->
 
     <DockPanel Margin="10">
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
