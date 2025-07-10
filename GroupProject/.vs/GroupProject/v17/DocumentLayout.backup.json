@@ -3,96 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\borrowreturnviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\borrowreturnviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\borrowreturnwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\borrowreturnwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\borrowbookdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\borrowbookdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\bookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\bookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\businessobject\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|solutionrelative:businessobject\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\returnbookdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\returnbookdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\bookdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\bookdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\overduebookswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\overduebookswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\patronborrowinghistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\patronborrowinghistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\patronborrowinghistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\patronborrowinghistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\patrondialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\patrondialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\patronwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\patronwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\userdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\userdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\usermanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\usermanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\dataaccesslayer\\dao\\finedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\finedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\reportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\reportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\finepaymentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\finepaymentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\finemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\finemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\finemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\finemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\genremanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -103,12 +43,8 @@
       "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\genredialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\finepaymentdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\finepaymentdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\finemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\finemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\categorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -122,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -157,322 +93,150 @@
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BorrowReturnViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
-              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T13:13:19.575Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BorrowReturnWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BorrowReturnWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BorrowReturnWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BorrowReturnWindow.xaml*",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\BorrowReturnWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:58:40.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BookWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\BookWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:58:02.476Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BookViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BookViewModel.cs",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BookViewModel.cs",
-              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BookViewModel.cs",
-              "ViewState": "AgIAAMQAAAAAAAAAAAAnwMYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T12:07:43.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\appsettings.json",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\appsettings.json",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\appsettings.json",
-              "RelativeToolTip": "LibraryWpfApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-10T12:41:07.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BorrowBookDialog.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BorrowBookDialog.xaml.cs",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BorrowBookDialog.xaml.cs",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BorrowBookDialog.xaml.cs",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\BorrowBookDialog.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T12:47:40.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Patron.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\Patron.cs",
-              "RelativeDocumentMoniker": "BusinessObject\\Patron.cs",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\Patron.cs",
-              "RelativeToolTip": "BusinessObject\\Patron.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T14:16:03.92Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BookService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\BookService.cs",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BookService.cs",
-              "RelativeToolTip": "Services\\Implementations\\BookService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T14:43:49.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T12:01:12.091Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "LibraryWpfApp\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAYwBgAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAA5wDMAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T12:03:01.276Z"
+              "WhenOpened": "2025-07-10T13:44:45.306Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppContext.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\AppContext.cs",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\AppContext.cs",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\AppContext.cs",
-              "RelativeToolTip": "LibraryWpfApp\\AppContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml*",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-10T13:59:23.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FineDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\FineDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\FineDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\FineDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\FineDAO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T13:39:13.038Z"
+              "WhenOpened": "2025-07-10T13:57:25.491Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BookDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookDialog.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BookDialog.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookDialog.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\BookDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:58:39.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ReturnBookDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\ReturnBookDialog.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\ReturnBookDialog.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\ReturnBookDialog.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\ReturnBookDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:38.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "OverdueBooksWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\OverdueBooksWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\OverdueBooksWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\OverdueBooksWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\OverdueBooksWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T12:01:00.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PatronBorrowingHistoryWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:23.294Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PatronBorrowingHistoryWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml.cs",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\PatronBorrowingHistoryWindow.xaml.cs",
+              "DocumentIndex": 5,
+              "Title": "FinePaymentDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T12:00:57.02Z"
+              "WhenOpened": "2025-07-10T13:57:16.174Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PatronWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\PatronWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\PatronWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:32.27Z"
+              "DocumentIndex": 6,
+              "Title": "FineManagementViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T13:57:13.93Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\LoginWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\LoginWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:57:58.356Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\UserDialog.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\UserDialog.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\UserDialog.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\UserDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:36.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UserManagementWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\UserManagementWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\UserManagementWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\UserManagementWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\UserManagementWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:33.805Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PatronDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronDialog.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\PatronDialog.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\PatronDialog.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\PatronDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:31.065Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\MainWindow.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T12:00:45.983Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 4,
               "Title": "ReportWindow.xaml",
               "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\ReportWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\ReportWindow.xaml",
               "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\ReportWindow.xaml",
               "RelativeToolTip": "LibraryWpfApp\\Views\\ReportWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:40.936Z"
+              "WhenOpened": "2025-07-09T11:59:40.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "GenreDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\GenreDialog.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\GenreDialog.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\GenreDialog.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\GenreDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:16.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FinePaymentDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
-              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
-              "RelativeToolTip": "LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:14.238Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 7,
               "Title": "FineManagementWindow.xaml",
               "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FineManagementWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\FineManagementWindow.xaml",
               "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FineManagementWindow.xaml",
               "RelativeToolTip": "LibraryWpfApp\\Views\\FineManagementWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:59:05.127Z"
+              "WhenOpened": "2025-07-09T11:59:05.127Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\App.xaml.cs",
+              "RelativeToolTip": "LibraryWpfApp\\App.xaml.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T13:44:13.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GenreDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\GenreDialog.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\GenreDialog.xaml",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\GenreDialog.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\GenreDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-10T13:53:18.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\App.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\App.xaml",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\App.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-10T13:44:08.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "GenreManagementWindow.xaml",
               "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\GenreManagementWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\GenreManagementWindow.xaml",
               "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\GenreManagementWindow.xaml",
               "RelativeToolTip": "LibraryWpfApp\\Views\\GenreManagementWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T11:57:59.596Z"
+              "WhenOpened": "2025-07-09T11:57:59.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 11,
               "Title": "CategoryWindow.xaml",
               "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\CategoryWindow.xaml",
               "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\CategoryWindow.xaml",

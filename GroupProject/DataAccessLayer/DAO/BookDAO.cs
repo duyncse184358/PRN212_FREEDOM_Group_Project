@@ -24,9 +24,27 @@ namespace DataAccessLayer.DAO
 
         public void Update(Book book)
         {
-            _context.Books.Update(book);
-            _context.SaveChanges();
+            var trackedBook = _context.Books.FirstOrDefault(b => b.BookId == book.BookId);
+            if (trackedBook != null)
+            {
+                // Cập nhật từng property (không gán navigation property)
+                trackedBook.Isbn = book.Isbn;
+                trackedBook.Title = book.Title;
+                trackedBook.Author = book.Author;
+                trackedBook.Publisher = book.Publisher;
+                trackedBook.PublicationYear = book.PublicationYear;
+                trackedBook.Genre = book.Genre;
+                trackedBook.NumberOfCopies = book.NumberOfCopies;
+                trackedBook.AvailableCopies = book.AvailableCopies;
+                trackedBook.ShelfLocation = book.ShelfLocation;
+                trackedBook.CategoryId = book.CategoryId;
+                trackedBook.Status = book.Status;
+                // Không gán lại trackedBook.Category
+
+                _context.SaveChanges();
+            }
         }
+
 
         public void Delete(int id)
         {
