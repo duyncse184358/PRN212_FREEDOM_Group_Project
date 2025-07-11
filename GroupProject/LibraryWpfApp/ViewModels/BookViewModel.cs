@@ -249,10 +249,10 @@ namespace LibraryWpfApp.ViewModels
 
                     MessageBox.Show(info, "Mượn sách thành công", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
-                else
-                {
-                    MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
+                //else
+                //{
+                //    MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                //}
             }
         }
 

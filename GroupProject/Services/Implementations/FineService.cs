@@ -28,5 +28,21 @@ namespace Services.Implementations
                 _repo.Update(fine);
             }
         }
+        public void DeleteFine(int fineId)
+        {
+            _repo.Delete(fineId);
+        }
+
+        public void UnpayFine(int fineId)
+        {
+            var fine = GetFineById(fineId);
+            if (fine != null && (fine.Paid == true))
+            {
+                fine.Paid = false;
+                _repo.Update(fine);
+            }
+        }
+
+
     }
 }

@@ -128,6 +128,10 @@ namespace DataAccessLayer
                 entity.Property(e => e.FineDate).HasColumnType("datetime");
                 entity.Property(e => e.PatronId);
 
+                entity.Property(e => e.FineDueDate).HasColumnType("datetime");    // mapping mới
+                entity.Property(e => e.FineType).HasMaxLength(20).IsUnicode(false); // mapping mới
+                entity.Property(e => e.LateDays).HasColumnType("int");              // mapping mới
+
                 entity.HasOne(d => d.Borrowing).WithMany(p => p.Fines)
                     .HasForeignKey(d => d.BorrowingId)
                     .HasConstraintName("FK__Fines__Borrowing__3A81B327");

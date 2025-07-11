@@ -85,8 +85,11 @@ namespace LibraryWpfApp.ViewModels
 
             try
             {
-                var borrowDate = DateOnly.FromDateTime(DateTime.Now);
-                var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(14));
+                //var borrowDate = DateOnly.FromDateTime(DateTime.Now);
+                //var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(1));
+
+                var borrowDate = DateOnly.FromDateTime(DateTime.Now.AddDays(-10)); // Giả lập mượn sách từ 10 ngày trước
+                var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(-3));    // Hạn trả đã qua 3 ngày
 
                 _borrowingService.BorrowBook(
                     BookToBorrow.BookId,
@@ -107,7 +110,7 @@ namespace LibraryWpfApp.ViewModels
 
                 System.Diagnostics.Debug.WriteLine($"[BorrowBookDialogViewModel] Borrowed BookId={BookToBorrow.BookId} for PatronId={SelectedPatron.PatronId}");
 
-                MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                //MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 // Đóng dialog (thiết lập DialogResult)
                 var dialog = Application.Current.Windows.OfType<Views.BorrowBookDialog>().FirstOrDefault(w => w.DataContext == this);

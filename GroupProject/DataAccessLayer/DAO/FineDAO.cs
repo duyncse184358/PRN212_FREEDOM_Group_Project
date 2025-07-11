@@ -38,5 +38,14 @@ namespace DataAccessLayer.DAO
                 _context.SaveChanges();
             }
         }
+        public void Delete(int fineId)
+        {
+            var fine = _context.Fines.Find(fineId);
+            if (fine != null)
+            {
+                _context.Fines.Remove(fine);
+                _context.SaveChanges();
+            }
+        }
     }
 }

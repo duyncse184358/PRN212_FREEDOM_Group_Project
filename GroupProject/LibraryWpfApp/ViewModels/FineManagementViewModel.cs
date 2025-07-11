@@ -24,7 +24,7 @@ namespace LibraryWpfApp.ViewModels
         public ICommand SearchCommand { get; }
         public ICommand MarkPaidCommand { get; }
         public ICommand ViewAllCommand { get; }
-
+        public ICommand MarkUnpaidCommand { get; }
         public FineManagementViewModel(IFineService fineService, IPatronService patronService)
         {
             _fineService = fineService;
@@ -33,10 +33,33 @@ namespace LibraryWpfApp.ViewModels
             SearchCommand = new RelayCommand(Search);
             MarkPaidCommand = new RelayCommand(MarkPaid);
             ViewAllCommand = new RelayCommand(LoadFines);
-
+            MarkUnpaidCommand = new RelayCommand(MarkUnpaid);
             LoadFines();
         }
+        private void MarkUnpaid()
+        {
+            if (SelectedFine == null)
+            {
+                MessageBox.Show("Please select a fine to mark as unpaid.", "No Fine Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if (!SelectedFine.IsPaid)
+            {
+                MessageBox.Show("This fine is already unpaid.", "Already Unpaid", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
 
+            try
+            {
+                _fineService.UnpayFine(SelectedFine.FineID);
+                LoadFines();
+                MessageBox.Show("Fine marked as unpaid successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
         private void LoadFines()
         {
             Fines.Clear();
@@ -51,7 +74,10 @@ namespace LibraryWpfApp.ViewModels
                     PatronName = patron?.FullName ?? "Unknown Patron",
                     Amount = f.FineAmount ?? 0M,
                     IsPaid = f.Paid ?? false,
-                    FineDate = f.FineDate ?? DateTime.MinValue
+                    FineDate = f.FineDate ?? DateTime.MinValue,
+                    FineType = f.FineType ?? "",
+                    LateDays = f.LateDays,
+                    FineDueDate = f.FineDueDate
                 });
             }
         }

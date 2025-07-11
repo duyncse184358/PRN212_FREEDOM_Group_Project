@@ -50,5 +50,26 @@ namespace LibraryWpfApp.Models
             get => _fineDate;
             set => SetProperty(ref _fineDate, value);
         }
+
+        private string _fineType = string.Empty;
+        public string FineType
+        {
+            get => _fineType;
+            set => SetProperty(ref _fineType, value);
+        }
+
+        private int? _lateDays;
+        public int? LateDays
+        {
+            get => _lateDays;
+            set => SetProperty(ref _lateDays, value);
+        }
+
+        private DateTime? _fineDueDate;
+        public DateTime? FineDueDate
+        {
+            get => _fineDueDate;
+            set => SetProperty(ref _fineDueDate, value);
+        }
     }
 }

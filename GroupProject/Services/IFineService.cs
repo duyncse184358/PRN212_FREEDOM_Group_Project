@@ -11,5 +11,8 @@ namespace Services
         void AddFine(Fine fine);
         void UpdateFine(Fine fine);
         void PayFine(int fineId);
+        void DeleteFine(int fineId);
+
+        void UnpayFine(int fineId);
     }
 }

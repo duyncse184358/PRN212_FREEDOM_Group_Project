@@ -20,9 +20,10 @@
             <TextBox Width="300" Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,10,0" ToolTip="Search by patron name"/>
             <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0"/>
             <Button Content="Mark Paid" Command="{Binding MarkPaidCommand}" Margin="0,0,10,0"/>
+            <Button Content="Mark Unpaid" Command="{Binding MarkUnpaidCommand}" Margin="0,0,10,0"/>
             <Button Content="View All Fines" Command="{Binding ViewAllCommand}"/>
         </StackPanel>
-
+    
         <!-- Summary -->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
             <TextBlock Text="Total fines: " FontWeight="Bold"/>
@@ -43,7 +44,14 @@
                 <DataGridTextColumn Header="Patron Name" Binding="{Binding PatronName}" Width="*"/>
                 <DataGridTextColumn Header="Amount" Binding="{Binding Amount, StringFormat=C}" Width="Auto"/>
                 <DataGridTextColumn Header="Date" Binding="{Binding FineDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
+                <DataGridTextColumn Header="Type" Binding="{Binding FineType}" Width="Auto"/>
+                <!-- Loại phạt -->
+                <DataGridTextColumn Header="Late Days" Binding="{Binding LateDays}" Width="Auto"/>
+                <!-- Số ngày trễ -->
+                <DataGridTextColumn Header="Due Date" Binding="{Binding FineDueDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
+                <!-- Ngày hạn đóng phạt -->
                 <DataGridCheckBoxColumn Header="Paid" Binding="{Binding IsPaid}" Width="Auto"/>
+                <!-- Đã thanh toán -->
             </DataGrid.Columns>
         </DataGrid>
     </DockPanel>

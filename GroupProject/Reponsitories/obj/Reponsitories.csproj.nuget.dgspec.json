@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Reponsitories.csproj": {}
+    "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Reponsitories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
+    "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\VicTus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\obj\\",
+        "projectPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\truon\\.nuget\\packages\\",
+        "outputPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\VicTus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\truon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -60,35 +60,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.302, 9.0.302]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\VicTus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\obj\\",
+        "projectPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\truon\\.nuget\\packages\\",
+        "outputPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\VicTus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\truon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -103,8 +97,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj"
+              "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }
@@ -119,7 +113,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -155,35 +149,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.302, 9.0.302]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Reponsitories.csproj": {
+    "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Reponsitories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Reponsitories.csproj",
+        "projectUniqueName": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Reponsitories.csproj",
         "projectName": "Reponsitories",
-        "projectPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Reponsitories.csproj",
-        "packagesPath": "C:\\Users\\VicTus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\obj\\",
+        "projectPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Reponsitories.csproj",
+        "packagesPath": "C:\\Users\\truon\\.nuget\\packages\\",
+        "outputPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\VicTus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\truon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -198,11 +186,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj"
+              "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BusinessObject.csproj"
               },
-              "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -217,7 +205,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -233,18 +221,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.302, 9.0.302]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

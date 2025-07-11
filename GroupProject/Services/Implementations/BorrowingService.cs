@@ -142,48 +142,7 @@ namespace Services.Implementations
             return 0M;
         }
 
-        /*public void MarkBookCopyAsLost(int borrowingId)
-        {
-            var borrowing = _borrowingDAO.GetById(borrowingId);
-            if (borrowing == null) throw new Exception("Không tìm thấy phiếu mượn.");
-
-            if (borrowing.CopyId.HasValue)
-            {
-                var copy = _bookCopyDAO.GetById(borrowing.CopyId.Value);
-                if (copy != null && copy.Status != "Lost")
-                {
-                    // CHỈ thực hiện giảm số lượng nếu bản copy đang là "Available"
-                    if (copy.Status == "Available")
-                    {
-                        var book = _bookDAO.GetById(copy.BookId);
-                        if (book != null && book.AvailableCopies > 0)
-                        {
-                            book.AvailableCopies--;
-                            _bookDAO.Update(book);
-                        }
-                    }
-                    copy.Status = "Lost";
-                    _bookCopyDAO.Update(copy);
-
-                    // Cập nhật trạng thái Borrowing
-                    borrowing.Status = "Lost";
-                    borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
-                    _borrowingDAO.Update(borrowing);
-                }
-            }
-        }*/
-        /* public void MarkBookCopyAsDamaged(int borrowingId)
-         {
-             var borrowing = _borrowingDAO.GetById(borrowingId);
-             if (borrowing == null) throw new Exception("Borrowing record not found.");
-
-             borrowing.Status = "Damaged";
-             borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
-             _borrowingDAO.Update(borrowing);
-
-             if (borrowing.CopyId.HasValue)
-                 _bookCopyDAO.UpdateStatusByCopyId(borrowing.CopyId.Value, "Damaged");
-         }*/
+       
          public void MarkBookCopyAsNormal(int borrowingId)
          {
              var borrowing = _borrowingDAO.GetById(borrowingId);
@@ -299,7 +258,10 @@ namespace Services.Implementations
                 _fineService.AddFine(fine);
             }
         }
+        public void UpdateBorrowing(Borrowing borrowing)
+        {
+            _repo.Update(borrowing);
+        }
 
-      
     }
 }

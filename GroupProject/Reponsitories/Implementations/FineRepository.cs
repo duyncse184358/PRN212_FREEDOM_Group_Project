@@ -19,5 +19,6 @@ namespace Reponsitories.Implementations
         public void Add(Fine f) => _fineDao.Add(f);
         public void Update(Fine fine) => _fineDao.Update(fine);
         public void MarkAsPaid(int fineId) => _fineDao.MarkAsPaid(fineId);
+        public void Delete(int fineId) => _fineDao.Delete(fineId);
     }
 }

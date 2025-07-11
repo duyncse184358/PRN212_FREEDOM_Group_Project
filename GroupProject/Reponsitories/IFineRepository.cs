@@ -11,5 +11,6 @@ namespace Reponsitories
         void Add(Fine f);
         void Update(Fine fine);
         void MarkAsPaid(int fineId);
+        void Delete(int fineId);
     }
 }

@@ -90,18 +90,56 @@ namespace LibraryWpfApp.ViewModels
 
             try
             {
-                _borrowingService.ReturnBook(SelectedBorrowingInfo.BorrowingID);
-                //MessageBox.Show("Book returned successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                if (SelectedBorrowingInfo.FineAmount > 0 && !SelectedBorrowingInfo.IsFinePaid)
+                // Lấy thông tin phiếu mượn thực tế
+                var borrowing = _borrowingService.GetBorrowingById(SelectedBorrowingInfo.BorrowingID);
+                if (borrowing == null)
                 {
-                    if (MessageBox.Show($"Book was overdue. Fine amount: {SelectedBorrowingInfo.FineAmount:C}. Process fine payment now?", "Overdue Fine", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    MessageBox.Show("Borrowing record not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                // Đặt ngày trả và trạng thái trả
+                borrowing.IsReturned = true;
+                borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
+                borrowing.Status = "Returned";
+                _borrowingService.UpdateBorrowing(borrowing);
+
+                // Kiểm tra quá hạn
+                if (borrowing.ReturnDate > borrowing.DueDate)
+                {
+                    int lateDays = (borrowing.ReturnDate.Value.ToDateTime(TimeOnly.MinValue) - borrowing.DueDate.ToDateTime(TimeOnly.MinValue)).Days;
+                    decimal fineAmount = lateDays * 5000;
+
+                    // Kiểm tra đã có khoản phạt chưa (tránh tạo trùng)
+                    bool alreadyFined = _fineService.GetAllFines().Any(f => f.BorrowingId == borrowing.BorrowingId && f.FineType == "LateReturn");
+                    if (!alreadyFined)
+                    {
+                        var fine = new Fine
+                        {
+                            BorrowingId = borrowing.BorrowingId,
+                            PatronId = borrowing.PatronId,
+                            FineAmount = fineAmount,
+                            Paid = false,
+                            FineDate = DateTime.Now,
+                            FineDueDate = DateTime.Now.AddDays(3),
+                            FineType = "LateReturn",
+                            LateDays = lateDays
+                        };
+                        _fineService.AddFine(fine);
+                    }
+
+                    MessageBox.Show($"Trả sách trễ {lateDays} ngày, bạn bị phạt {fineAmount:N0} đ.", "Phạt trả trễ", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+
+                // Xử lý nộp phạt nếu có
+                var unpaidFines = _fineService.GetAllFines().Where(f => f.BorrowingId == borrowing.BorrowingId && f.Paid == false).ToList();
+                if (unpaidFines.Any())
+                {
+                    decimal totalFine = unpaidFines.Sum(f => f.FineAmount ?? 0);
+                    if (MessageBox.Show($"Tổng tiền phạt: {totalFine:C}. Bạn có muốn thanh toán ngay không?", "Tiền phạt", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                     {
                         var fineVm = (Application.Current as App)?.Services.GetRequiredService<ViewModels.FinePaymentDialogViewModel>();
-                        fineVm!.Setup(SelectedBorrowingInfo.BorrowingID,
-                                      SelectedBorrowingInfo.PatronID,
-                                      SelectedBorrowingInfo.FineAmount,
-                                      SelectedBorrowingInfo.PatronName);
+                        fineVm!.Setup(borrowing.BorrowingId, borrowing.PatronId ?? 0, totalFine, SelectedBorrowingInfo.PatronName);
 
                         var fineDialog = (Application.Current as App)?.Services.GetRequiredService<Views.FinePaymentDialog>();
                         fineDialog!.DataContext = fineVm;
@@ -109,10 +147,11 @@ namespace LibraryWpfApp.ViewModels
                     }
                 }
 
+                // Đóng dialog
                 var dialog = Application.Current.Windows.OfType<Views.ReturnBookDialog>().FirstOrDefault(w => w.DataContext == this);
                 if (dialog != null)
                 {
-                    dialog.DialogResult = true; // Fix: Ensure the assignment is made to a valid property
+                    dialog.DialogResult = true;
                 }
             }
             catch (InvalidOperationException ex)
