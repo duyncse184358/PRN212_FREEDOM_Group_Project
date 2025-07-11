@@ -47,6 +47,21 @@ namespace DataAccessLayer.DAO
             }
         }
 
+        // HÀM MỚI: Cập nhật trạng thái trực tiếp theo CopyId
+        public void UpdateStatusByCopyId(int copyId, string newStatus)
+        {
+            var copy = _context.BookCopies.Find(copyId);
+            if (copy != null)
+            {
+                copy.Status = newStatus;
+                _context.SaveChanges();
+            }
+            else
+            {
+                throw new InvalidOperationException("Không tìm thấy bản copy với CopyId này.");
+            }
+        }
+
         public void Add(BookCopy copy)
         {
             _context.BookCopies.Add(copy);
@@ -59,6 +74,23 @@ namespace DataAccessLayer.DAO
             if (copy != null)
             {
                 _context.BookCopies.Remove(copy);
+                _context.SaveChanges();
+            }
+        }
+
+        public BookCopy? GetAvailableCopyByBookId(int bookId)
+        {
+            // Trả về bản copy đầu tiên còn Available cho bookId đó
+            return _context.BookCopies.FirstOrDefault(c => c.BookId == bookId && c.Status == "Available");
+        }
+
+        public void Update(BookCopy copy)
+        {
+            var trackedCopy = _context.BookCopies.FirstOrDefault(c => c.CopyId == copy.CopyId);
+            if (trackedCopy != null)
+            {
+                trackedCopy.Status = copy.Status;
+                // Nếu muốn update thêm trường khác, gán vào đây
                 _context.SaveChanges();
             }
         }

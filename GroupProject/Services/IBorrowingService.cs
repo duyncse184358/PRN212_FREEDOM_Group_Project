@@ -1,22 +1,17 @@
 ﻿using BusinessObject;
-using System.Collections.Generic;
-using System;
 
-namespace Services
+public interface IBorrowingService
 {
-    public interface IBorrowingService
-    {
-        List<Borrowing> GetAllBorrowings();
-        Borrowing? GetBorrowingById(int id);
-        List<Borrowing> GetBorrowingsByPatron(int patronId);
-        void BorrowBook(Borrowing borrowing);
-        void ReturnBook(int borrowingId);
-        List<Borrowing> GetOverdueBorrowings();
-        bool IsOverdue(Borrowing borrowing);
-        decimal CalculateFine(Borrowing borrowing);
+    List<Borrowing> GetAllBorrowings();
+    Borrowing? GetBorrowingById(int id);
+    List<Borrowing> GetBorrowingsByPatron(int patronId);
+    void BorrowBook(int bookId, int patronId, DateOnly borrowDate, DateOnly dueDate); // Phải truyền đủ tham số
+    void ReturnBook(int borrowingId);
+    List<Borrowing> GetOverdueBorrowings();
+    bool IsOverdue(Borrowing borrowing);
+    decimal CalculateFine(Borrowing borrowing);
 
-        void MarkBookCopyAsLost(int borrowingId);
-        void MarkBookCopyAsDamaged(int borrowingId);
-
-    }
+    void MarkBookCopyAsLost(int borrowingId);
+    void MarkBookCopyAsDamaged(int borrowingId);
+    void MarkBookCopyAsNormal(int borrowingId);
 }

@@ -90,6 +90,7 @@ namespace DataAccessLayer
 
             modelBuilder.Entity<Borrowing>(entity =>
             {
+                entity.Property(e => e.CopyId).HasColumnName("CopyId");
                 entity.HasKey(e => e.BorrowingId).HasName("PK__Borrowin__6CD933D7EB0F50CD");
 
                 entity.Property(e => e.BorrowDate).HasColumnType("date");

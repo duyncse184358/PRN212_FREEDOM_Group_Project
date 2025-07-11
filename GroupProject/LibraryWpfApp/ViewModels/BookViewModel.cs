@@ -75,8 +75,6 @@ namespace LibraryWpfApp.ViewModels
             DeleteCommand = new RelayCommand(Delete);
             BorrowBookCommand = new RelayCommand(BorrowBook);
             ReturnBookCommand = new RelayCommand(ReturnBook);
-            MarkLostCommand = new RelayCommand(MarkLost);
-            MarkDamagedCommand = new RelayCommand(MarkDamaged);
 
             LoadBooks();
         }
@@ -129,11 +127,14 @@ namespace LibraryWpfApp.ViewModels
                 if (vm != null)
                 {
                     vm.Book.CategoryId = vm.SelectedCategory?.CategoryId;
-                    _bookService.AddBook(vm.Book);
+                    // QUAN TRỌNG: GỌI ĐÚNG HÀM NÀY
+                    _bookService.AddBookWithCopies(vm.Book);
                     LoadBooks();
                 }
             }
         }
+
+
 
         private void Edit()
         {
@@ -285,75 +286,6 @@ namespace LibraryWpfApp.ViewModels
                 MessageBox.Show("Quá trình trả sách đã được xử lý thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
-
-        //private void MarkLost()
-        //{
-        //    if (!CanManageBooks)
-        //    {
-        //        MessageBox.Show("You do not have permission to mark books as lost.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return;
-        //    }
-        //    if (SelectedBook == null)
-        //    {
-        //        MessageBox.Show("Please select a book to mark as lost.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return;
-        //    }
-        //    if (MessageBox.Show($"Are you sure you want to mark '{SelectedBook.Title}' as LOST? This will reduce available copies.", "Confirm Lost", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-        //    {
-        //        _bookService.MarkBookStatus(SelectedBook.BookId, "Lost");
-        //        LoadBooks();
-        //        MessageBox.Show("Book marked as lost.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-        //    }
-        //}
-
-        private void MarkLost()
-        {
-            if (!CanManageBooks)
-            {
-                MessageBox.Show("Bạn không có quyền đánh dấu sách là mất.", "Không đủ quyền hạn", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            if (SelectedBook == null)
-            {
-                MessageBox.Show("Vui lòng chọn một cuốn sách để đánh dấu là mất.", "Chưa chọn sách", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            if (MessageBox.Show($"Bạn có chắc muốn đánh dấu sách \"{SelectedBook.Title}\" là MẤT? Việc này sẽ giảm số bản còn lại.",
-                "Xác nhận mất sách", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-            {
-                // Gọi Service để thay đổi trạng thái sách
-                _bookService.MarkBookStatus(SelectedBook.BookId, "Lost");
-
-                // Làm mới danh sách sách
-                LoadBooks();
-
-                MessageBox.Show("Đã đánh dấu sách là MẤT.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-        }
-
-
-        private void MarkDamaged()
-        {
-            if (!CanManageBooks)
-            {
-                MessageBox.Show("You do not have permission to mark books as damaged.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            if (SelectedBook == null)
-            {
-                MessageBox.Show("Please select a book to mark as damaged.", "No Book Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            if (MessageBox.Show($"Are you sure you want to mark '{SelectedBook.Title}' as DAMAGED? This will reduce available copies.", "Confirm Damaged", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-            {
-                _bookService.MarkBookStatus(SelectedBook.BookId, "Damaged");
-                LoadBooks();
-                MessageBox.Show("Book marked as damaged.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-        }
-
 
     }
 }

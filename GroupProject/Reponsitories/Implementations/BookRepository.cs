@@ -19,5 +19,6 @@ namespace Reponsitories.Implementations
         public void Update(Book book) => _bookDao.Update(book);
         public void Delete(int id) => _bookDao.Delete(id);
         public List<Book> Search(string keyword) => _bookDao.Search(keyword);
+        public void AddBookWithCopies(Book book) => _bookDao.AddBookWithCopies(book);
     }
 }

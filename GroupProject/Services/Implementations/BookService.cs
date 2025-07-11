@@ -74,11 +74,13 @@ namespace Services.Implementations
                 {
                     book.AvailableCopies--;
                 }
-
                 _bookRepo.Update(book); // ✅ dùng repository để lưu
             }
         }
-
+        public void AddBookWithCopies(Book book)
+        {
+            _bookRepo.AddBookWithCopies(book);
+        }
 
     }
 }

@@ -11,5 +11,7 @@ namespace Reponsitories
         void Update(Book book);
         void Delete(int id);
         List<Book> Search(string keyword);
+
+        void AddBookWithCopies(Book book);
     }
 }

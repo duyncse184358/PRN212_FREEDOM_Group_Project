@@ -83,7 +83,12 @@ namespace LibraryWpfApp.ViewModels
                     IsReturned = false,
                     Status = "Borrowed"
                 };
-                _borrowingService.BorrowBook(newBorrowing);
+                _borrowingService.BorrowBook(
+                       BookToBorrow.BookId,
+                       SelectedPatron.PatronId,
+                       newBorrowing.BorrowDate,
+                       newBorrowing.DueDate
+                   );
                 LastBorrowedRecord = newBorrowing;
 
                 System.Diagnostics.Debug.WriteLine($"[BorrowBookDialogViewModel] Borrowed BookId={BookToBorrow.BookId} for PatronId={SelectedPatron.PatronId}");

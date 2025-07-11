@@ -27,5 +27,13 @@ namespace Services
 
         public void UpdateStatusByBookId(int bookId, string newStatus)
     => _repository.UpdateStatusByBookId(bookId, newStatus);
+
+
+        public void AddCopies(int bookId, int number)
+        {
+            for (int i = 0; i < number; i++)
+                _repository.Add(new BookCopy { BookId = bookId, Status = "Available" });
+        }
+
     }
 }

@@ -5,6 +5,7 @@ using System.Windows.Input;
 using Microsoft.Extensions.DependencyInjection;
 using LibraryWpfApp.Commands;
 using LibraryWpfApp.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryWpfApp.ViewModels
 {
@@ -278,11 +279,29 @@ namespace LibraryWpfApp.ViewModels
         }
         private void OnMarkLost(BorrowingDisplayModel item)
         {
+            // Nếu sách đang ở trạng thái "Lost", hỏi phục hồi
             if (item.Status == "Lost")
             {
-                MessageBox.Show("Sách này đã được đánh dấu là mất.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                if (MessageBox.Show(
+                        "Sách này đã bị đánh dấu là mất. Bạn có muốn phục hồi trạng thái bình thường không?",
+                        "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    try
+                    {
+                        _borrowingService.MarkBookCopyAsNormal(item.BorrowingID); // Gọi Service phục hồi
+                        LoadBorrowings();
+                        MessageBox.Show($"Đã phục hồi sách '{item.BookTitle}' về trạng thái bình thường.",
+                                        "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Lỗi khi phục hồi: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
                 return;
             }
+
+            // Nếu chưa là Lost thì xác nhận lại với admin trước khi đánh dấu mất
             var b = _borrowingService.GetBorrowingById(item.BorrowingID);
             if (b == null)
             {
@@ -290,17 +309,28 @@ namespace LibraryWpfApp.ViewModels
                 return;
             }
 
+            // Xác nhận chắc chắn muốn đánh dấu mất
+            if (MessageBox.Show(
+                    $"Bạn chắc chắn muốn đánh dấu sách '{item.BookTitle}' là MẤT?",
+                    "Xác nhận đánh dấu mất", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                return;
+            }
+
             try
             {
-                _borrowingService.MarkBookCopyAsLost(b.BorrowingId);
+                _borrowingService.MarkBookCopyAsLost(b.BorrowingId); // Gọi Service đánh dấu mất
                 LoadBorrowings();
-                MessageBox.Show($"Đã đánh dấu sách \"{item.BookTitle}\" là mất.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show($"Đã đánh dấu sách '{item.BookTitle}' là mất.",
+                                "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi đánh dấu mất: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+
 
         private void OnMarkDamaged(BorrowingDisplayModel item)
         {

@@ -15,5 +15,6 @@ namespace Services
         void BorrowBook(Borrowing newBorrowing);
         void ReturnBook(int borrowingId);
         void MarkBookStatus(int bookId, string status);
+        void AddBookWithCopies(Book book);
     }
 }
