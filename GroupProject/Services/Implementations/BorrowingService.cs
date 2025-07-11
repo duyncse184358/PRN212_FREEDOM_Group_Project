@@ -30,35 +30,36 @@ namespace Services.Implementations
         public List<Borrowing> GetAllBorrowings() => _repo.GetAll();
         public Borrowing? GetBorrowingById(int id) => _repo.GetById(id);
         public List<Borrowing> GetBorrowingsByPatron(int patronId) => _repo.GetByPatronId(patronId);
-        public void BorrowBook(int bookId, int patronId, DateOnly borrowDate, DateOnly dueDate)
-        {
-            var availableCopy = _bookCopyDAO.GetAvailableCopyByBookId(bookId);
-            if (availableCopy == null)
-                throw new Exception("Không còn bản copy nào khả dụng!");
+         public void BorrowBook(int bookId, int patronId, DateOnly borrowDate, DateOnly dueDate)
+         {
+             var availableCopy = _bookCopyDAO.GetAvailableCopyByBookId(bookId);
+             if (availableCopy == null)
+                 throw new Exception("Không còn bản copy nào khả dụng!");
 
-            availableCopy.Status = "Borrowed";
-            _bookCopyDAO.Update(availableCopy);
+             availableCopy.Status = "Borrowed";
+             _bookCopyDAO.Update(availableCopy);
 
-            // Lấy Book từ BookDAO/BookRepository để cập nhật số lượng
-            var book = _bookDAO.GetById(bookId);
-            if (book == null || book.AvailableCopies <= 0)
-                throw new Exception("Sách không còn bản nào khả dụng!");
-            book.AvailableCopies--;
-            if (book.AvailableCopies == 0) book.Status = "Borrowed";
-            _bookDAO.Update(book);
+             // Lấy Book từ BookDAO/BookRepository để cập nhật số lượng
+             var book = _bookDAO.GetById(bookId);
+             if (book == null || book.AvailableCopies <= 0)
+                 throw new Exception("Sách không còn bản nào khả dụng!");
+             book.AvailableCopies--;
+             if (book.AvailableCopies == 0) book.Status = "Borrowed";
+             _bookDAO.Update(book);
 
-            var borrowing = new Borrowing
-            {
-                BookId = bookId,
-                PatronId = patronId,
-                BorrowDate = borrowDate,
-                DueDate = dueDate,
-                Status = "Borrowed",
-                IsReturned = false,
-                CopyId = availableCopy.CopyId
-            };
-            _borrowingDAO.Add(borrowing);
-        }
+             var borrowing = new Borrowing
+             {
+                 BookId = bookId,
+                 PatronId = patronId,
+                 BorrowDate = borrowDate,
+                 DueDate = dueDate,
+                 Status = "Borrowed",
+                 IsReturned = false,
+                 CopyId = availableCopy.CopyId
+             };
+             _borrowingDAO.Add(borrowing);
+         }
+       
 
 
 
@@ -141,7 +142,7 @@ namespace Services.Implementations
             return 0M;
         }
 
-        public void MarkBookCopyAsLost(int borrowingId)
+        /*public void MarkBookCopyAsLost(int borrowingId)
         {
             var borrowing = _borrowingDAO.GetById(borrowingId);
             if (borrowing == null) throw new Exception("Không tìm thấy phiếu mượn.");
@@ -170,7 +171,105 @@ namespace Services.Implementations
                     _borrowingDAO.Update(borrowing);
                 }
             }
+        }*/
+        /* public void MarkBookCopyAsDamaged(int borrowingId)
+         {
+             var borrowing = _borrowingDAO.GetById(borrowingId);
+             if (borrowing == null) throw new Exception("Borrowing record not found.");
+
+             borrowing.Status = "Damaged";
+             borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
+             _borrowingDAO.Update(borrowing);
+
+             if (borrowing.CopyId.HasValue)
+                 _bookCopyDAO.UpdateStatusByCopyId(borrowing.CopyId.Value, "Damaged");
+         }*/
+         public void MarkBookCopyAsNormal(int borrowingId)
+         {
+             var borrowing = _borrowingDAO.GetById(borrowingId);
+             if (borrowing == null) throw new Exception("Không tìm thấy phiếu mượn.");
+
+             if (borrowing.CopyId.HasValue)
+             {
+                 var copy = _bookCopyDAO.GetById(borrowing.CopyId.Value);
+                 if (copy != null && copy.Status == "Lost")
+                 {
+                     // Nếu phiếu mượn đã trả rồi thì cộng lại số lượng
+                     if (borrowing.Status == "Returned")
+                     {
+                         var book = _bookDAO.GetById(copy.BookId);
+                         if (book != null)
+                         {
+                             book.AvailableCopies++;
+                             if (book.Status == "Borrowed" && book.AvailableCopies > 0)
+                                 book.Status = "Available";
+                             _bookDAO.Update(book);
+                         }
+                         // Trạng thái phiếu mượn vẫn giữ là "Returned"
+                     }
+                     else if (borrowing.Status == "Lost")
+                     {
+                         // Trường hợp này: phiếu mượn chưa trả, chỉ chuyển lại trạng thái về Borrowed
+                         borrowing.Status = "Borrowed";
+                         borrowing.ReturnDate = null;        // <-- Xóa ReturnDate
+                         borrowing.IsReturned = false;       // <-- Đánh dấu chưa trả
+                         _borrowingDAO.Update(borrowing);
+                         _repo.Update(borrowing); // Nếu UI lấy từ repo
+                     }
+                     // Luôn phục hồi trạng thái copy
+                     copy.Status = "Available";
+                     _bookCopyDAO.Update(copy);
+                 }
+             }
+         }
+        public void MarkBookCopyAsLost(int borrowingId)
+        {
+            var borrowing = _borrowingDAO.GetById(borrowingId);
+            if (borrowing == null) throw new Exception("Không tìm thấy phiếu mượn.");
+
+            if (borrowing.CopyId.HasValue)
+            {
+                var copy = _bookCopyDAO.GetById(borrowing.CopyId.Value);
+                if (copy != null && copy.Status != "Lost")
+                {
+                    // CHỈ thực hiện giảm số lượng nếu bản copy đang là "Available"
+                    if (copy.Status == "Available")
+                    {
+                        var book = _bookDAO.GetById(copy.BookId);
+                        if (book != null && book.AvailableCopies > 0)
+                        {
+                            book.AvailableCopies--;
+                            _bookDAO.Update(book);
+                        }
+                    }
+                    copy.Status = "Lost";
+                    _bookCopyDAO.Update(copy);
+
+                    // Cập nhật trạng thái Borrowing
+                    borrowing.Status = "Lost";
+                    borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
+                    _borrowingDAO.Update(borrowing);
+
+                    // Tạo khoản phạt nếu chưa có
+                    var bookLost = _bookDAO.GetById(copy.BookId);
+                    var existingFine = _fineService.GetAllFines()
+                        .FirstOrDefault(f => f.BorrowingId == borrowing.BorrowingId && f.PatronId == borrowing.PatronId && (f.Paid == null || f.Paid == false));
+                    if (bookLost != null && existingFine == null)
+                    {
+                        var fine = new Fine
+                        {
+                            BorrowingId = borrowing.BorrowingId,
+                            PatronId = borrowing.PatronId,
+                            FineAmount = bookLost.Price,
+                            Paid = false,
+                            FineDate = DateTime.Now
+                        };
+                        _fineService.AddFine(fine);
+                    }
+                }
+            }
         }
+
         public void MarkBookCopyAsDamaged(int borrowingId)
         {
             var borrowing = _borrowingDAO.GetById(borrowingId);
@@ -182,46 +281,25 @@ namespace Services.Implementations
 
             if (borrowing.CopyId.HasValue)
                 _bookCopyDAO.UpdateStatusByCopyId(borrowing.CopyId.Value, "Damaged");
-        }
-        public void MarkBookCopyAsNormal(int borrowingId)
-        {
-            var borrowing = _borrowingDAO.GetById(borrowingId);
-            if (borrowing == null) throw new Exception("Không tìm thấy phiếu mượn.");
 
-            if (borrowing.CopyId.HasValue)
+            // Tạo khoản phạt nếu chưa có
+            var bookDamaged = _bookDAO.GetById(borrowing.BookId ?? 0);
+            var existingFine = _fineService.GetAllFines()
+                .FirstOrDefault(f => f.BorrowingId == borrowing.BorrowingId && f.PatronId == borrowing.PatronId && (f.Paid == null || f.Paid == false));
+            if (bookDamaged != null && existingFine == null)
             {
-                var copy = _bookCopyDAO.GetById(borrowing.CopyId.Value);
-                if (copy != null && copy.Status == "Lost")
+                var fine = new Fine
                 {
-                    // Nếu phiếu mượn đã trả rồi thì cộng lại số lượng
-                    if (borrowing.Status == "Returned")
-                    {
-                        var book = _bookDAO.GetById(copy.BookId);
-                        if (book != null)
-                        {
-                            book.AvailableCopies++;
-                            if (book.Status == "Borrowed" && book.AvailableCopies > 0)
-                                book.Status = "Available";
-                            _bookDAO.Update(book);
-                        }
-                        // Trạng thái phiếu mượn vẫn giữ là "Returned"
-                    }
-                    else if (borrowing.Status == "Lost")
-                    {
-                        // Trường hợp này: phiếu mượn chưa trả, chỉ chuyển lại trạng thái về Borrowed
-                        borrowing.Status = "Borrowed";
-                        borrowing.ReturnDate = null;        // <-- Xóa ReturnDate
-                        borrowing.IsReturned = false;       // <-- Đánh dấu chưa trả
-                        _borrowingDAO.Update(borrowing);
-                        _repo.Update(borrowing); // Nếu UI lấy từ repo
-                    }
-                    // Luôn phục hồi trạng thái copy
-                    copy.Status = "Available";
-                    _bookCopyDAO.Update(copy);
-                }
+                    BorrowingId = borrowing.BorrowingId,
+                    PatronId = borrowing.PatronId,
+                    FineAmount = bookDamaged.Price,
+                    Paid = false,
+                    FineDate = DateTime.Now
+                };
+                _fineService.AddFine(fine);
             }
         }
 
-
+      
     }
 }

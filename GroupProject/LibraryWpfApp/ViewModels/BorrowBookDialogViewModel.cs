@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
 using BusinessObject;
 using LibraryWpfApp.Commands;
 using Services;
-using System.Windows.Input;
-using System.Windows;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace LibraryWpfApp.ViewModels
 {
@@ -20,12 +16,21 @@ namespace LibraryWpfApp.ViewModels
         private readonly IBorrowingService? _borrowingService;
 
         public Book BookToBorrow { get; set; } = new Book();
-        public ObservableCollection<Patron> Patrons { get; set; } = new();
-        public Patron? SelectedPatron { get; set; }
+        private ObservableCollection<Patron> _patrons = new();
+        public ObservableCollection<Patron> Patrons
+        {
+            get => _patrons;
+            set { _patrons = value; OnPropertyChanged(); }
+        }
+        private Patron? _selectedPatron;
+        public Patron? SelectedPatron
+        {
+            get => _selectedPatron;
+            set { _selectedPatron = value; OnPropertyChanged(); }
+        }
 
         public ICommand ConfirmBorrowCommand { get; }
         public Borrowing? LastBorrowedRecord { get; private set; }
-
 
         // Constructor mặc định cho XAML (không dùng thực tế)
         public BorrowBookDialogViewModel()
@@ -59,7 +64,6 @@ namespace LibraryWpfApp.ViewModels
 
         private void ConfirmBorrow()
         {
-
             if (SelectedPatron == null)
             {
                 MessageBox.Show("Please select a patron.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -72,26 +76,38 @@ namespace LibraryWpfApp.ViewModels
                 return;
             }
 
+            // Kiểm tra số lượng sách khả dụng
+            if (BookToBorrow.AvailableCopies <= 0)
+            {
+                MessageBox.Show("No available copies for this book.", "Unavailable", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             try
             {
-                var newBorrowing = new BusinessObject.Borrowing
+                var borrowDate = DateOnly.FromDateTime(DateTime.Now);
+                var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(14));
+
+                _borrowingService.BorrowBook(
+                    BookToBorrow.BookId,
+                    SelectedPatron.PatronId,
+                    borrowDate,
+                    dueDate
+                );
+
+                LastBorrowedRecord = new Borrowing
                 {
                     BookId = BookToBorrow.BookId,
                     PatronId = SelectedPatron.PatronId,
-                    BorrowDate = DateOnly.FromDateTime(DateTime.Now),
-                    DueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(14)),
+                    BorrowDate = borrowDate,
+                    DueDate = dueDate,
                     IsReturned = false,
                     Status = "Borrowed"
                 };
-                _borrowingService.BorrowBook(
-                       BookToBorrow.BookId,
-                       SelectedPatron.PatronId,
-                       newBorrowing.BorrowDate,
-                       newBorrowing.DueDate
-                   );
-                LastBorrowedRecord = newBorrowing;
 
                 System.Diagnostics.Debug.WriteLine($"[BorrowBookDialogViewModel] Borrowed BookId={BookToBorrow.BookId} for PatronId={SelectedPatron.PatronId}");
+
+                MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 // Đóng dialog (thiết lập DialogResult)
                 var dialog = Application.Current.Windows.OfType<Views.BorrowBookDialog>().FirstOrDefault(w => w.DataContext == this);

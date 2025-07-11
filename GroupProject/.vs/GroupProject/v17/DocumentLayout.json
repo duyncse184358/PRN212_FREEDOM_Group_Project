@@ -1,14 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\",
+  "WorkspaceRootPath": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\services\\implementations\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\services\\implementations\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\borrowbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\dataaccesslayer\\dao\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\borrowingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\dataaccesslayer\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE756E4-87A3-4DBB-A3CC-E61D20B6E67B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\finemanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\finemanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\borrowreturnviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\borrowreturnviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\reponsitories\\iborrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\iborrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\borrowbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\borrowbookdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\finemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\finemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\finepaymentdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\finepaymentdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\reponsitories\\implementations\\borrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\borrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\services\\iborrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\iborrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\reponsitories\\implementations\\bookcopyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\bookcopyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F693A97E-F038-4165-A893-870E8B43BE6C}|Services\\Services.csproj|solutionrelative:services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\reponsitories\\implementations\\finerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A08E1575-31DE-461E-A632-E9380F4EB20D}|Reponsitories\\Reponsitories.csproj|solutionrelative:reponsitories\\implementations\\finerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\finepaymentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\finepaymentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\viewmodels\\finemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\viewmodels\\finemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\businessobject\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BF2DADD-B7E6-45C4-A821-41F6745989E7}|BusinessObject\\BusinessObject.csproj|solutionrelative:businessobject\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|c:\\users\\victus\\desktop\\prn212groupproject\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,11 +98,19 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:22:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -45,46 +125,252 @@
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FineManagementWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FineManagementWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\FineManagementWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FineManagementWindow.xaml.cs",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\FineManagementWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T15:10:40.088Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:22:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BookViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BookViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BookViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BookViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:50:29.114Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BorrowingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\BorrowingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:05:15.797Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BorrowReturnViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BorrowReturnViewModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAtwIUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:54:17.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BorrowBookDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAqwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T09:26:17.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BorrowingDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\BorrowingDAO.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAiwI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:53:09.18Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "BorrowingService.cs",
-              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
               "RelativeDocumentMoniker": "Services\\Implementations\\BorrowingService.cs",
-              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BorrowingService.cs",
               "RelativeToolTip": "Services\\Implementations\\BorrowingService.cs",
-              "ViewState": "AgIAALkAAAAAAAAAAAA5wNIAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABwBAAAAAAAAAADwvyIBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T09:36:10.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BorrowBookDialogViewModel.cs",
-              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
-              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
-              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\BorrowBookDialogViewModel.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAuwFUAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CategoryDAO.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\CategoryDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\CategoryDAO.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\DataAccessLayer\\DAO\\CategoryDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\CategoryDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T09:26:17.093Z",
+              "WhenOpened": "2025-07-11T15:10:42.122Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBorrowingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\IBorrowingRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\IBorrowingRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\IBorrowingRepository.cs",
+              "RelativeToolTip": "Reponsitories\\IBorrowingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:09:02.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FinePaymentDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\FinePaymentDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-11T14:37:14.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FineManagementWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FineManagementWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\FineManagementWindow.xaml",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\FineManagementWindow.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\FineManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-11T13:42:05.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBorrowingService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\IBorrowingService.cs",
+              "RelativeDocumentMoniker": "Services\\IBorrowingService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\IBorrowingService.cs",
+              "RelativeToolTip": "Services\\IBorrowingService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:11:00.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BookService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\BookService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\BookService.cs",
+              "RelativeToolTip": "Services\\Implementations\\BookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:46:30.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BookCopyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Implementations\\BookCopyRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\BookCopyRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Implementations\\BookCopyRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\BookCopyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:12:21.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\CategoryService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Services\\Implementations\\CategoryService.cs",
+              "RelativeToolTip": "Services\\Implementations\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:11:08.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FineRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Implementations\\FineRepository.cs",
+              "RelativeDocumentMoniker": "Reponsitories\\Implementations\\FineRepository.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\Reponsitories\\Implementations\\FineRepository.cs",
+              "RelativeToolTip": "Reponsitories\\Implementations\\FineRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:05:14.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FinePaymentDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\FinePaymentDialogViewModel.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAADwv2YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:41:46.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FineManagementViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "RelativeToolTip": "LibraryWpfApp\\ViewModels\\FineManagementViewModel.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAADwv2sAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:41:32.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookCopy.cs",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BookCopy.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\BookCopy.cs",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\BusinessObject\\BookCopy.cs",
+              "RelativeToolTip": "BusinessObject\\BookCopy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:36:23.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\appsettings.json",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\VicTus\\Desktop\\PRN212GroupProject\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\appsettings.json",
+              "RelativeToolTip": "LibraryWpfApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-11T13:20:59.974Z"
             }
           ]
         }

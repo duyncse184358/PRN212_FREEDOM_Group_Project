@@ -1,4 +1,5 @@
 ﻿using BusinessObject;
+using DataAccessLayer.DAO;
 
 public interface IBorrowingService
 {
@@ -14,4 +15,6 @@ public interface IBorrowingService
     void MarkBookCopyAsLost(int borrowingId);
     void MarkBookCopyAsDamaged(int borrowingId);
     void MarkBookCopyAsNormal(int borrowingId);
+   /* void MarkDamagedAndFine(int borrowingId);
+    void MarkLostAndFine(int borrowingId);*/
 }

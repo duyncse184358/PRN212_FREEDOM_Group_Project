@@ -10,6 +10,8 @@ namespace Reponsitories
         List<Borrowing> GetByPatronId(int patronId);
         void Add(Borrowing borrowing);
         void Update(Borrowing borrowing);
+        void MarkDamagedAndFine(int borrowingId);
         void MarkReturned(int borrowingId);
+        void MarkLostAndFine(int borrowingId);
     }
 }

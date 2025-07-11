@@ -19,5 +19,7 @@ namespace Reponsitories.Implementations
         public void Add(Borrowing borrowing) => _borrowingDao.Add(borrowing);
         public void Update(Borrowing borrowing) => _borrowingDao.Update(borrowing);
         public void MarkReturned(int borrowingId) => _borrowingDao.MarkReturned(borrowingId);
+        public void MarkDamagedAndFine(int borrowingId) => _borrowingDao.MarkDamagedAndFine(borrowingId);
+        public void MarkLostAndFine(int borrowingId) => _borrowingDao.MarkLostAndFine(borrowingId);
     }
 }

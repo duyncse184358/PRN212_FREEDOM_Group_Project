@@ -84,5 +84,59 @@ namespace DataAccessLayer.DAO
                 _context.SaveChanges();
             }
         }
+        public void MarkLostAndFine(int borrowingId)
+        {
+            var borrowing = _context.Borrowings.Include(b => b.Book).FirstOrDefault(b => b.BorrowingId == borrowingId);
+            if (borrowing == null) return;
+
+            // Đánh dấu trạng thái
+            borrowing.Status = "Lost";
+            borrowing.IsReturned = false;
+
+            // Kiểm tra đã có khoản phạt chưa
+            var existingFine = _context.Fines.FirstOrDefault(f =>
+                f.BorrowingId == borrowingId && f.PatronId == borrowing.PatronId && (f.Paid == null || f.Paid == false));
+            if (existingFine == null && borrowing.Book != null)
+            {
+                var fine = new Fine
+                {
+                    BorrowingId = borrowingId,
+                    PatronId = borrowing.PatronId,
+                    FineAmount = borrowing.Book.Price,
+                    Paid = false,
+                    FineDate = DateTime.Now
+                };
+                _context.Fines.Add(fine);
+            }
+
+            _context.SaveChanges();
+        }
+
+        public void MarkDamagedAndFine(int borrowingId)
+        {
+            var borrowing = _context.Borrowings.Include(b => b.Book).FirstOrDefault(b => b.BorrowingId == borrowingId);
+            if (borrowing == null) return;
+
+            borrowing.Status = "Damaged";
+            borrowing.IsReturned = false;
+
+            var existingFine = _context.Fines.FirstOrDefault(f =>
+                f.BorrowingId == borrowingId && f.PatronId == borrowing.PatronId && (f.Paid == null || f.Paid == false));
+            if (existingFine == null && borrowing.Book != null)
+            {
+                var fine = new Fine
+                {
+                    BorrowingId = borrowingId,
+                    PatronId = borrowing.PatronId,
+                    FineAmount = borrowing.Book.Price,
+                    Paid = false,
+                    FineDate = DateTime.Now
+                };
+                _context.Fines.Add(fine);
+            }
+
+            _context.SaveChanges();
+        }
+
     }
 }

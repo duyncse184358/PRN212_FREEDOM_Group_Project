@@ -5,7 +5,6 @@
         Title="Fine Management" Height="600" Width="1000"
         WindowStartupLocation="CenterScreen">
 
-  
     <Window.Resources>
         <Style x:Key="RightAlignedText" TargetType="TextBlock">
             <Setter Property="TextAlignment" Value="Right"/>
@@ -13,17 +12,31 @@
     </Window.Resources>
 
     <DockPanel Margin="10">
+        <!-- Header -->
+        <TextBlock Text="Fine Management" FontSize="22" FontWeight="Bold" Margin="0,0,0,10" DockPanel.Dock="Top"/>
+
+        <!-- Controls -->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
-            <TextBox Width="300" Text="{Binding SearchKeyword}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}"/>
-            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Mark Paid" Command="{Binding MarkPaidCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="View All Fines" Command="{Binding ViewAllCommand}" Style="{StaticResource ModernButtonStyle}"/>
+            <TextBox Width="300" Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,10,0" ToolTip="Search by patron name"/>
+            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0"/>
+            <Button Content="Mark Paid" Command="{Binding MarkPaidCommand}" Margin="0,0,10,0"/>
+            <Button Content="View All Fines" Command="{Binding ViewAllCommand}"/>
         </StackPanel>
 
+        <!-- Summary -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="Total fines: " FontWeight="Bold"/>
+            <TextBlock Text="{Binding Fines.Count}" Margin="5,0,20,0"/>
+            <TextBlock Text="Total unpaid: " FontWeight="Bold"/>
+            <!-- Remove the converter if not defined -->
+            <TextBlock Text="{Binding TotalUnpaid, StringFormat=C}" Margin="5,0,0,0"/>
+        </StackPanel>
+
+        <!-- DataGrid -->
         <DataGrid ItemsSource="{Binding Fines}"
-                  SelectedItem="{Binding SelectedFine}"
+                  SelectedItem="{Binding SelectedFine, Mode=TwoWay}"
                   AutoGenerateColumns="False" IsReadOnly="True"
-                  Style="{StaticResource ModernDataGridStyle}">
+                  MouseDoubleClick="DataGrid_MouseDoubleClick">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Fine ID" Binding="{Binding FineID}" Width="Auto"/>
                 <DataGridTextColumn Header="Borrowing ID" Binding="{Binding BorrowingID}" Width="Auto"/>

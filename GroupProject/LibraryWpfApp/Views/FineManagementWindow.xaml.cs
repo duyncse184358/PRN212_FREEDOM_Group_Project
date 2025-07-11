@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using LibraryWpfApp.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -26,6 +18,16 @@ namespace LibraryWpfApp.Views
             InitializeComponent();
             this.DataContext = (Application.Current as App)?.Services.GetRequiredService<FineManagementViewModel>();
         }
-    }
-    }
 
+        private void DataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var dataGrid = sender as DataGrid;
+            if (dataGrid?.SelectedItem != null)
+            {
+                // Example: Show details of the selected fine
+                // var selectedFine = dataGrid.SelectedItem as FineDisplayModel;
+                // MessageBox.Show($"Fine ID: {selectedFine?.FineID}\nAmount: {selectedFine?.Amount:C}");
+            }
+        }
+    }
+}

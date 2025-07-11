@@ -30,8 +30,8 @@ namespace LibraryWpfApp.ViewModels
 
         public BorrowReturnViewModel()
         {
-           
         }
+
         public BorrowReturnViewModel(IBorrowingService borrowingService, IBookService bookService, IPatronService patronService, IFineService fineService)
         {
             _borrowingService = borrowingService;
@@ -43,14 +43,11 @@ namespace LibraryWpfApp.ViewModels
             MarkReturnedCommand = new RelayCommand(MarkReturned);
             ViewOverdueCommand = new RelayCommand(ViewOverdue);
             CalculateAndAddFineCommand = new RelayCommand(CalculateAndAddFine);
-            // trong constructor:
-            // Truyền luôn item hiện tại qua CommandParameter
             MarkLostCommand = new RelayCommand(obj =>
             {
                 if (obj is BorrowingDisplayModel item)
                     OnMarkLost(item);
             });
-
             MarkDamagedCommand = new RelayCommand(obj =>
             {
                 if (obj is BorrowingDisplayModel item)
@@ -74,13 +71,13 @@ namespace LibraryWpfApp.ViewModels
                     BorrowingID = b.BorrowingId,
                     BookTitle = book?.Title ?? "Unknown Book",
                     PatronName = patron?.FullName ?? "Unknown Patron",
-                    BorrowDate = b.BorrowDate.ToDateTime(TimeOnly.MinValue), // CHUYỂN ĐỔI TẠI ĐÂY
-                    DueDate = b.DueDate.ToDateTime(TimeOnly.MinValue), // CHUYỂN ĐỔI TẠI ĐÂY
-                    ReturnDate = b.ReturnDate?.ToDateTime(TimeOnly.MinValue), // CHUYỂN ĐỔI TẠI ĐÂY
+                    BorrowDate = b.BorrowDate.ToDateTime(TimeOnly.MinValue),
+                    DueDate = b.DueDate.ToDateTime(TimeOnly.MinValue),
+                    ReturnDate = b.ReturnDate?.ToDateTime(TimeOnly.MinValue),
                     Status = b.Status ?? "Unknown",
                     FineAmount = fine?.FineAmount ?? 0M,
-                    IsFinePaid = fine?.Paid ?? true, // Sử dụng IsFinePaid
-                    PatronID = b.PatronId ?? 0 // Thêm PatronID
+                    IsFinePaid = fine?.Paid ?? true,
+                    PatronID = b.PatronId ?? 0
                 });
             }
         }
@@ -105,13 +102,13 @@ namespace LibraryWpfApp.ViewModels
                     BorrowingID = b.BorrowingId,
                     BookTitle = book?.Title ?? "Unknown Book",
                     PatronName = patron?.FullName ?? "Unknown Patron",
-                    PatronID = b.PatronId ?? 0, // Thêm PatronID
-                    BorrowDate = b.BorrowDate.ToDateTime(TimeOnly.MinValue), // CHUYỂN ĐỔI TẠI ĐÂY
-                    DueDate = b.DueDate.ToDateTime(TimeOnly.MinValue), // CHUYỂN ĐỔI TẠI ĐÂY
-                    ReturnDate = b.ReturnDate?.ToDateTime(TimeOnly.MinValue), // CHUYỂN ĐỔI TẠI ĐÂY
+                    PatronID = b.PatronId ?? 0,
+                    BorrowDate = b.BorrowDate.ToDateTime(TimeOnly.MinValue),
+                    DueDate = b.DueDate.ToDateTime(TimeOnly.MinValue),
+                    ReturnDate = b.ReturnDate?.ToDateTime(TimeOnly.MinValue),
                     Status = b.Status ?? "Unknown",
                     FineAmount = fine?.FineAmount ?? 0M,
-                    IsFinePaid = fine?.Paid ?? true // Sử dụng IsFinePaid
+                    IsFinePaid = fine?.Paid ?? true
                 });
             }
         }
@@ -133,8 +130,6 @@ namespace LibraryWpfApp.ViewModels
             {
                 _borrowingService.ReturnBook(SelectedBorrowing.BorrowingID);
                 LoadBorrowings();
-
-                //MessageBox.Show("Book marked as returned successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 var originalBorrowing = _borrowingService.GetBorrowingById(SelectedBorrowing.BorrowingID);
                 if (originalBorrowing != null)
@@ -250,7 +245,6 @@ namespace LibraryWpfApp.ViewModels
             }
         }
 
-
         private void MarkDamaged()
         {
             if (SelectedBorrowing == null)
@@ -277,9 +271,10 @@ namespace LibraryWpfApp.ViewModels
                 MessageBox.Show($"Failed to mark damaged: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        // BỔ SUNG LOGIC TỰ ĐỘNG TẠO KHOẢN PHẠT KHI MẤT/HƯ HỎNG
         private void OnMarkLost(BorrowingDisplayModel item)
         {
-            // Nếu sách đang ở trạng thái "Lost", hỏi phục hồi
             if (item.Status == "Lost")
             {
                 if (MessageBox.Show(
@@ -288,7 +283,7 @@ namespace LibraryWpfApp.ViewModels
                 {
                     try
                     {
-                        _borrowingService.MarkBookCopyAsNormal(item.BorrowingID); // Gọi Service phục hồi
+                        _borrowingService.MarkBookCopyAsNormal(item.BorrowingID);
                         LoadBorrowings();
                         MessageBox.Show($"Đã phục hồi sách '{item.BookTitle}' về trạng thái bình thường.",
                                         "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -301,7 +296,6 @@ namespace LibraryWpfApp.ViewModels
                 return;
             }
 
-            // Nếu chưa là Lost thì xác nhận lại với admin trước khi đánh dấu mất
             var b = _borrowingService.GetBorrowingById(item.BorrowingID);
             if (b == null)
             {
@@ -309,7 +303,6 @@ namespace LibraryWpfApp.ViewModels
                 return;
             }
 
-            // Xác nhận chắc chắn muốn đánh dấu mất
             if (MessageBox.Show(
                     $"Bạn chắc chắn muốn đánh dấu sách '{item.BookTitle}' là MẤT?",
                     "Xác nhận đánh dấu mất", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
@@ -319,9 +312,27 @@ namespace LibraryWpfApp.ViewModels
 
             try
             {
-                _borrowingService.MarkBookCopyAsLost(b.BorrowingId); // Gọi Service đánh dấu mất
+                _borrowingService.MarkBookCopyAsLost(b.BorrowingId);
+
+                // Tạo khoản phạt nếu chưa có
+                var book = _bookService.GetBookById(b.BookId ?? 0);
+                var existingFine = _fineService.GetAllFines()
+                    .FirstOrDefault(f => f.BorrowingId == b.BorrowingId && f.PatronId == b.PatronId && (f.Paid == null || f.Paid == false));
+                if (book != null && existingFine == null)
+                {
+                    var fine = new BusinessObject.Fine
+                    {
+                        BorrowingId = b.BorrowingId,
+                        PatronId = b.PatronId,
+                        FineAmount = book.Price,
+                        Paid = false,
+                        FineDate = DateTime.Now
+                    };
+                    _fineService.AddFine(fine);
+                }
+
                 LoadBorrowings();
-                MessageBox.Show($"Đã đánh dấu sách '{item.BookTitle}' là mất.",
+                MessageBox.Show($"Đã đánh dấu sách '{item.BookTitle}' là mất và tạo khoản phạt.",
                                 "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
@@ -329,8 +340,6 @@ namespace LibraryWpfApp.ViewModels
                 MessageBox.Show($"Lỗi khi đánh dấu mất: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
-
 
         private void OnMarkDamaged(BorrowingDisplayModel item)
         {
@@ -346,18 +355,41 @@ namespace LibraryWpfApp.ViewModels
                 return;
             }
 
+            if (MessageBox.Show(
+                    $"Bạn chắc chắn muốn đánh dấu sách '{item.BookTitle}' là HƯ HỎNG?",
+                    "Xác nhận đánh dấu hư hỏng", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                return;
+            }
+
             try
             {
                 _borrowingService.MarkBookCopyAsDamaged(b.BorrowingId);
+
+                // Tạo khoản phạt nếu chưa có
+                var book = _bookService.GetBookById(b.BookId ?? 0);
+                var existingFine = _fineService.GetAllFines()
+                    .FirstOrDefault(f => f.BorrowingId == b.BorrowingId && f.PatronId == b.PatronId && (f.Paid == null || f.Paid == false));
+                if (book != null && existingFine == null)
+                {
+                    var fine = new BusinessObject.Fine
+                    {
+                        BorrowingId = b.BorrowingId,
+                        PatronId = b.PatronId,
+                        FineAmount = book.Price,
+                        Paid = false,
+                        FineDate = DateTime.Now
+                    };
+                    _fineService.AddFine(fine);
+                }
+
                 LoadBorrowings();
-                MessageBox.Show($"Đã đánh dấu sách \"{item.BookTitle}\" là hư hỏng.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show($"Đã đánh dấu sách \"{item.BookTitle}\" là hư hỏng và tạo khoản phạt.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi đánh dấu hư hỏng: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
-
     }
 }
