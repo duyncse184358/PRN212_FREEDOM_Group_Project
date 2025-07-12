@@ -59,11 +59,57 @@ namespace Services.Implementations
              };
              _borrowingDAO.Add(borrowing);
          }
-       
+
 
 
 
         // Sửa ReturnBook
+        //public void ReturnBook(int borrowingId)
+        //{
+        //    var borrowing = _repo.GetById(borrowingId);
+        //    if (borrowing != null)
+        //    {
+        //        borrowing.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
+        //        borrowing.IsReturned = true;
+        //        borrowing.Status = "Returned";
+        //        _repo.Update(borrowing);
+
+        //        // Lấy Book để cộng lại số sách còn lại
+        //        var book = _bookDAO.GetById(borrowing.BookId ?? 0);
+        //        if (book != null)
+        //        {
+        //            book.AvailableCopies++;
+        //            if (book.Status == "Borrowed" && book.AvailableCopies > 0)
+        //                book.Status = "Available";
+        //            _bookDAO.Update(book);
+        //        }
+
+        //        // Cập nhật trạng thái BookCopy
+        //        if (borrowing.CopyId.HasValue)
+        //        {
+        //            var copy = _bookCopyDAO.GetById(borrowing.CopyId.Value);
+        //            if (copy != null)
+        //            {
+        //                copy.Status = "Available";
+        //                _bookCopyDAO.Update(copy);
+        //            }
+        //        }
+
+        //        decimal fineAmount = CalculateFine(borrowing);
+        //        if (fineAmount > 0)
+        //        {
+        //            var newFine = new BusinessObject.Fine
+        //            {
+        //                BorrowingId = borrowing.BorrowingId,
+        //                PatronId = borrowing.PatronId ?? 0,
+        //                FineAmount = fineAmount,
+        //                Paid = false,
+        //                FineDate = DateTime.Now
+        //            };
+        //            _fineService.AddFine(newFine);
+        //        }
+        //    }
+        //}
         public void ReturnBook(int borrowingId)
         {
             var borrowing = _repo.GetById(borrowingId);
@@ -81,7 +127,7 @@ namespace Services.Implementations
                     book.AvailableCopies++;
                     if (book.Status == "Borrowed" && book.AvailableCopies > 0)
                         book.Status = "Available";
-                    _bookDAO.Update(book);
+                    _bookDAO.Update(book); // Cập nhật lại vào DB
                 }
 
                 // Cập nhật trạng thái BookCopy
@@ -95,6 +141,7 @@ namespace Services.Implementations
                     }
                 }
 
+                // Tính toán tiền phạt nếu trả trễ
                 decimal fineAmount = CalculateFine(borrowing);
                 if (fineAmount > 0)
                 {

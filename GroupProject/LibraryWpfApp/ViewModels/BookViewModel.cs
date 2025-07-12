@@ -270,20 +270,39 @@ namespace LibraryWpfApp.ViewModels
 
             // Tạo dialog trả sách sử dụng DI
             var returnDialog = (Application.Current as App)?.Services.GetRequiredService<Views.ReturnBookDialog>();
-            returnDialog!.DataContext = ActivatorUtilities.CreateInstance<ViewModels.ReturnBookDialogViewModel>(
+            var returnBookDialogViewModel = ActivatorUtilities.CreateInstance<ViewModels.ReturnBookDialogViewModel>(
                 (Application.Current as App)?.Services!,
                 _bookService,
                 _borrowingService,
                 _patronService,
                 _fineService
             );
+            returnDialog!.DataContext = returnBookDialogViewModel;
 
             // Hiển thị dialog. Nếu dialog trả về true (tức là xử lý trả sách thành công)
             if (returnDialog.ShowDialog() == true)
             {
-                // Làm mới danh sách sách
-                LoadBooks();
-                MessageBox.Show("Quá trình trả sách đã được xử lý thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                try
+                {
+                    // Kiểm tra Borrowing đã được trả sách hay chưa
+                    var borrowing = returnBookDialogViewModel.SelectedBorrowingInfo;
+                    if (borrowing == null)
+                    {
+                        MessageBox.Show("Không tìm thấy bản ghi mượn sách hợp lệ.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    // Gọi service để xử lý logic trả sách
+                    _borrowingService.ReturnBook(borrowing.BorrowingID);
+
+                    // Làm mới danh sách sách   
+                    LoadBooks();
+                    MessageBox.Show("Quá trình trả sách đã được xử lý thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi khi trả sách: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
         }
 
