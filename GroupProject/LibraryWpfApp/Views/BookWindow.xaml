@@ -3,53 +3,253 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
         xmlns:conv="clr-namespace:LibraryWpfApp.Converters"
-        Title="Quản lý sách" Height="650" Width="1000"
-        WindowStartupLocation="CenterScreen">
-
-    <!-- Đã loại bỏ Window.DataContext để dùng DI hoặc code-behind -->
+        Title="Book Management" Height="700" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        Background="#F4F7FB">
 
     <Window.Resources>
         <Style x:Key="RightAlignedText" TargetType="TextBlock">
             <Setter Property="TextAlignment" Value="Right"/>
         </Style>
         <conv:BoolToVisibilityConverter x:Key="BoolToVisibility"/>
+
+        <!-- Enhanced Button Style -->
+        <Style x:Key="EnhancedButtonStyle" TargetType="Button" BasedOn="{StaticResource ModernButtonStyle}">
+            <Setter Property="Background" Value="#FF007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF0066AA"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FF004488"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#FFCCCCCC"/>
+                                <Setter Property="Foreground" Value="#FF888888"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Action Button Styles -->
+        <Style x:Key="AddButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FF28A745"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF1E7E34"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="EditButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FFFFC107"/>
+            <Setter Property="Foreground" Value="#FF212529"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFE0A800"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="DeleteButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FFDC3545"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFC82333"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="BorrowButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FF17A2B8"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF138496"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Enhanced TextBox Style -->
+        <Style x:Key="SearchTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource ModernTextBoxStyle}">
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#FFCBD5E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="6">
+                            <ScrollViewer x:Name="PART_ContentHost" Margin="{TemplateBinding Padding}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF007ACC"/>
+                                <Setter Property="BorderThickness" Value="2"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Card Style -->
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderBrush" Value="#FFCBD5E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="8" ShadowDepth="2" Opacity="0.1"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Custom DataGrid Style with Blue Header -->
+        <Style x:Key="BlueHeaderDataGridStyle" TargetType="DataGrid" BasedOn="{StaticResource ModernDataGridStyle}">
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#FF24506D"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="Padding" Value="8,10"/>
+                        <Setter Property="BorderBrush" Value="#FF24506D"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,0"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
 
-    <DockPanel Margin="10">
-        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
-            <TextBox Width="300" Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}"/>
-            <Button Content="Tìm kiếm" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-            <Button Content="Thêm mới" Command="{Binding AddCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Sửa đã chọn" Command="{Binding EditCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Xóa đã chọn" Command="{Binding DeleteCommand}" Style="{StaticResource ModernButtonStyle}"/>
-        </StackPanel>
+        <!-- Header Section -->
+        <Border Grid.Row="0" Style="{StaticResource CardStyle}" Margin="0,-16,0,36" Padding="20">
+            <StackPanel Margin="0,0,0,-21">
+                <!-- Title -->
+                <TextBlock Text="📚 Book Management" FontSize="24" FontWeight="Bold" 
+                          Foreground="#FF2D3748" Margin="0,0,0,20"/>
 
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,0">
-            <Button Content="Mượn sách" Command="{Binding BorrowBookCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Trả sách" Command="{Binding ReturnBookCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-     
+                <!-- Search Section -->
+                <Grid Margin="0,0,0,15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-        </StackPanel>
+                    <TextBox Grid.Column="0" 
+                            Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" 
+                            Style="{StaticResource SearchTextBoxStyle}"
+                            FontSize="14" Margin="0,0,635,0"
+                             BorderBrush="Black">
+                        <TextBox.Resources>
+                            <Style TargetType="TextBox" BasedOn="{StaticResource SearchTextBoxStyle}">
+                                <Style.Triggers>
+                                    <Trigger Property="Text" Value="">
+                                        <Setter Property="Background" Value="White"/>
+                                    </Trigger>
+                                    <DataTrigger Binding="{Binding Text, RelativeSource={RelativeSource Self}}" Value="">
+                                        <Setter Property="Background" Value="White"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
 
-        <DataGrid ItemsSource="{Binding Books}"
-                  SelectedItem="{Binding SelectedBook, Mode=TwoWay}"
-                  AutoGenerateColumns="False" IsReadOnly="True"
-                  Style="{StaticResource ModernDataGridStyle}">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã sách" Binding="{Binding BookId}" Width="Auto"/>
-                <DataGridTextColumn Header="ISBN" Binding="{Binding Isbn}" Width="Auto"/>
-                <DataGridTextColumn Header="Tiêu đề" Binding="{Binding Title}" Width="2*"/>
-                <DataGridTextColumn Header="Tác giả" Binding="{Binding Author}" Width="*"/>
-                <DataGridTextColumn Header="Nhà xuất bản" Binding="{Binding Publisher}" Width="*"/>
-                <DataGridTextColumn Header="Năm XB" Binding="{Binding PublicationYear}" Width="Auto"/>
-                <DataGridTextColumn Header="Thể loại" Binding="{Binding Category.CategoryName}" Width="Auto"/>
-                <DataGridTextColumn Header="Tổng số" Binding="{Binding NumberOfCopies}" Width="Auto"/>
-                <DataGridTextColumn Header="Còn lại" Binding="{Binding AvailableCopies}" Width="Auto"/>
-                <DataGridTextColumn Header="Vị trí" Binding="{Binding ShelfLocation}" Width="Auto"/>
-                <DataGridTextColumn Header="Giá tiền" Binding="{Binding Price, StringFormat={}{0:N0} đ}" Width="Auto"/>
-                <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="Auto"/>
-            </DataGrid.Columns>
-        </DataGrid>
-    </DockPanel>
+                    <Button Content="🔍 Search" FontSize="15" Background="#FF24506D"
+                           Command="{Binding SearchCommand}" 
+                           Style="{StaticResource EnhancedButtonStyle}" Margin="498,5,498,5"/>
+                </Grid>
+
+                <!-- Action Buttons -->
+                <WrapPanel HorizontalAlignment="Left" Height="47">
+                    <Button Content="➕ Add New" Command="{Binding AddCommand}" FontSize="15" Background="#FF24506D"
+                           Style="{StaticResource AddButtonStyle}" Height="32" Width="98"/>
+                    <Button Content="✏️ Edit Selected" Command="{Binding EditCommand}" FontSize="15" Background="#FF24506D"
+                           Style="{StaticResource EditButtonStyle}" Width="132" Foreground="White"/>
+                    <Button Content="🗑️ Delete Selected" Command="{Binding DeleteCommand}" FontSize="15"
+                           Style="{StaticResource DeleteButtonStyle}" Width="149"/>
+
+                    <Separator Width="20" Background="Transparent"/>
+                    <Button Content="📖 Borrow Book" Command="{Binding BorrowBookCommand}" FontSize="15"
+                           Style="{StaticResource BorrowButtonStyle}" Width="121" Background="#FF24506D"/>
+                    <Button Content="📚 Return Book" Command="{Binding ReturnBookCommand}" FontSize="15"
+                           Style="{StaticResource BorrowButtonStyle}" Width="124" Background="#FF24506D"/>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Data Grid Section -->
+        <Border Grid.Row="1" Style="{StaticResource CardStyle}" Padding="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="93*"/>
+                    <ColumnDefinition Width="368*"/>
+                    <ColumnDefinition Width="92*"/>
+                    <ColumnDefinition Width="94*"/>
+                    <ColumnDefinition Width="471*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="Book Inventory" FontSize="18" FontWeight="SemiBold" 
+                          Foreground="#FF2D3748" Margin="0,-55,0,49" Grid.ColumnSpan="5"/>
+
+                <DataGrid 
+                         ItemsSource="{Binding Books}"
+                         SelectedItem="{Binding SelectedBook, Mode=TwoWay}"
+AutoGenerateColumns="False" IsReadOnly="True"
+                         Style="{StaticResource BlueHeaderDataGridStyle}"
+                         GridLinesVisibility="Horizontal"
+                         HorizontalGridLinesBrush="#FFE0E7EF"
+                         VerticalGridLinesBrush="Transparent"
+                         RowHeight="35" 
+                         FontSize="15" Margin="0,-4,0,-9" Grid.RowSpan="2"  Grid.ColumnSpan="5">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Book ID" Binding="{Binding BookId}" Width="80" MinWidth="80"/>
+                        <DataGridTextColumn Header="ISBN" Binding="{Binding Isbn}" Width="120" MinWidth="100"/>
+                        <DataGridTextColumn Header="Title" Binding="{Binding Title}" Width="2*" MinWidth="150"/>
+                        <DataGridTextColumn Header="Author" Binding="{Binding Author}" Width="*" MinWidth="120"/>
+                        <DataGridTextColumn Header="Publisher" Binding="{Binding Publisher}" Width="*" MinWidth="120"/>
+                        <DataGridTextColumn Header="Year" Binding="{Binding PublicationYear}" Width="70" MinWidth="70"/>
+                        <DataGridTextColumn Header="Category" Binding="{Binding Category.CategoryName}" Width="100" MinWidth="90"/>
+                        <DataGridTextColumn Header="Total" Binding="{Binding NumberOfCopies}" Width="60" MinWidth="60"/>
+                        <DataGridTextColumn Header="Available" Binding="{Binding AvailableCopies}" Width="80" MinWidth="70"/>
+                        <DataGridTextColumn Header="Location" Binding="{Binding ShelfLocation}" Width="80" MinWidth="70"/>
+                        <DataGridTextColumn Header="Price" Binding="{Binding Price, StringFormat={}{0:N0} đ}" Width="100" MinWidth="80"/>
+                        <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="80" MinWidth="70"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
 </Window>

@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\bookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\bookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|d:\\doc\\ky5\\prn212\\project\\prn212_freedom_group_project\\groupproject\\librarywpfapp\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB653643-A913-46CA-8AD7-D91126A47AC6}|LibraryWpfApp\\LibraryWpfApp.csproj|solutionrelative:librarywpfapp\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,6 +63,42 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookWindow.xaml",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\BookWindow.xaml",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\BookWindow.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\BookWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-12T14:32:22.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\MainWindow.xaml",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-12T14:30:30.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryWpfApp\\Views\\LoginWindow.xaml",
+              "ToolTip": "D:\\DOC\\ky5\\PRN212\\Project\\PRN212_FREEDOM_Group_Project\\GroupProject\\LibraryWpfApp\\Views\\LoginWindow.xaml",
+              "RelativeToolTip": "LibraryWpfApp\\Views\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-12T14:28:30.345Z",
+              "EditorCaption": ""
             }
           ]
         }
