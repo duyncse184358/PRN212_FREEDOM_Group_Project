@@ -30,37 +30,41 @@ namespace Services.Implementations
         public List<Borrowing> GetAllBorrowings() => _repo.GetAll();
         public Borrowing? GetBorrowingById(int id) => _repo.GetById(id);
         public List<Borrowing> GetBorrowingsByPatron(int patronId) => _repo.GetByPatronId(patronId);
-         public void BorrowBook(int bookId, int patronId, DateOnly borrowDate, DateOnly dueDate)
-         {
-             var availableCopy = _bookCopyDAO.GetAvailableCopyByBookId(bookId);
-             if (availableCopy == null)
-                 throw new Exception("Không còn bản copy nào khả dụng!");
+    
+        public Borrowing BorrowBook(int bookId, int patronId, DateOnly borrowDate, DateOnly dueDate)
+        {
+            var availableCopy = _bookCopyDAO.GetAvailableCopyByBookId(bookId);
+            if (availableCopy == null)
+                throw new Exception("Không còn bản copy nào khả dụng!");
 
-             availableCopy.Status = "Borrowed";
-             _bookCopyDAO.Update(availableCopy);
+            availableCopy.Status = "Borrowed";
+            _bookCopyDAO.Update(availableCopy);
 
-             // Lấy Book từ BookDAO/BookRepository để cập nhật số lượng
-             var book = _bookDAO.GetById(bookId);
-             if (book == null || book.AvailableCopies <= 0)
-                 throw new Exception("Sách không còn bản nào khả dụng!");
-             book.AvailableCopies--;
-             if (book.AvailableCopies == 0) book.Status = "Borrowed";
-             _bookDAO.Update(book);
+            // Lấy Book từ BookDAO/BookRepository để cập nhật số lượng
+            var book = _bookDAO.GetById(bookId);
+            if (book == null || book.AvailableCopies <= 0)
+                throw new Exception("Sách không còn bản nào khả dụng!");
+            book.AvailableCopies--;
+            if (book.AvailableCopies == 0) book.Status = "Borrowed";
+            _bookDAO.Update(book);
 
-             var borrowing = new Borrowing
-             {
-                 BookId = bookId,
-                 PatronId = patronId,
-                 BorrowDate = borrowDate,
-                 DueDate = dueDate,
-                 Status = "Borrowed",
-                 IsReturned = false,
-                 CopyId = availableCopy.CopyId
-             };
-             _borrowingDAO.Add(borrowing);
-         }
-       
+            var borrowing = new Borrowing
+            {
+                BookId = bookId,
+                PatronId = patronId,
+                BorrowDate = borrowDate,
+                DueDate = dueDate,
+                Status = "Borrowed",
+                IsReturned = false,
+                CopyId = availableCopy.CopyId
+            };
 
+            // Lưu bản ghi mượn vào cơ sở dữ liệu
+            _borrowingDAO.Add(borrowing);
+
+            // Trả về đối tượng Borrowing vừa được tạo
+            return borrowing;
+        }
 
 
         // Sửa ReturnBook

@@ -179,11 +179,8 @@ D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfAp
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\CategoryWindow.g.cs
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\FineManagementWindow.g.cs
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\FinePaymentDialog.g.cs
-D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\GenreDialog.g.cs
-D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\GenreManagementWindow.g.cs
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\LoginWindow.g.cs
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\MainWindow.g.cs
-D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\OverdueBooksWindow.g.cs
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\PatronBorrowingHistoryWindow.g.cs
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\PatronDialog.g.cs
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\PatronWindow.g.cs
@@ -205,11 +202,8 @@ D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfAp
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\CategoryWindow.baml
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\FineManagementWindow.baml
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\FinePaymentDialog.baml
-D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\GenreDialog.baml
-D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\GenreManagementWindow.baml
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\LoginWindow.baml
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\MainWindow.baml
-D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\OverdueBooksWindow.baml
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\PatronBorrowingHistoryWindow.baml
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\PatronDialog.baml
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\PatronWindow.baml

@@ -24,7 +24,6 @@
             <MenuItem Header="Library Operations">
                 <MenuItem Header="View Books" Command="{Binding OpenMemberBookListCommand}"/>
                 <MenuItem Header="Manage Borrow/Return" Command="{Binding OpenBorrowReturnCommand}"/>
-                <MenuItem Header="My Borrowing History" Command="{Binding OpenMyBorrowingHistoryCommand}"/>
                 <MenuItem Header="Manage Fines" Command="{Binding OpenFineManagementCommand}"/>
                 <MenuItem Header="Reports" Command="{Binding OpenReportsCommand}"/>
             </MenuItem>

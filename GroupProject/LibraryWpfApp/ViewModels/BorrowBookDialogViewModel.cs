@@ -62,6 +62,7 @@ namespace LibraryWpfApp.ViewModels
             }
         }
 
+
         private void ConfirmBorrow()
         {
             if (SelectedPatron == null)
@@ -85,46 +86,42 @@ namespace LibraryWpfApp.ViewModels
 
             try
             {
-                //var borrowDate = DateOnly.FromDateTime(DateTime.Now);
-                //var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(1));
+                // Thiết lập ngày mượn và hạn trả
+                var borrowDate = DateOnly.FromDateTime(DateTime.Now); // Ngày mượn là ngày hiện tại
+                var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(14)); // Hạn trả là 14 ngày sau
 
-                var borrowDate = DateOnly.FromDateTime(DateTime.Now.AddDays(-10)); // Giả lập mượn sách từ 10 ngày trước
-                var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(-3));    // Hạn trả đã qua 3 ngày
-
-                _borrowingService.BorrowBook(
-                    BookToBorrow.BookId,
-                    SelectedPatron.PatronId,
-                    borrowDate,
-                    dueDate
+                // Gọi phương thức BorrowBook và lấy bản ghi mượn sách được trả về
+                LastBorrowedRecord = _borrowingService.BorrowBook(
+                    BookToBorrow.BookId, // ID của sách
+                    SelectedPatron.PatronId, // ID của bạn đọc
+                    borrowDate, // Ngày mượn
+                    dueDate // Hạn trả
                 );
 
-                LastBorrowedRecord = new Borrowing
+                // Kiểm tra xem bản ghi mượn có được trả về chính xác không
+                if (LastBorrowedRecord == null || LastBorrowedRecord.BorrowingId == 0)
                 {
-                    BookId = BookToBorrow.BookId,
-                    PatronId = SelectedPatron.PatronId,
-                    BorrowDate = borrowDate,
-                    DueDate = dueDate,
-                    IsReturned = false,
-                    Status = "Borrowed"
-                };
+                    throw new Exception("Failed to create borrowing record. BorrowingId is missing.");
+                }
 
-                System.Diagnostics.Debug.WriteLine($"[BorrowBookDialogViewModel] Borrowed BookId={BookToBorrow.BookId} for PatronId={SelectedPatron.PatronId}");
-
-                //MessageBox.Show("Book borrowed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                // Ghi log thông tin mượn sách (chỉ để kiểm tra)
+                System.Diagnostics.Debug.WriteLine($"[BorrowBookDialogViewModel] Borrowed BookId={LastBorrowedRecord.BookId} for PatronId={LastBorrowedRecord.PatronId}, BorrowingId={LastBorrowedRecord.BorrowingId}");
 
                 // Đóng dialog (thiết lập DialogResult)
                 var dialog = Application.Current.Windows.OfType<Views.BorrowBookDialog>().FirstOrDefault(w => w.DataContext == this);
                 if (dialog != null)
                 {
-                    dialog.DialogResult = true;
+                    dialog.DialogResult = true; // Đánh dấu dialog thành công
                 }
             }
             catch (InvalidOperationException ex)
             {
+                // Xử lý lỗi logic trong quá trình mượn sách
                 MessageBox.Show(ex.Message, "Borrow Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             catch (Exception ex)
             {
+                // Xử lý mọi lỗi không mong muốn
                 MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }

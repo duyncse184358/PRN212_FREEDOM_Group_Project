@@ -1,4 +1,4 @@
-﻿D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.cs
+﻿
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\App.xaml;;
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\MainWindow.xaml;;
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\BookDialog.xaml;;
@@ -8,11 +8,8 @@ FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfA
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\CategoryWindow.xaml;;
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\FineManagementWindow.xaml;;
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\FinePaymentDialog.xaml;;
-FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\GenreDialog.xaml;;
-FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\GenreManagementWindow.xaml;;
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\LoginWindow.xaml;;
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\MainWindow.xaml;;
-FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\OverdueBooksWindow.xaml;;
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\PatronBorrowingHistoryWindow.xaml;;
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\PatronDialog.xaml;;
 FD:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\Views\PatronWindow.xaml;;

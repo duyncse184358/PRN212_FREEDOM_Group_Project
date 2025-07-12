@@ -26,15 +26,6 @@
     <Compile Update="Views\FinePaymentDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\GenreDialog.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\GenreManagementWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\OverdueBooksWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Views\PatronBorrowingHistoryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

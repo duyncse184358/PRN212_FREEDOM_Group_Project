@@ -47,7 +47,6 @@ namespace LibraryWpfApp.ViewModels
             OpenUserManagementCommand = new RelayCommand(() => GetWindow<Views.UserManagementWindow>()?.Show());
             OpenCategoryManagementCommand = new RelayCommand(() => GetWindow<Views.CategoryWindow>()?.Show());
             OpenReportsCommand = new RelayCommand(() => GetWindow<Views.ReportWindow>()?.Show());
-            OpenOverdueBooksCommand = new RelayCommand(() => GetWindow<Views.OverdueBooksWindow>()?.Show());
             OpenMemberBookListCommand = new RelayCommand(() => GetWindow<Views.BookWindow>()?.Show()); // Bổ sung
 
             OpenMyBorrowingHistoryCommand = new RelayCommand(OpenMyBorrowingHistory);

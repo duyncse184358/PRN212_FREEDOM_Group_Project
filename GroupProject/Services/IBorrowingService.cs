@@ -5,7 +5,8 @@ public interface IBorrowingService
     List<Borrowing> GetAllBorrowings();
     Borrowing? GetBorrowingById(int id);
     List<Borrowing> GetBorrowingsByPatron(int patronId);
-    void BorrowBook(int bookId, int patronId, DateOnly borrowDate, DateOnly dueDate);
+    //void BorrowBook(int bookId, int patronId, DateOnly borrowDate, DateOnly dueDate);
+    Borrowing BorrowBook(int bookId, int patronId, DateOnly borrowDate, DateOnly dueDate);
     void ReturnBook(int borrowingId);
     List<Borrowing> GetOverdueBorrowings();
     bool IsOverdue(Borrowing borrowing);

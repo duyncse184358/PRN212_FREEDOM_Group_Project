@@ -41,7 +41,6 @@ namespace LibraryWpfApp.ViewModels
             _fineService = fineService;
 
             SearchCommand = new RelayCommand(Search);
-            ViewOverdueCommand = new RelayCommand(ViewOverdue);
             CalculateAndAddFineCommand = new RelayCommand(CalculateAndAddFine);
             MarkLostCommand = new RelayCommand(obj =>
             {
@@ -114,10 +113,7 @@ namespace LibraryWpfApp.ViewModels
             }
         }
 
-        private void ViewOverdue()
-        {
-            (Application.Current as App)?.Services.GetRequiredService<Views.OverdueBooksWindow>()?.Show();
-        }
+      
 
         private void CalculateAndAddFine()
         {

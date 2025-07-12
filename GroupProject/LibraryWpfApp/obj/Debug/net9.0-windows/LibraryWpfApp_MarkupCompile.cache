@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP
 D:\DOC\ky5\PRN212\Project\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\App.xaml
-21-574759994
+18794575728
 
-52-220767527
+48860352939
 239885494818
-MainWindow.xaml;Views\BookDialog.xaml;Views\BookWindow.xaml;Views\BorrowBookDialog.xaml;Views\BorrowReturnWindow.xaml;Views\CategoryDialog.xaml;Views\CategoryWindow.xaml;Views\FineManagementWindow.xaml;Views\FinePaymentDialog.xaml;Views\GenreDialog.xaml;Views\GenreManagementWindow.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\OverdueBooksWindow.xaml;Views\PatronBorrowingHistoryWindow.xaml;Views\PatronDialog.xaml;Views\PatronWindow.xaml;Views\ReportWindow.xaml;Views\ReturnBookDialog.xaml;Views\UserDialog.xaml;Views\UserManagementWindow.xaml;
+MainWindow.xaml;Views\BookDialog.xaml;Views\BookWindow.xaml;Views\BorrowBookDialog.xaml;Views\BorrowReturnWindow.xaml;Views\CategoryDialog.xaml;Views\CategoryWindow.xaml;Views\FineManagementWindow.xaml;Views\FinePaymentDialog.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\PatronBorrowingHistoryWindow.xaml;Views\PatronDialog.xaml;Views\PatronWindow.xaml;Views\ReportWindow.xaml;Views\ReturnBookDialog.xaml;Views\UserDialog.xaml;Views\UserManagementWindow.xaml;
 
 False
 

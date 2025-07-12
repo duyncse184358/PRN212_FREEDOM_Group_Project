@@ -105,7 +105,6 @@ namespace LibraryWpfApp
             serviceCollection.AddTransient<ViewModels.PatronViewModel>();
             serviceCollection.AddTransient<ViewModels.PatronDialogViewModel>();
             serviceCollection.AddTransient<ViewModels.BorrowReturnViewModel>();
-            serviceCollection.AddTransient<ViewModels.OverdueBooksViewModel>();
             serviceCollection.AddTransient<ViewModels.ReportViewModel>();
             serviceCollection.AddTransient<ViewModels.FineManagementViewModel>();
            // serviceCollection.AddTransient<ViewModels.ProfileViewModel>();
@@ -127,7 +126,6 @@ namespace LibraryWpfApp
             serviceCollection.AddTransient<Views.PatronWindow>();
             serviceCollection.AddTransient<Views.PatronDialog>();
             serviceCollection.AddTransient<Views.BorrowReturnWindow>();
-            serviceCollection.AddTransient<Views.OverdueBooksWindow>();
             serviceCollection.AddTransient<Views.ReportWindow>();
             serviceCollection.AddTransient<Views.FineManagementWindow>();
           //  serviceCollection.AddTransient<Views.ProfileWindow>();
