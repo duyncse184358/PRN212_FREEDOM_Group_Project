@@ -11,8 +11,6 @@
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
             <TextBox Width="300" Text="{Binding SearchKeyword}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}" />
             <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}" />
-            <Button Content="View Overdue Books" Command="{Binding ViewOverdueCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}" />
-            <Button Content="Process Fine" Command="{Binding CalculateAndAddFineCommand}" Style="{StaticResource ModernButtonStyle}" />
         </StackPanel>
 
         <DataGrid ItemsSource="{Binding Borrowings}"

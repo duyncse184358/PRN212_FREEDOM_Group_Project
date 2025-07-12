@@ -164,68 +164,8 @@ namespace LibraryWpfApp.ViewModels
             }
         }
 
-        private void MarkLost()
-        {
-            if (SelectedBorrowing == null)
-            {
-                MessageBox.Show("Please select a borrowing record.", "No Record Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
+      
 
-            if (SelectedBorrowing.Status == "Lost")
-            {
-                MessageBox.Show("Sách này đã được đánh dấu là mất.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-                return;
-            }
-
-            var borrowing = _borrowingService.GetBorrowingById(SelectedBorrowing.BorrowingID);
-            if (borrowing == null)
-            {
-                MessageBox.Show("Borrowing record not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            try
-            {
-                _borrowingService.MarkBookCopyAsLost(borrowing.BorrowingId);
-                LoadBorrowings();
-                MessageBox.Show($"Đã đánh dấu sách \"{SelectedBorrowing.BookTitle}\" là mất.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Failed to mark lost: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private void MarkDamaged()
-        {
-            if (SelectedBorrowing == null)
-            {
-                MessageBox.Show("Please select a borrowing record.", "No Record Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            var borrowing = _borrowingService.GetBorrowingById(SelectedBorrowing.BorrowingID);
-            if (borrowing == null)
-            {
-                MessageBox.Show("Borrowing record not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            try
-            {
-                _borrowingService.MarkBookCopyAsDamaged(borrowing.BorrowingId);
-                LoadBorrowings();
-                MessageBox.Show("Marked book as damaged.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Failed to mark damaged: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        // BỔ SUNG LOGIC TỰ ĐỘNG TẠO KHOẢN PHẠT KHI MẤT/HƯ HỎNG
-        // LOGIC ĐÁNH DẤU MẤT & PHỤC HỒI, TỰ ĐỘNG TẠO HOẶC XÓA KHOẢN PHẠT
         private void OnMarkLost(BorrowingDisplayModel item)
         {
             // Nếu sách đã là "Lost", cho phép phục hồi về trạng thái thường
@@ -304,6 +244,7 @@ namespace LibraryWpfApp.ViewModels
                         BorrowingId = borrowing.BorrowingId,
                         PatronId = borrowing.PatronId,
                         FineAmount = book.Price,
+                        FineType = "Lost",
                         Paid = false,
                         FineDate = DateTime.Now
                     };
@@ -361,6 +302,7 @@ namespace LibraryWpfApp.ViewModels
                         BorrowingId = b.BorrowingId,
                         PatronId = b.PatronId,
                         FineAmount = book.Price,
+                        FineType = "Damaged",
                         Paid = false,
                         FineDate = DateTime.Now
                     };

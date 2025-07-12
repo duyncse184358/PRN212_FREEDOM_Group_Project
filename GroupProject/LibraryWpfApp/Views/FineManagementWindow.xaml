@@ -21,7 +21,6 @@
             <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0"/>
             <Button Content="Mark Paid" Command="{Binding MarkPaidCommand}" Margin="0,0,10,0"/>
             <Button Content="Mark Unpaid" Command="{Binding MarkUnpaidCommand}" Margin="0,0,10,0"/>
-            <Button Content="View All Fines" Command="{Binding ViewAllCommand}"/>
         </StackPanel>
     
         <!-- Summary -->

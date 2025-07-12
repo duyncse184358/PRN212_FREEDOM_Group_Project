@@ -66,6 +66,8 @@ namespace LibraryWpfApp.ViewModels
                     if (existingFine.Paid == null || existingFine.Paid == false)
                     {
                         _fineService.PayFine(existingFine.FineId);
+                        IsPaid = true; // Cập nhật trạng thái trong ViewModel
+                        OnPropertyChanged(nameof(IsPaid));
                         MessageBox.Show("Existing fine payment processed successfully!", "Payment Success", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                     else

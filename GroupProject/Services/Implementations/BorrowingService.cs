@@ -258,9 +258,28 @@ namespace Services.Implementations
                 _fineService.AddFine(fine);
             }
         }
+        //public void UpdateBorrowing(Borrowing borrowing)
+        //{
+        //    _repo.Update(borrowing);
+        //}
+
         public void UpdateBorrowing(Borrowing borrowing)
         {
+            // Update the borrowing record
             _repo.Update(borrowing);
+
+            // Handle AvailableCopies update for returned books
+            if (borrowing.IsReturned == true)
+            {
+                var book = _bookDAO.GetById(borrowing.BookId ?? 0);
+                if (book != null)
+                {
+                    book.AvailableCopies++;
+                    if (book.Status == "Borrowed" && book.AvailableCopies > 0)
+                        book.Status = "Available";
+                    _bookDAO.Update(book);
+                }
+            }
         }
 
     }
