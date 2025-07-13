@@ -29,6 +29,30 @@ namespace LibraryWpfApp.ViewModels
             set { _selectedPatron = value; OnPropertyChanged(); }
         }
 
+        // THÊM CÁC PROPERTIES MỚI ĐÂY
+        private string _patronId = "";
+        public string PatronId
+        {
+            get => _patronId;
+            set
+            {
+                _patronId = value;
+                OnPropertyChanged();
+                LoadPatronName(); // Tự động load tên khi ID thay đổi
+            }
+        }
+
+        private string _patronName = "";
+        public string PatronName
+        {
+            get => _patronName;
+            set
+            {
+                _patronName = value;
+                OnPropertyChanged();
+            }
+        }
+
         public ICommand ConfirmBorrowCommand { get; }
         public Borrowing? LastBorrowedRecord { get; private set; }
 
@@ -62,12 +86,46 @@ namespace LibraryWpfApp.ViewModels
             }
         }
 
+        // THÊM METHOD MỚI ĐÂY
+        private void LoadPatronName()
+        {
+            if (!string.IsNullOrEmpty(PatronId) && _patronService != null)
+            {
+                try
+                {
+                    // Tìm patron theo ID (giả sử PatronId là string, nếu là int thì parse trước)
+                    var patron = _patronService.GetAllPatrons().FirstOrDefault(p => p.PatronId.ToString() == PatronId);
+
+                    if (patron != null)
+                    {
+                        PatronName = patron.FullName;
+                        SelectedPatron = patron; // Cập nhật SelectedPatron để logic cũ vẫn hoạt động
+                    }
+                    else
+                    {
+                        PatronName = "Patron not found";
+                        SelectedPatron = null;
+                    }
+                }
+                catch (Exception)
+                {
+                    PatronName = "Error loading patron";
+                    SelectedPatron = null;
+                }
+            }
+            else
+            {
+                PatronName = "";
+                SelectedPatron = null;
+            }
+        }
 
         private void ConfirmBorrow()
         {
-            if (SelectedPatron == null)
+            // Kiểm tra PatronId thay vì SelectedPatron
+            if (string.IsNullOrEmpty(PatronId) || SelectedPatron == null)
             {
-                MessageBox.Show("Please select a patron.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Please enter a valid Patron ID.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
