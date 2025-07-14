@@ -2,54 +2,202 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
-        Title="Borrowing &amp; Return Management" Height="600" Width="1000"
-        WindowStartupLocation="CenterScreen">
+        Title="📊 Borrowing &amp; Return Management" Height="700" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        Background="#F4F7FB">
 
-    <!-- KHÔNG có Window.DataContext ở đây -->
+    <Window.Resources>
+        <!-- Card Style -->
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderBrush" Value="#FFCBD5E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="8" ShadowDepth="2" Opacity="0.1"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-    <DockPanel Margin="10">
-        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
-            <TextBox Width="300" Text="{Binding SearchKeyword}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}" />
-            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}" />
-        </StackPanel>
+        <!-- Enhanced Button Style -->
+        <Style x:Key="EnhancedButtonStyle" TargetType="Button" BasedOn="{StaticResource ModernButtonStyle}">
+            <Setter Property="Background" Value="#FF24506D"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF1A3B4D"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FF0F2A35"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-        <DataGrid ItemsSource="{Binding Borrowings}"
-                  SelectedItem="{Binding SelectedBorrowing}"
-                  AutoGenerateColumns="False" IsReadOnly="True"
-                  Style="{StaticResource ModernDataGridStyle}">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Borrowing ID" Binding="{Binding BorrowingID}" Width="Auto" />
-                <DataGridTextColumn Header="Book Title" Binding="{Binding BookTitle}" Width="2*" />
-                <DataGridTextColumn Header="Patron Name" Binding="{Binding PatronName}" Width="*" />
-                <DataGridTextColumn Header="Borrow Date" Binding="{Binding BorrowDate, StringFormat=dd/MM/yyyy}" Width="Auto" />
-                <DataGridTextColumn Header="Due Date" Binding="{Binding DueDate, StringFormat=dd/MM/yyyy}" Width="Auto" />
-                <DataGridTextColumn Header="Return Date" Binding="{Binding ReturnDate, StringFormat=dd/MM/yyyy}" Width="Auto" />
-                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto" />
-                <DataGridTextColumn Header="Fine" Binding="{Binding FineAmount, StringFormat=C}" Width="Auto" />
+        <!-- Action Button Styles -->
+        <Style x:Key="LostButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FFDC3545"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFC82333"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
 
-                <!-- ✅ Cột nút đánh dấu mất -->
-                <DataGridTemplateColumn Header="Actions">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Button Content="Đánh dấu mất"
-                Command="{Binding DataContext.MarkLostCommand, RelativeSource={RelativeSource AncestorType=Window}}"
-                CommandParameter="{Binding}"
-                Style="{StaticResource ModernButtonStyle}"
-                Margin="2" />
+        <Style x:Key="DamagedButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FFFFC107"/>
+            <Setter Property="Foreground" Value="#FF212529"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFE0A800"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
 
-                                <Button Content="Đánh dấu hư hỏng"
-                Command="{Binding DataContext.MarkDamagedCommand, RelativeSource={RelativeSource AncestorType=Window}}"
-                CommandParameter="{Binding}"
-                Style="{StaticResource ModernButtonStyle}"
-                Margin="2" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
+        <!-- Enhanced TextBox Style -->
+        <Style x:Key="SearchTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource ModernTextBoxStyle}">
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="BorderBrush" Value="#FFCBD5E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Height" Value="36"/>
+        </Style>
 
+        <!-- Enhanced DataGrid Style -->
+        <Style x:Key="EnhancedDataGridStyle" TargetType="DataGrid" BasedOn="{StaticResource ModernDataGridStyle}">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#FF24506D"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="FontSize" Value="13"/>
+                        <Setter Property="Padding" Value="8,10"/>
+                        <Setter Property="BorderBrush" Value="#FF24506D"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,0"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
 
-            </DataGrid.Columns>
-        </DataGrid>
-    </DockPanel>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header Section -->
+        <Border Grid.Row="0" Style="{StaticResource CardStyle}" Margin="0,0,0,20" Padding="20">
+            <StackPanel>
+                <!-- Title -->
+                <TextBlock Text="📊 Borrowing &amp; Return Management" 
+                           FontSize="30" FontWeight="Bold" 
+                           Foreground="#FF2D3748" 
+                           HorizontalAlignment="Center" 
+                           Margin="0,0,0,20"/>
+
+                <!-- Search Section -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- XÓA Watermark attribute - SỬA LỖI -->
+                    <TextBox Grid.Column="0"
+                             Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" 
+                             Style="{StaticResource SearchTextBoxStyle}"
+                             Margin="0,0,10,0"/>
+
+                    <Button Grid.Column="1"
+                            Content="🔍 Search" 
+                            Command="{Binding SearchCommand}" 
+                            Style="{StaticResource EnhancedButtonStyle}"
+                            Width="100"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <!-- Data Grid Section -->
+        <Border Grid.Row="1" Style="{StaticResource CardStyle}" Padding="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" 
+                           Text="📋 Borrowing Records" 
+                           FontSize="15" FontWeight="SemiBold" 
+                           Foreground="#FF2D3748" 
+                           Margin="0,0,0,15"/>
+
+                <DataGrid Grid.Row="1"
+                          ItemsSource="{Binding Borrowings}"
+                          SelectedItem="{Binding SelectedBorrowing}"
+                          AutoGenerateColumns="False" IsReadOnly="True"
+                          Style="{StaticResource EnhancedDataGridStyle}"
+                          GridLinesVisibility="Horizontal"
+                          HorizontalGridLinesBrush="#FFE0E7EF"
+                          VerticalGridLinesBrush="Transparent"
+                          RowHeight="35">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding BorrowingID}" Width="60" MinWidth="60"/>
+                        <DataGridTextColumn Header="Book Title" Binding="{Binding BookTitle}" Width="2*" MinWidth="150"/>
+                        <DataGridTextColumn Header="Patron Name" Binding="{Binding PatronName}" Width="*" MinWidth="120"/>
+                        <DataGridTextColumn Header="Borrow Date" Binding="{Binding BorrowDate, StringFormat=dd/MM/yyyy}" Width="100" MinWidth="100"/>
+                        <DataGridTextColumn Header="Due Date" Binding="{Binding DueDate, StringFormat=dd/MM/yyyy}" Width="100" MinWidth="100"/>
+                        <DataGridTextColumn Header="Return Date" Binding="{Binding ReturnDate, StringFormat=dd/MM/yyyy}" Width="100" MinWidth="100"/>
+                        <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="80" MinWidth="80"/>
+                        <DataGridTextColumn Header="Fine" Binding="{Binding FineAmount, StringFormat={}{0:N0} đ}" Width="80" MinWidth="80"/>
+
+                        <!-- Action Buttons Column -->
+                        <DataGridTemplateColumn Header="Actions" Width="200" MinWidth="200">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <Button Content="❌ Mất"
+                                                Command="{Binding DataContext.MarkLostCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                                CommandParameter="{Binding}"
+                                                Style="{StaticResource LostButtonStyle}"
+                                                Width="70"
+                                                Margin="2"/>
+
+                                        <Button Content="⚠️ Hỏng"
+                                                Command="{Binding DataContext.MarkDamagedCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                                CommandParameter="{Binding}"
+                                                Style="{StaticResource DamagedButtonStyle}"
+                                                Width="70"
+                                                Margin="2"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
 </Window>

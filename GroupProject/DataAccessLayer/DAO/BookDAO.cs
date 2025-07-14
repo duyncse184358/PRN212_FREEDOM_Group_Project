@@ -68,13 +68,18 @@ namespace DataAccessLayer.DAO
 
 
 
-        public List<Book> Search(string keyword) =>
-            _context.Books.Include(b => b.Category)
-                   .Where(b => (b.Title != null && b.Title.Contains(keyword, StringComparison.OrdinalIgnoreCase)) ||
-                                (b.Author != null && b.Author.Contains(keyword, StringComparison.OrdinalIgnoreCase)) ||
-                                (b.ShelfLocation != null && b.ShelfLocation.Contains(keyword, StringComparison.OrdinalIgnoreCase)) ||
-                                (b.Category != null && b.Category.CategoryName.Contains(keyword, StringComparison.OrdinalIgnoreCase)))
-                   .ToList();
+        public List<Book> Search(string keyword)
+        {
+            keyword = keyword?.ToLower() ?? "";
+            return _context.Books.Include(b => b.Category)
+                .Where(b =>
+                    (b.Title != null && b.Title.ToLower().Contains(keyword)) ||
+                    (b.Author != null && b.Author.ToLower().Contains(keyword)) ||
+                    (b.ShelfLocation != null && b.ShelfLocation.ToLower().Contains(keyword)) ||
+                    (b.Category != null && b.Category.CategoryName.ToLower().Contains(keyword))
+                )
+                .ToList();
+        }
 
 
         public void BorrowBookWithCopy(int bookId, int patronId, DateOnly borrowDate, DateOnly dueDate)

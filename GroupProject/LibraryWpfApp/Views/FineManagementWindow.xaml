@@ -18,18 +18,18 @@
         <!-- Controls -->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
             <TextBox Width="300" Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,10,0" ToolTip="Search by patron name"/>
-            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0"/>
-            <Button Content="Mark Paid" Command="{Binding MarkPaidCommand}" Margin="0,0,10,0"/>
-            <Button Content="Mark Unpaid" Command="{Binding MarkUnpaidCommand}" Margin="0,0,10,0"/>
+            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Width="51" Background="#FF24506D" Foreground="White"/>
+            <Button Content="Mark Paid" Command="{Binding MarkPaidCommand}" Margin="0,0,10,0" Width="67" Background="#FF24506D" Foreground="White"/>
+            <Button Content="Mark Unpaid" Command="{Binding MarkUnpaidCommand}" Margin="0,0,10,0" Width="86" Background="#FF24506D" Foreground="White"/>
         </StackPanel>
-    
+
         <!-- Summary -->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
-            <TextBlock Text="Total fines: " FontWeight="Bold"/>
-            <TextBlock Text="{Binding Fines.Count}" Margin="5,0,20,0"/>
-            <TextBlock Text="Total unpaid: " FontWeight="Bold"/>
+            <TextBlock Text="Total fines: " FontWeight="Bold" FontSize="15"/>
+            <TextBlock Text="{Binding Fines.Count}" Margin="5,0,20,0" FontSize="15"/>
+            <TextBlock Text="Total unpaid: " FontWeight="Bold" FontSize="15"/>
             <!-- Remove the converter if not defined -->
-            <TextBlock Text="{Binding TotalUnpaid, StringFormat=C}" Margin="5,0,0,0"/>
+            <TextBlock Text="{Binding TotalUnpaid, StringFormat=C}" Margin="5,0,0,0" FontSize="15"/>
         </StackPanel>
 
         <!-- DataGrid -->

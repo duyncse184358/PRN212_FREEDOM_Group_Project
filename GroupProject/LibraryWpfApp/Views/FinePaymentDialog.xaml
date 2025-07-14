@@ -2,47 +2,105 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
-        Title="Process Fine Payment" Height="280" Width="400"
-        WindowStartupLocation="CenterOwner">
+        Title="Process Fine Payment" Height="345" Width="420"
+        WindowStartupLocation="CenterOwner"
+        Background="White">
 
     <Window.DataContext>
         <vm:FinePaymentDialogViewModel />
     </Window.DataContext>
 
-    <Grid Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <!-- Title -->
-            <RowDefinition Height="Auto"/>
-            <!-- Borrowing ID -->
-            <RowDefinition Height="Auto"/>
-            <!-- Patron Name -->
-            <RowDefinition Height="Auto"/>
-            <!-- Fine Amount -->
-            <RowDefinition Height="*"/>
-            <!-- Spacer -->
-            <RowDefinition Height="Auto"/>
-            <!-- Buttons -->
-        </Grid.RowDefinitions>
+    <Window.Resources>
+        <!-- Simple Button Style -->
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF24506D"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="MinWidth" Value="120"/>
+        </Style>
 
-        <TextBlock Text="Process Fine Payment" Grid.Row="0"
-                   FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+        <Style x:Key="CancelButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF6C757D"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="MinWidth" Value="120"/>
+        </Style>
+    </Window.Resources>
 
-        <Label Content="Borrowing ID:" Grid.Row="1"/>
-        <TextBlock Grid.Row="2" Text="{Binding BorrowingID}" FontWeight="Bold" Margin="0,0,0,5"/>
-
-        <Label Content="Patron Name:" Grid.Row="3"/>
-        <TextBlock Grid.Row="4" Text="{Binding PatronName}" FontWeight="Bold" Margin="0,0,0,5"/>
-
-        <Label Content="Fine Amount:" Grid.Row="5"/>
-        <TextBlock Grid.Row="6" Text="{Binding FineAmount, StringFormat=C}" FontSize="18" FontWeight="Bold" Foreground="Red" Margin="0,0,0,10"/>
-
-        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
-            <Button Content="Process Payment"
-        Command="{Binding ProcessPaymentCommand}"
-        Margin="0,0,10,0"
-        Style="{StaticResource ModernButtonStyle}" />
-            <Button Content="Cancel" Click="Close_Click" Style="{StaticResource ModernButtonStyle}"/>
+    <StackPanel Margin="30">
+        <!-- Header -->
+        <StackPanel Margin="0,0,0,30" HorizontalAlignment="Center">
+            <TextBlock Text="💳 Process Fine Payment" 
+                       FontSize="20" FontWeight="Bold" 
+                       Foreground="#FF2D3748" 
+                       HorizontalAlignment="Center"/>
+            <Rectangle Height="2" Fill="#FF24506D" 
+                       Width="150" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,8,0,0"/>
         </StackPanel>
-    </Grid>
+
+        <!-- Information Section -->
+        <Border Background="#FFF8F9FA" 
+                BorderBrush="#FFEEEEEE" 
+                BorderThickness="1" 
+                Padding="20" 
+                Margin="0,0,0,25">
+
+            <StackPanel>
+                <!-- Borrowing ID -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                    <TextBlock Text="📋 Borrowing ID:" 
+                               Width="120" 
+                               FontWeight="SemiBold" 
+                               Foreground="Black"/>
+                    <TextBlock Text="{Binding BorrowingID}" 
+                               FontWeight="Bold" 
+                               Foreground="Black"/>
+                </StackPanel>
+
+                <!-- Patron Name -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                    <TextBlock Text="👤 Patron Name:" 
+                               Width="120" 
+                               FontWeight="SemiBold" 
+                               Foreground="Black"/>
+                    <TextBlock Text="{Binding PatronName}" 
+                               FontWeight="Bold" 
+                               Foreground="Black"/>
+                </StackPanel>
+
+                <!-- Fine Amount -->
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="💰 Fine Amount:" 
+                               Width="120" 
+                               FontWeight="SemiBold" 
+                               Foreground="Black"/>
+                    <TextBlock Text="{Binding FineAmount, StringFormat=C}" 
+                               FontSize="18" 
+                               FontWeight="Bold" 
+                               Foreground="#FFDC3545"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Action Buttons -->
+        <StackPanel Orientation="Horizontal" 
+                    HorizontalAlignment="Center">
+            <Button Content="💳 Process Payment"
+                    Command="{Binding ProcessPaymentCommand}"
+                    Style="{StaticResource PrimaryButtonStyle}" />
+            <Button Content="✖️ Cancel"
+                    Click="Close_Click"
+                    Style="{StaticResource CancelButtonStyle}"/>
+        </StackPanel>
+    </StackPanel>
 </Window>

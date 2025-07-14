@@ -3,29 +3,56 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
         Title="Category Management" Height="500" Width="800"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        FontSize="13"
+        Background="{StaticResource PrimaryBackgroundBrush}">
 
     <Window.DataContext>
         <vm:CategoryViewModel />
     </Window.DataContext>
 
     <Window.Resources>
+        <!-- Primary color brush -->
+        <SolidColorBrush x:Key="PrimaryBrush" Color="#FF24506D"/>
+        <SolidColorBrush x:Key="PrimaryBackgroundBrush" Color="#FF24506D"/>
+        <SolidColorBrush x:Key="PrimaryForegroundBrush" Color="White"/>
+
+        <!-- Default style for buttons -->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryForegroundBrush}"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="0,0,10,0"/>
+            <Setter Property="Padding" Value="10,5"/>
+        </Style>
+
+        <!-- Default style for DataGrid -->
+        <Style TargetType="DataGrid">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="RowBackground" Value="#FFE3EAF2"/>
+            <Setter Property="AlternatingRowBackground" Value="#FFD6DEE7"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#FF24506D"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+        </Style>
+
+        <!-- Right aligned text style -->
         <Style x:Key="RightAlignedText" TargetType="TextBlock">
             <Setter Property="TextAlignment" Value="Right"/>
+            <Setter Property="FontSize" Value="13"/>
         </Style>
     </Window.Resources>
 
     <DockPanel Margin="10">
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
-            <Button Content="Add New" Command="{Binding AddCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Edit Selected" Command="{Binding EditCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
-            <Button Content="Delete Selected" Command="{Binding DeleteCommand}" Style="{StaticResource ModernButtonStyle}"/>
+            <Button Content="Add New" Command="{Binding AddCommand}"/>
+            <Button Content="Edit Selected" Command="{Binding EditCommand}"/>
+            <Button Content="Delete Selected" Command="{Binding DeleteCommand}" Margin="0"/>
         </StackPanel>
 
         <DataGrid ItemsSource="{Binding Categories}" 
                   SelectedItem="{Binding SelectedCategory}" 
-                  AutoGenerateColumns="False" IsReadOnly="True"
-                  Style="{StaticResource ModernDataGridStyle}">
+                  AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding CategoryId}" Width="Auto"/>
                 <DataGridTextColumn Header="Name" Binding="{Binding CategoryName}" Width="*"/>
