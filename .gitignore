@@ -401,11 +401,10 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/csharp
 
 # WPF Generated Files
-*.g.cs
-*.g.i.cs
-*.baml
-*.g.resources
-*.g.resources.dll
+**/*.g.cs
+**/*.g.i.cs
+**/*.baml
+**/*.g.resources
 
 # WPF Temporary Files
 *.tmp
