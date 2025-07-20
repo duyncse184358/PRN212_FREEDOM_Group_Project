@@ -395,7 +395,23 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+# WPF Generated Files
+*.g.cs
+*.g.i.cs
+*.baml
+*.g.resources
+*.g.resources.dll
 
+# WPF Temporary Files
+*.tmp
+*.temp
+*_wpftmp.csproj
+
+# WPF Build Artifacts
+**/obj/**
+**/bin/**
+**/Debug/**
+**/Release/**
 # JetBrains Rider
 *.sln.iml
 
