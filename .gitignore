@@ -516,7 +516,10 @@ project.nuget.cache
 .Trashes
 ehthumbs.db
 Thumbs.db
-
+# Generated MSBuild and Assembly
+**/*.GeneratedMSBuildEditorConfig.editorconfig
+**/AssemblyInfo.cs
+**/obj/
 # Logs
 logs
 *.log
