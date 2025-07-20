@@ -416,6 +416,13 @@ FodyWeavers.xsd
 **/bin/**
 **/Debug/**
 **/Release/**
+**/*.exe
+**/*.dll
+**/*.pdb
+**/AssemblyInfo.cs
+**/*.deps.json
+**/project.assets.json
+**/*.cache
 
 # Visual Studio Index Files
 *.vsidx
