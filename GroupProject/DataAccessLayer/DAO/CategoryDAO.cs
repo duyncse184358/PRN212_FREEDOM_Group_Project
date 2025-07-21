@@ -21,8 +21,14 @@ namespace DataAccessLayer.DAO
 
         public void Update(Category category)
         {
-            _context.Categories.Update(category);
-            _context.SaveChanges();
+            // Tìm entity đã được track trong context
+            var existingCategory = _context.Categories.Find(category.CategoryId);
+            if (existingCategory != null)
+            {
+                // Cập nhật thuộc tính của entity đã được track
+                existingCategory.CategoryName = category.CategoryName;
+                _context.SaveChanges();
+            }
         }
 
         public void Delete(int id)
