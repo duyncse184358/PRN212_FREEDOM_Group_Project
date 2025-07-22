@@ -22,9 +22,26 @@ namespace LibraryWpfApp.Views
     /// </summary>
     public partial class CategoryDialog : Window
     {
+        private BusinessObject.Category _currentCategory; // Field lưu Category hiện tại
+        private bool _isEditMode; // Phân biệt chế độ
+
+        // Constructor cho chế độ thêm mới
         public CategoryDialog()
         {
             InitializeComponent();
+            _isEditMode = false;
+        }
+
+        // Constructor cho chế độ chỉnh sửa
+        public CategoryDialog(BusinessObject.Category categoryToEdit)
+        {
+            InitializeComponent();
+            if (categoryToEdit != null)
+            {
+                _currentCategory = categoryToEdit;
+                CategoryNameTextBox.Text = categoryToEdit.CategoryName;
+                _isEditMode = true;
+            }
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
@@ -37,31 +54,27 @@ namespace LibraryWpfApp.Views
                 return;
             }
 
-            // Tạo Category object mới
-            var category = new BusinessObject.Category
-            {
-                CategoryName = categoryName
-            };
-
-            // Gọi service để lưu
             try
             {
-                var app = Application.Current as App;
-                if (app?.Services != null)
+                if (_isEditMode && _currentCategory != null)
                 {
-                    var categoryService = app.Services.GetRequiredService<ICategoryService>();
-                    categoryService.AddCategory(category);
-                    DialogResult = true;
-                    Close();
+                    // Chỉ cập nhật giá trị cho Category hiện tại
+                    _currentCategory.CategoryName = categoryName;
                 }
                 else
                 {
-                    MessageBox.Show("Service provider is not available.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    // Tạo mới Category và lưu vào property (nếu cần)
+                    _currentCategory = new BusinessObject.Category
+                    {
+                        CategoryName = categoryName
+                    };
                 }
+                DialogResult = true;
+                Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error saving category: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
