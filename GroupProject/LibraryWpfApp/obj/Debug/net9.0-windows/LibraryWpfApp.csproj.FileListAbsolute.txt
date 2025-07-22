@@ -397,7 +397,6 @@ C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\G
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\bin\Debug\net9.0-windows\Reponsitories.pdb
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\LibraryWpfApp.csproj.AssemblyReference.cache
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\BorrowBookDialog.baml
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\MainWindow.g.cs
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\BookDialog.g.cs
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\BookWindow.g.cs
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\BorrowBookDialog.g.cs
@@ -420,7 +419,6 @@ C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\G
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\LibraryWpfApp_MarkupCompile.cache
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\LibraryWpfApp_MarkupCompile.lref
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\App.baml
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\MainWindow.baml
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\BookDialog.baml
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\BookWindow.baml
 C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\LibraryWpfApp\obj\Debug\net9.0-windows\Views\BorrowReturnWindow.baml

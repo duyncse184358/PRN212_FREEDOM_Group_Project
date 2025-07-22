@@ -59,16 +59,23 @@ namespace LibraryWpfApp.ViewModels
 
         private void Logout()
         {
+            AppContext.Reset();
+
+            // Mở LoginWindow trước
+            var loginWindow = (Application.Current as App)?.Services.GetRequiredService<LoginWindow>();
+            if (loginWindow != null)
+            {
+                loginWindow.Show();
+            }
+
+            // Đóng MainWindow
             foreach (Window window in Application.Current.Windows.OfType<Window>().ToList())
             {
-                if (!(window is LoginWindow))
+                if (window is MainWindow)
                 {
                     window.Close();
                 }
             }
-
-            AppContext.Reset();
-            (Application.Current as App)?.Services.GetRequiredService<LoginWindow>()?.Show();
         }
 
         private void OpenMyBorrowingHistory()
