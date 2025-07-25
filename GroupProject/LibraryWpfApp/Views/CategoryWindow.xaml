@@ -4,8 +4,10 @@
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
         Title="Category Management" Height="500" Width="800"
         WindowStartupLocation="CenterScreen"
-        FontSize="13"
-        Background="#F8FAFC">
+ WindowState="Maximized"
+ WindowStyle="SingleBorderWindow"
+ ResizeMode="CanResize"
+ Background="#F4F7FB">
 
     <Window.DataContext>
         <vm:CategoryViewModel />
@@ -13,83 +15,27 @@
 
     <Window.Resources>
         <!-- Primary color brush -->
-        <SolidColorBrush x:Key="PrimaryBrush" Color="#2563EB"/>
-        <SolidColorBrush x:Key="PrimaryBackgroundBrush" Color="#F8FAFC"/>
+        <SolidColorBrush x:Key="PrimaryBrush" Color="#FF24506D"/>
+        <SolidColorBrush x:Key="PrimaryBackgroundBrush" Color="#FF24506D"/>
         <SolidColorBrush x:Key="PrimaryForegroundBrush" Color="White"/>
 
-        <!-- Enhanced Button Style -->
-        <Style x:Key="CategoryButtonStyle" TargetType="Button">
+        <!-- Default style for buttons -->
+        <Style TargetType="Button">
             <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
             <Setter Property="Foreground" Value="{StaticResource PrimaryForegroundBrush}"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="FontWeight" Value="SemiBold"/>
-            <Setter Property="Margin" Value="0,0,12,0"/>
-            <Setter Property="Padding" Value="16,10"/>
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}"
-                                CornerRadius="6"
-                                BorderThickness="0">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                            VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#1D4ED8"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" Value="#1E40AF"/>
-                                <Setter Property="Opacity" Value="0.9"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="0,0,10,0"/>
+            <Setter Property="Padding" Value="10,5"/>
         </Style>
 
-        <!-- Enhanced DataGrid Style -->
-        <Style x:Key="CategoryDataGridStyle" TargetType="DataGrid">
+        <!-- Default style for DataGrid -->
+        <Style TargetType="DataGrid">
             <Setter Property="FontSize" Value="13"/>
-            <Setter Property="RowBackground" Value="White"/>
-            <Setter Property="AlternatingRowBackground" Value="#F8FAFC"/>
+            <Setter Property="RowBackground" Value="#FFE3EAF2"/>
+            <Setter Property="AlternatingRowBackground" Value="#FFD6DEE7"/>
             <Setter Property="Background" Value="White"/>
-            <Setter Property="Foreground" Value="#1E293B"/>
-            <Setter Property="BorderBrush" Value="#E2E8F0"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
-            <Setter Property="HorizontalGridLinesBrush" Value="#E2E8F0"/>
-            <Setter Property="RowHeight" Value="40"/>
-            <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
-            <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
-            <Setter Property="CanUserResizeRows" Value="False"/>
-            <Setter Property="CanUserAddRows" Value="False"/>
-            <Setter Property="CanUserDeleteRows" Value="False"/>
-            <Setter Property="SelectionMode" Value="Single"/>
-            <Setter Property="SelectionUnit" Value="FullRow"/>
-            <Setter Property="ColumnHeaderStyle">
-                <Setter.Value>
-                    <Style TargetType="DataGridColumnHeader">
-                        <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
-                        <Setter Property="Foreground" Value="White"/>
-                        <Setter Property="FontWeight" Value="SemiBold"/>
-                        <Setter Property="Padding" Value="12,10"/>
-                        <Setter Property="BorderThickness" Value="0,0,1,0"/>
-                        <Setter Property="BorderBrush" Value="White"/>
-                    </Style>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="CellStyle">
-                <Setter.Value>
-                    <Style TargetType="DataGridCell">
-                        <Setter Property="Padding" Value="12,8"/>
-                        <Setter Property="BorderThickness" Value="0"/>
-                        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-                    </Style>
-                </Setter.Value>
-            </Setter>
+            <Setter Property="Foreground" Value="#FF24506D"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
         </Style>
 
         <!-- Right aligned text style -->
@@ -97,68 +43,22 @@
             <Setter Property="TextAlignment" Value="Right"/>
             <Setter Property="FontSize" Value="13"/>
         </Style>
-
-        <!-- Card Style -->
-        <Style x:Key="CategoryCardStyle" TargetType="Border">
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="CornerRadius" Value="8"/>
-            <Setter Property="BorderBrush" Value="#E2E8F0"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="Effect">
-                <Setter.Value>
-                    <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.08"/>
-                </Setter.Value>
-            </Setter>
-        </Style>
     </Window.Resources>
 
-    <Grid Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <DockPanel Margin="10">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
+            <Button Content="Add New" Command="{Binding AddCommand}"/>
+            <Button Content="Edit Selected" Command="{Binding EditCommand}"/>
+            <Button Content="Delete Selected" Command="{Binding DeleteCommand}" Margin="0"/>
+        </StackPanel>
 
-        <!-- Header Section -->
-        <Border Grid.Row="0" Style="{StaticResource CategoryCardStyle}" Margin="0,0,0,20" Padding="20">
-            <StackPanel>
-                <TextBlock Text="📂 Category Management" 
-                           FontSize="24" FontWeight="Bold" 
-                           Foreground="#1E293B" Margin="0,0,0,16"/>
-                
-                <StackPanel Orientation="Horizontal">
-                    <Button Content="➕ Add New" Command="{Binding AddCommand}" 
-                            Style="{StaticResource CategoryButtonStyle}"/>
-                    <Button Content="✏️ Edit Selected" Command="{Binding EditCommand}" 
-                            Style="{StaticResource CategoryButtonStyle}"/>
-                    <Button Content="🗑️ Delete Selected" Command="{Binding DeleteCommand}" 
-                            Style="{StaticResource CategoryButtonStyle}" Margin="0"/>
-                </StackPanel>
-            </StackPanel>
-        </Border>
-
-        <!-- Data Grid Section -->
-        <Border Grid.Row="1" Style="{StaticResource CategoryCardStyle}" Padding="20">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                
-                <TextBlock Grid.Row="0" Text="Category List" 
-                           FontSize="18" FontWeight="SemiBold" 
-                           Foreground="#1E293B" Margin="0,0,0,16"/>
-                
-                <DataGrid Grid.Row="1" ItemsSource="{Binding Categories}" 
-                          SelectedItem="{Binding SelectedCategory}" 
-                          AutoGenerateColumns="False" IsReadOnly="True"
-                          Style="{StaticResource CategoryDataGridStyle}"
-                          MaxHeight="300">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="ID" Binding="{Binding CategoryId}" Width="80"/>
-                        <DataGridTextColumn Header="Category Name" Binding="{Binding CategoryName}" Width="*"/>
-                    </DataGrid.Columns>
-                </DataGrid>
-            </Grid>
-        </Border>
-    </Grid>
+        <DataGrid ItemsSource="{Binding Categories}" 
+                  SelectedItem="{Binding SelectedCategory}" 
+                  AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding CategoryId}" Width="Auto"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding CategoryName}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
 </Window>

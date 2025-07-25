@@ -27,5 +27,5 @@ namespace LibraryWpfApp.Views
             this.DataContext = (Application.Current as App)?.Services.GetRequiredService<PatronViewModel>();
         }
     }
-    }
+}
 

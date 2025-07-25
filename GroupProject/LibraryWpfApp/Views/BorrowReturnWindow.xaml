@@ -4,7 +4,10 @@
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
         Title="📊 Borrowing &amp; Return Management" Height="700" Width="1200"
         WindowStartupLocation="CenterScreen"
-        Background="#F4F7FB">
+ WindowState="Maximized"
+ WindowStyle="SingleBorderWindow"
+ ResizeMode="CanResize"
+ Background="#F4F7FB">
 
     <Window.Resources>
         <!-- Card Style -->
@@ -201,3 +204,4 @@
         </Border>
     </Grid>
 </Window>
+

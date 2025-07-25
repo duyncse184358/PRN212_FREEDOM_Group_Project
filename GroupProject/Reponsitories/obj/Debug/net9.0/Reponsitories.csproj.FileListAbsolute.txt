@@ -51,21 +51,75 @@ C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupPro
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\refint\Reponsitories.dll
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.pdb
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\ref\Reponsitories.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.deps.json
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfoInputs.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfo.cs
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.sourcelink.json
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsit.5DD25DF7.Up2Date
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\refint\Reponsitories.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\ref\Reponsitories.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.deps.json
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.AssemblyReference.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.GeneratedMSBuildEditorConfig.editorconfig
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfoInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfo.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.CoreCompileInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.sourcelink.json
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsit.5DD25DF7.Up2Date
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\refint\Reponsitories.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Reponsitories\obj\Debug\net9.0\ref\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.deps.json
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.AssemblyReference.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfoInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfo.cs
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.CoreCompileInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsit.5DD25DF7.Up2Date
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\refint\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\ref\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\LibraryDbContext.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\LibraryDbContext.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.deps.json
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.AssemblyReference.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.GeneratedMSBuildEditorConfig.editorconfig
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfoInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfo.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.CoreCompileInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsit.5DD25DF7.Up2Date
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\refint\Reponsitories.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Reponsitories\obj\Debug\net9.0\ref\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\bin\Debug\net9.0\LibraryDbContext.cs
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.deps.json
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\bin\Debug\net9.0\Reponsitories.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\bin\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.AssemblyReference.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfoInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.AssemblyInfo.cs
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.csproj.CoreCompileInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsit.5DD25DF7.Up2Date
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\refint\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\Reponsitories.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Reponsitories\obj\Debug\net9.0\ref\Reponsitories.dll

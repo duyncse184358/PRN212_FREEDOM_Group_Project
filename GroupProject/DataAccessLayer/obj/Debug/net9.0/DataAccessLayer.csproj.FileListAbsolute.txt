@@ -51,21 +51,75 @@ C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupPro
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.pdb
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\ref\DataAccessLayer.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.deps.json
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.runtimeconfig.json
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfoInputs.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfo.cs
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.sourcelink.json
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAcce.E67BD773.Up2Date
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\refint\DataAccessLayer.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.genruntimeconfig.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\ref\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.deps.json
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.runtimeconfig.json
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfo.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.sourcelink.json
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAcce.E67BD773.Up2Date
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\refint\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.genruntimeconfig.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\DataAccessLayer\obj\Debug\net9.0\ref\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.deps.json
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.runtimeconfig.json
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfo.cs
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAcce.E67BD773.Up2Date
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\refint\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.genruntimeconfig.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\ref\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\LibraryDbContext.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\LibraryDbContext.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.deps.json
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.runtimeconfig.json
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfo.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAcce.E67BD773.Up2Date
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\refint\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.genruntimeconfig.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\DataAccessLayer\obj\Debug\net9.0\ref\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\bin\Debug\net9.0\LibraryDbContext.cs
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.deps.json
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.runtimeconfig.json
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\bin\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfo.cs
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAcce.E67BD773.Up2Date
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\refint\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.genruntimeconfig.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\DataAccessLayer\obj\Debug\net9.0\ref\DataAccessLayer.dll

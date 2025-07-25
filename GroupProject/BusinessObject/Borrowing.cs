@@ -7,6 +7,7 @@ namespace BusinessObject
     {
         public int BorrowingId { get; set; }
         public int? BookId { get; set; }
+
         public int? PatronId { get; set; }
         public DateOnly BorrowDate { get; set; }
         public DateOnly DueDate { get; set; }

@@ -22,11 +22,42 @@ namespace LibraryWpfApp.Views
         public PatronDialog()
         {
             InitializeComponent();
+
+            // Đảm bảo dialog hiển thị trên cùng
+            this.Loaded += (s, e) =>
+            {
+                this.Activate();
+                this.Focus();
+            };
         }
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            DialogResult = true;
-            Close();
+            try
+            {
+                // Validate the data before saving
+                var viewModel = DataContext as ViewModels.PatronDialogViewModel;
+                if (viewModel == null)
+                {
+                    System.Windows.MessageBox.Show("ViewModel is null.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                    return;
+                }
+
+                if (viewModel.Patron == null)
+                {
+                    System.Windows.MessageBox.Show("Patron data is null.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                    return;
+                }
+
+                if (viewModel.IsValid())
+                {
+                    DialogResult = true;
+                    Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"Error in Save_Click: {ex.Message}", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+            }
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)

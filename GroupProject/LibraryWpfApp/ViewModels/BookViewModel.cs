@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using Microsoft.Extensions.DependencyInjection;
 using LibraryWpfApp.Commands;
+using LibraryWpfApp.Helpers;
 
 namespace LibraryWpfApp.ViewModels
 {
@@ -32,7 +33,9 @@ namespace LibraryWpfApp.ViewModels
             set => SetProperty(ref _searchKeyword, value);
         }
 
-        public bool CanManageBooks => AppContext.IsAdmin || AppContext.IsLibrarian || AppContext.IsStaff;
+        //public bool CanManageBooks => AppContext.IsAdmin || AppContext.IsLibrarian || AppContext.IsStaff;
+        public bool CanManageBooks => AppSession.IsAdmin || AppSession.IsStaff;
+
 
         public ICommand SearchCommand { get; }
         public ICommand AddCommand { get; }
@@ -197,7 +200,7 @@ namespace LibraryWpfApp.ViewModels
 
         private void BorrowBook()
         {
-            if (!AppContext.IsAdmin)
+            if (!AppSession.IsAdmin && !AppSession.IsStaff)
             {
                 MessageBox.Show("You do not have permission to borrow books.", "Permission Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
@@ -236,29 +239,29 @@ namespace LibraryWpfApp.ViewModels
                     var record = vm.LastBorrowedRecord;
                     var patron = _patronService.GetPatronById(record.PatronId ?? 0);
                     var book = _bookService.GetBookById(record.BookId ?? 0);
-
-                    string info = $"📚 **Thông tin mượn sách**\n" +
-                                  $"- Mã mượn: {record.BorrowingId}\n" +
-                                  $"- Tên sách: {book?.Title}\n" +
-                                  $"- Ngày mượn: {record.BorrowDate:dd/MM/yyyy}\n" +
-                                  $"- Hạn trả: {record.DueDate:dd/MM/yyyy}\n\n" +
-                                  $"👤 **Người mượn**\n" +
-                                  $"- Mã bạn đọc: {patron?.PatronId}\n" +
-                                  $"- Họ tên: {patron?.FullName}\n" +
+                    string info = $"📚 **Borrowing Information**\n" +
+                                  $"- Borrowing ID: {record.BorrowingId}\n" +
+                                  $"- Book Title: {book?.Title}\n" +
+                                  $"- Borrow Date: {record.BorrowDate:dd/MM/yyyy}\n" +
+                                  $"- Due Date: {record.DueDate:dd/MM/yyyy}\n\n" +
+                                  $"👤 **Patron Information**\n" +
+                                  $"- Patron ID: {patron?.PatronId}\n" +
+                                  $"- Full Name: {patron?.FullName}\n" +
                                   $"- Email: {patron?.Email}";
 
-                    MessageBox.Show(info, "Mượn sách thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(info, "Book Borrowed Successfully", MessageBoxButton.OK, MessageBoxImage.Information);
+
                 }
-             
+
             }
         }
 
         private void ReturnBook()
         {
             // Cho phép trả sách nếu người dùng là thành viên hoặc có quyền quản lý (admin, librarian, staff)
-            if (!(AppContext.IsMember || CanManageBooks))
+            if (!(AppSession.IsAdmin || CanManageBooks))
             {
-                MessageBox.Show("Bạn không có quyền trả sách.", "Không đủ quyền hạn", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("You do not have permission to return books.", "Insufficient Privileges", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -280,7 +283,8 @@ namespace LibraryWpfApp.ViewModels
             {
                 // Làm mới danh sách sách
                 LoadBooks();
-                MessageBox.Show("Quá trình trả sách đã được xử lý thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("The book return process has been successfully completed!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
             }
         }
 

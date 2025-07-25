@@ -20,4 +20,10 @@
 	  <ProjectReference Include="..\BusinessObject\BusinessObject.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="LibraryDbContext.cs">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Compile>
+	</ItemGroup>
+
 </Project>

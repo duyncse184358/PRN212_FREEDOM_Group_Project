@@ -113,8 +113,6 @@ namespace LibraryWpfApp.ViewModels
             }
         }
 
-      
-
         private void CalculateAndAddFine()
         {
             if (SelectedBorrowing == null)
@@ -160,16 +158,14 @@ namespace LibraryWpfApp.ViewModels
             }
         }
 
-      
-
         private void OnMarkLost(BorrowingDisplayModel item)
         {
             // Nếu sách đã là "Lost", cho phép phục hồi về trạng thái thường
             if (item.Status == "Lost")
             {
                 var confirm = MessageBox.Show(
-                    "Sách này đã bị đánh dấu là mất. Bạn có muốn phục hồi trạng thái bình thường không?",
-                    "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Question);
+     "This book has been marked as lost. Do you want to restore it to normal status?",
+     "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
                 if (confirm == MessageBoxResult.Yes)
                 {
@@ -190,16 +186,17 @@ namespace LibraryWpfApp.ViewModels
 
                         LoadBorrowings();
                         MessageBox.Show(
-                            $"Đã phục hồi sách '{item.BookTitle}' về trạng thái bình thường và xóa khoản phạt liên quan.",
-                            "Thành công", MessageBoxButton.OK, MessageBoxImage.Information
-                        );
+                             $"The book '{item.BookTitle}' has been restored to normal status and the related fine has been removed.",
+                             "Success", MessageBoxButton.OK, MessageBoxImage.Information
+                         );
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(
-                            $"Lỗi khi phục hồi: {ex.Message}",
-                            "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error
-                        );
+                             $"Error while restoring: {ex.Message}",
+                             "Error", MessageBoxButton.OK, MessageBoxImage.Error
+                         );
+
                     }
                 }
                 return;
@@ -209,13 +206,14 @@ namespace LibraryWpfApp.ViewModels
             var borrowing = _borrowingService.GetBorrowingById(item.BorrowingID);
             if (borrowing == null)
             {
-                MessageBox.Show("Không tìm thấy bản ghi mượn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Borrowing record not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
             var confirmLost = MessageBox.Show(
-                $"Bạn chắc chắn muốn đánh dấu sách '{item.BookTitle}' là MẤT?",
-                "Xác nhận đánh dấu mất", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                $"Are you sure you want to mark the book '{item.BookTitle}' as LOST?",
+                 "Confirm Mark as Lost", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+
 
             if (confirmLost == MessageBoxResult.No)
                 return;
@@ -249,16 +247,18 @@ namespace LibraryWpfApp.ViewModels
 
                 LoadBorrowings();
                 MessageBox.Show(
-                    $"Đã đánh dấu sách '{item.BookTitle}' là mất và tạo khoản phạt.",
-                    "Thành công", MessageBoxButton.OK, MessageBoxImage.Information
-                );
+                  $"The book '{item.BookTitle}' has been marked as lost and a fine has been issued.",
+                  "Success", MessageBoxButton.OK, MessageBoxImage.Information
+              );
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    $"Lỗi khi đánh dấu mất: {ex.Message}",
-                    "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error
-                );
+                      $"Error while marking as lost: {ex.Message}",
+                      "Error", MessageBoxButton.OK, MessageBoxImage.Error
+                  );
+
             }
         }
 
@@ -266,19 +266,20 @@ namespace LibraryWpfApp.ViewModels
         {
             if (item.Status == "Damaged")
             {
-                MessageBox.Show("Sách này đã được đánh dấu là hư hỏng.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("This book has been marked as damaged.", "Notification", MessageBoxButton.OK, MessageBoxImage.Information);
                 return;
             }
             var b = _borrowingService.GetBorrowingById(item.BorrowingID);
             if (b == null)
             {
-                MessageBox.Show("Không tìm thấy bản ghi mượn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Borrowing record not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
             if (MessageBox.Show(
-                    $"Bạn chắc chắn muốn đánh dấu sách '{item.BookTitle}' là HƯ HỎNG?",
-                    "Xác nhận đánh dấu hư hỏng", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+                          $"Are you sure you want to mark the book '{item.BookTitle}' as DAMAGED?",
+                            "Confirm Mark as Damaged", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+
             {
                 return;
             }
@@ -306,11 +307,13 @@ namespace LibraryWpfApp.ViewModels
                 }
 
                 LoadBorrowings();
-                MessageBox.Show($"Đã đánh dấu sách \"{item.BookTitle}\" là hư hỏng và tạo khoản phạt.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show($"The book \"{item.BookTitle}\" has been marked as damaged and a fine has been created.",
+                "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi đánh dấu hư hỏng: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error while marking as damaged: {ex.Message}",
+                "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

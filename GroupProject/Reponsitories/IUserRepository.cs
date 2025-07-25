@@ -10,6 +10,6 @@ namespace Reponsitories
         User? Login(string username, string password);
         void Add(User user);
         void Update(User user);
-        void Delete(int id);
+        void Delete(int id, int currentUserId);
     }
 }

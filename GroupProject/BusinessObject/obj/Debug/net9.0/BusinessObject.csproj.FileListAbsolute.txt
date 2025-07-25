@@ -33,15 +33,48 @@ C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupPro
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\refint\BusinessObject.dll
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.pdb
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\ref\BusinessObject.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.deps.json
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfoInputs.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfo.cs
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.sourcelink.json
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\refint\BusinessObject.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\ref\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.deps.json
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfoInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfo.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.sourcelink.json
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\refint\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\BusinessObject\obj\Debug\net9.0\ref\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.deps.json
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfoInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfo.cs
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\refint\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\ref\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.deps.json
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfoInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfo.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\refint\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\BusinessObject\obj\Debug\net9.0\ref\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.deps.json
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\bin\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfoInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.AssemblyInfo.cs
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\obj\Debug\net9.0\refint\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\obj\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\BusinessObject\obj\Debug\net9.0\ref\BusinessObject.dll

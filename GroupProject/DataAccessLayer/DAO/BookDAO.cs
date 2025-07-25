@@ -1,4 +1,4 @@
-﻿    using BusinessObject;
+﻿using BusinessObject;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,35 +24,94 @@ namespace DataAccessLayer.DAO
 
         public void Update(Book book)
         {
-            var trackedBook = _context.Books.FirstOrDefault(b => b.BookId == book.BookId);
-            if (trackedBook != null)
+            var existingBook = _context.Books
+                .Include(b => b.BookCopies)
+                .FirstOrDefault(b => b.BookId == book.BookId);
+
+            if (existingBook != null)
             {
-                trackedBook.Isbn = book.Isbn;
-                trackedBook.Title = book.Title;
-                trackedBook.Author = book.Author;
-                trackedBook.Publisher = book.Publisher;
-                trackedBook.PublicationYear = book.PublicationYear;
-                trackedBook.Genre = book.Genre;
-                trackedBook.NumberOfCopies = book.NumberOfCopies;
-                trackedBook.AvailableCopies = book.AvailableCopies;
-                trackedBook.ShelfLocation = book.ShelfLocation;
-                trackedBook.CategoryId = book.CategoryId;
-                trackedBook.Status = book.Status;
-                trackedBook.Price = book.Price; // 👈 Thêm dòng này
+                // Cập nhật thông tin chung
+                existingBook.Title = book.Title;
+                existingBook.Isbn = book.Isbn;
+                existingBook.CategoryId = book.CategoryId;
+                existingBook.Author = book.Author;
+                existingBook.PublicationYear = book.PublicationYear;
+                existingBook.Publisher = book.Publisher;
+                existingBook.Genre = book.Genre;
+                existingBook.ShelfLocation = book.ShelfLocation;
+                existingBook.Status = book.Status;
+                existingBook.Price = book.Price;
+                existingBook.ImagePath = book.ImagePath;
+
+                int currentAvailableCopies = existingBook.BookCopies.Count(c => c.Status == "Available");
+                int currentTotalCopies = existingBook.BookCopies.Count;
+                int desiredCopies = (int)book.AvailableCopies;
+
+                if (currentAvailableCopies < desiredCopies)
+                {
+                    int toAdd = desiredCopies - currentAvailableCopies;
+
+                    for (int i = 0; i < toAdd; i++)
+                    {
+                        _context.BookCopies.Add(new BookCopy
+                        {
+                            BookId = book.BookId,
+                            Status = "Available"
+                        });
+                    }
+
+                    _context.SaveChanges(); // Cập nhật BookCopies trước
+                }
+                else if (currentAvailableCopies > desiredCopies)
+                {
+                    int toRemove = currentAvailableCopies - desiredCopies;
+
+                    var availableCopies = existingBook.BookCopies
+                        .Where(c => c.Status == "Available")
+                        .Take(toRemove)
+                        .ToList();
+
+                    if (availableCopies.Count < toRemove)
+                    {
+                        throw new InvalidOperationException("Không thể giảm bản sao vì có sách đang được mượn.");
+                    }
+
+                    _context.BookCopies.RemoveRange(availableCopies);
+                    _context.SaveChanges(); // Xoá xong BookCopies
+                }
+
+                // Cập nhật lại số lượng bản sao hiện tại
+                int updatedTotalCopies = _context.BookCopies.Count(c => c.BookId == book.BookId);
+                int updatedAvailableCopies = _context.BookCopies.Count(c => c.BookId == book.BookId && c.Status == "Available");
+
+                existingBook.NumberOfCopies = updatedTotalCopies;
+                existingBook.AvailableCopies = updatedAvailableCopies;
 
                 _context.SaveChanges();
             }
         }
+
+
+
 
         public void Delete(int id)
         {
             var book = GetById(id);
             if (book != null)
             {
+                // Xóa các bản sao (copies) của sách trước, nếu có ràng buộc
+                var relatedCopies = _context.BookCopies.Where(c => c.BookId == id).ToList();
+                if (relatedCopies.Any())
+                {
+                    _context.BookCopies.RemoveRange(relatedCopies);
+                }
+
+                // Xóa sách
                 _context.Books.Remove(book);
                 _context.SaveChanges();
             }
         }
+
         public void AddBookWithCopies(Book book)
         {
             _context.Books.Add(book);

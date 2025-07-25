@@ -23,36 +23,31 @@ namespace LibraryWpfApp.ViewModels
         public DateTime FromDate
         {
             get => _fromDate;
-            set
-            {
-                if (SetProperty(ref _fromDate, value))
-                {
-                    GenerateReport();
-                }
-            }
+            set => SetProperty(ref _fromDate, value);
         }
 
         private DateTime _toDate = DateTime.Today;
         public DateTime ToDate
         {
             get => _toDate;
-            set
-            {
-                if (SetProperty(ref _toDate, value))
-                {
-                    GenerateReport();
-                }
-            }
+            set => SetProperty(ref _toDate, value);
         }
 
         public string TotalBorrowedBooksText => (BorrowingsReport?.Count(b => b.Status == "Borrowed" || b.Status == "Overdue") ?? 0).ToString();
         public string TotalOverdueBooksText => (BorrowingsReport?.Count(b => b.Status == "Overdue") ?? 0).ToString();
-        public string TotalFinesAmountText => (BorrowingsReport?.Sum(b => b.FineAmount) ?? 0M).ToString("C");
+        public string TotalFinesAmountText =>
+    string.Format("{0:N0} đ", BorrowingsReport?.Sum(b => b.FineAmount) ?? 0M);
+
 
         public ICommand GenerateReportCommand { get; }
 
         // Constructor mặc định (public parameterless constructor) cho XAML
-        public ReportViewModel()
+        public ReportViewModel() : this(
+            (Application.Current as App)?.Services.GetRequiredService<IBorrowingService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IBookService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IPatronService>()!,
+            (Application.Current as App)?.Services.GetRequiredService<IFineService>()!
+        )
         {
         }
 
@@ -63,28 +58,37 @@ namespace LibraryWpfApp.ViewModels
             _patronService = patronService;
             _fineService = fineService;
 
-            GenerateReportCommand = new RelayCommand(GenerateReport);
-            GenerateReport();
+            GenerateReportCommand = new RelayCommand(() =>
+            {
+                System.Diagnostics.Debug.WriteLine("GenerateReportCommand executed");
+                GenerateReport();
+            });
+
+            // Không auto load, để user click Generate Report
         }
 
-        private void GenerateReport()
+        public void GenerateReport()
         {
             try
             {
+                if (_borrowingService == null)
+                {
+                    MessageBox.Show("Borrowing service not available. Cannot generate report.", "Service Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
                 BorrowingsReport.Clear();
-                var allBorrowings = _borrowingService?.GetAllBorrowings();
+                var allBorrowings = _borrowingService.GetAllBorrowings();
 
                 if (allBorrowings == null)
                 {
-                    Console.WriteLine("Warning: _borrowingService.GetAllBorrowings() returned null or service is null.");
+                    MessageBox.Show("No borrowing data available.", "No Data", MessageBoxButton.OK, MessageBoxImage.Information);
                     return;
                 }
 
                 var result = allBorrowings
                     .Where(b => b.BorrowDate >= DateOnly.FromDateTime(FromDate) && b.BorrowDate <= DateOnly.FromDateTime(ToDate))
-                    //.OrderByDescending(b => b.BorrowDate).ToList();
                     .OrderByDescending(b => b.BorrowingId).ToList();
-
 
                 foreach (var b in result)
                 {
@@ -106,16 +110,19 @@ namespace LibraryWpfApp.ViewModels
                         IsFinePaid = fine?.Paid ?? false
                     });
                 }
+
                 // Thông báo cho UI rằng các thuộc tính đã thay đổi
                 OnPropertyChanged(nameof(TotalBorrowedBooksText));
                 OnPropertyChanged(nameof(TotalOverdueBooksText));
                 OnPropertyChanged(nameof(TotalFinesAmountText));
+
+                MessageBox.Show($"Report generated successfully! Found {BorrowingsReport.Count} borrowing records.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"ERROR in GenerateReport: {ex.Message}");
-                Console.WriteLine($"StackTrace: {ex.StackTrace}");
-                MessageBox.Show($"An error occurred while generating report: {ex.Message}\n\nCheck Output Window for details.", "Report Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"An error occurred while generating report: {ex.Message}\n\nPlease check the data and try again.", "Report Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                System.Diagnostics.Debug.WriteLine($"ERROR in GenerateReport: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"StackTrace: {ex.StackTrace}");
             }
         }
     }

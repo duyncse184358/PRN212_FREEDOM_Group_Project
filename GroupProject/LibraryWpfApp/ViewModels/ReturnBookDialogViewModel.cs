@@ -5,6 +5,7 @@ using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using LibraryWpfApp.Commands;
 using LibraryWpfApp.Models;
+using System.Collections.ObjectModel;
 
 namespace LibraryWpfApp.ViewModels
 {
@@ -26,6 +27,18 @@ namespace LibraryWpfApp.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        private ObservableCollection<BorrowingDisplayModel> _borrowingList = new();
+        public ObservableCollection<BorrowingDisplayModel> BorrowingList
+        {
+            get => _borrowingList;
+            set
+            {
+                _borrowingList = value;
+                OnPropertyChanged();
+            }
+        }
+
 
         // CÁC PROPERTY 
         private string _idInput = string.Empty;
@@ -73,29 +86,28 @@ namespace LibraryWpfApp.ViewModels
         //  METHOD SEARCHBORROWING
         private void SearchBorrowing()
         {
+            BorrowingList.Clear();
+            SelectedBorrowingInfo = null;
+
             if (string.IsNullOrWhiteSpace(IDInput))
             {
                 MessageBox.Show("Please enter a search value.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            Borrowing? borrowing = null;
-
             try
             {
+                IEnumerable<Borrowing> matchedBorrowings = Enumerable.Empty<Borrowing>();
+
                 switch (SelectedSearchType)
                 {
                     case "BorrowingID":
                         if (int.TryParse(IDInput, out int borrowingId))
                         {
-                            borrowing = _borrowingService.GetBorrowingById(borrowingId);
-                            if (borrowing != null && (borrowing.IsReturned == null || borrowing.IsReturned == false))
+                            var borrowing = _borrowingService.GetBorrowingById(borrowingId);
+                            if (borrowing != null && borrowing.Status == "Borrowed" && (borrowing.IsReturned == null || borrowing.IsReturned == false))
                             {
-                                // Borrowing found and active
-                            }
-                            else
-                            {
-                                borrowing = null; // Reset if not active
+                                matchedBorrowings = new[] { borrowing };
                             }
                         }
                         break;
@@ -103,8 +115,10 @@ namespace LibraryWpfApp.ViewModels
                     case "PatronID":
                         if (int.TryParse(IDInput, out int patronId))
                         {
-                            borrowing = _borrowingService.GetAllBorrowings()
-                                .FirstOrDefault(b => b.PatronId == patronId && (b.IsReturned == null || b.IsReturned == false));
+                            matchedBorrowings = _borrowingService.GetAllBorrowings()
+                                .Where(b => b.PatronId == patronId &&
+                                            (b.IsReturned == null || b.IsReturned == false) &&
+                                            b.Status == "Borrowed");
                         }
                         break;
 
@@ -113,33 +127,29 @@ namespace LibraryWpfApp.ViewModels
                             .FirstOrDefault(p => p.FullName.Contains(IDInput, StringComparison.OrdinalIgnoreCase));
                         if (patron != null)
                         {
-                            borrowing = _borrowingService.GetAllBorrowings()
-                                .FirstOrDefault(b => b.PatronId == patron.PatronId && (b.IsReturned == null || b.IsReturned == false));
-                        }
-                        break;
-
-                    default:
-                        // Fallback to old logic for BorrowingID
-                        if (int.TryParse(IDInput, out int id))
-                        {
-                            borrowing = _borrowingService.GetBorrowingById(id);
-                            if (borrowing == null)
-                            {
-                                borrowing = _borrowingService.GetAllBorrowings()
-                                    .FirstOrDefault(b => b.BookId == id && (b.IsReturned == null || b.IsReturned == false));
-                            }
+                            matchedBorrowings = _borrowingService.GetAllBorrowings()
+                                .Where(b => b.PatronId == patron.PatronId &&
+                                            (b.IsReturned == null || b.IsReturned == false) &&
+                                            b.Status == "Borrowed");
                         }
                         break;
                 }
 
-                if (borrowing != null && (borrowing.IsReturned == null || borrowing.IsReturned == false))
+                if (!matchedBorrowings.Any())
+                {
+                    MessageBox.Show("No active borrowed records found.", "Not Found", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
+                }
+
+                foreach (var borrowing in matchedBorrowings)
                 {
                     var book = _bookService.GetBookById(borrowing.BookId ?? 0);
                     var patronInfo = _patronService.GetPatronById(borrowing.PatronId ?? 0);
 
-                    SelectedBorrowingInfo = new BorrowingDisplayModel
+                    BorrowingList.Add(new BorrowingDisplayModel
                     {
                         BorrowingID = borrowing.BorrowingId,
+                        BookImage = book?.ImagePath,
                         BookTitle = book?.Title ?? "Unknown Book",
                         PatronName = patronInfo?.FullName ?? "Unknown Patron",
                         PatronID = borrowing.PatronId ?? 0,
@@ -149,29 +159,18 @@ namespace LibraryWpfApp.ViewModels
                         Status = borrowing.Status ?? "Unknown",
                         FineAmount = _borrowingService.CalculateFine(borrowing),
                         IsFinePaid = _fineService.GetAllFines().Any(f => f.BorrowingId == borrowing.BorrowingId && (f.Paid == true))
-                    };
+                    });
                 }
-                else
-                {
-                    SelectedBorrowingInfo = null;
-                    string searchType = SelectedSearchType switch
-                    {
-                        "BorrowingID" => "Borrowing ID",
-                        "PatronID" => "Patron ID",
-                        "PatronName" => "Patron Name",
-                        _ => "search value"
-                    };
-                    MessageBox.Show($"No active borrowing record found for this {searchType}.", "Not Found", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
+
+                // Chọn bản ghi đầu tiên làm mặc định
+                SelectedBorrowingInfo = BorrowingList.FirstOrDefault();
             }
             catch (Exception ex)
             {
-                SelectedBorrowingInfo = null;
                 MessageBox.Show($"Error during search: {ex.Message}", "Search Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
-            OnPropertyChanged(nameof(SelectedBorrowingInfo));
         }
+
 
         // PHẦN CONFIRMRETURN 
         private void ConfirmReturn()

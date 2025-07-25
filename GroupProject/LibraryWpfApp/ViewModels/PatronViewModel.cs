@@ -19,13 +19,32 @@ namespace LibraryWpfApp.ViewModels
         private readonly IBorrowingService _borrowingService;
         private readonly IBookService _bookService;
         private readonly IFineService _fineService;
+        private Patron? _selectedPatron;
+        private string _searchKeyword = "";
 
         public ObservableCollection<Patron> Patrons { get; set; } = new();
-        public Patron? SelectedPatron { get; set; }
 
-        public string SearchKeyword { get; set; } = "";
+        public Patron? SelectedPatron
+        {
+            get => _selectedPatron;
+            set
+            {
+                _selectedPatron = value;
+                OnPropertyChanged();
+            }
+        }
 
-        public bool CanManagePatrons => AppContext.IsAdmin || AppContext.IsLibrarian || AppContext.IsStaff;
+        public string SearchKeyword
+        {
+            get => _searchKeyword;
+            set
+            {
+                _searchKeyword = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public bool CanManagePatrons => AppContext.IsAdmin;
 
         public ICommand SearchCommand { get; }
         public ICommand AddCommand { get; }
@@ -68,6 +87,12 @@ namespace LibraryWpfApp.ViewModels
 
         private void Search()
         {
+            if (_patronService == null)
+            {
+                MessageBox.Show("Patron service not available. Cannot search patrons.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             Patrons.Clear();
             var result = _patronService.SearchPatrons(SearchKeyword);
             foreach (var p in result)
@@ -76,20 +101,46 @@ namespace LibraryWpfApp.ViewModels
 
         private void Add()
         {
-            var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.PatronDialog>();
-            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
-            dialog!.DataContext = ActivatorUtilities.CreateInstance<PatronDialogViewModel>(
-                (Application.Current as App)?.Services! // ServiceProvider
-            );
-
-            if (dialog.ShowDialog() == true)
+            if (_patronService == null)
             {
-                var vm = dialog.DataContext as PatronDialogViewModel;
-                if (vm != null)
+                MessageBox.Show("Patron service not available. Cannot add patron.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            try
+            {
+                // Đảm bảo chỉ mở 1 dialog
+                var dialog = new Views.PatronDialog();
+                var viewModel = new PatronDialogViewModel();
+                dialog.DataContext = viewModel;
+
+                // Set owner để dialog không bị overlap
+                var currentWindow = Application.Current.Windows.OfType<Window>().FirstOrDefault(w => w.IsActive);
+                if (currentWindow != null)
                 {
-                    _patronService.AddPatron(vm.Patron);
-                    LoadPatrons();
+                    dialog.Owner = currentWindow;
                 }
+
+                // Set dialog properties
+                dialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                dialog.ShowInTaskbar = false;
+                dialog.Topmost = true;
+
+                var result = dialog.ShowDialog();
+                if (result == true)
+                {
+                    var vm = dialog.DataContext as PatronDialogViewModel;
+                    if (vm?.Patron != null)
+                    {
+                        _patronService.AddPatron(vm.Patron);
+                        LoadPatrons();
+                        MessageBox.Show($"Patron '{vm.Patron.FullName}' added successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error in Add: {ex.Message}\n\nDetails: {ex.InnerException?.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -101,21 +152,46 @@ namespace LibraryWpfApp.ViewModels
                 return;
             }
 
-            var dialog = (Application.Current as App)?.Services.GetRequiredService<Views.PatronDialog>();
-            // ĐÃ SỬA LỖI: Sử dụng ActivatorUtilities.CreateInstance
-            dialog!.DataContext = ActivatorUtilities.CreateInstance<PatronDialogViewModel>(
-                (Application.Current as App)?.Services!, // ServiceProvider
-                SelectedPatron! // Tham số cho constructor của PatronDialogViewModel
-            );
-
-            if (dialog.ShowDialog() == true)
+            if (_patronService == null)
             {
-                var vm = dialog.DataContext as PatronDialogViewModel;
-                if (vm != null)
+                MessageBox.Show("Patron service not available. Cannot edit patron.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            try
+            {
+                // Đảm bảo chỉ mở 1 dialog
+                var dialog = new Views.PatronDialog();
+                var viewModel = new PatronDialogViewModel(SelectedPatron);
+                dialog.DataContext = viewModel;
+
+                // Set owner để dialog không bị overlap
+                var currentWindow = Application.Current.Windows.OfType<Window>().FirstOrDefault(w => w.IsActive);
+                if (currentWindow != null)
                 {
-                    _patronService.UpdatePatron(vm.Patron);
-                    LoadPatrons();
+                    dialog.Owner = currentWindow;
                 }
+
+                // Set dialog properties
+                dialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                dialog.ShowInTaskbar = false;
+                dialog.Topmost = true;
+
+                var result = dialog.ShowDialog();
+                if (result == true)
+                {
+                    var vm = dialog.DataContext as PatronDialogViewModel;
+                    if (vm?.Patron != null)
+                    {
+                        _patronService.UpdatePatron(vm.Patron);
+                        LoadPatrons();
+                        MessageBox.Show($"Patron '{vm.Patron.FullName}' updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error in Edit: {ex.Message}\n\nDetails: {ex.InnerException?.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

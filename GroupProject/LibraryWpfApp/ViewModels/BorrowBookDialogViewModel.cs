@@ -61,7 +61,8 @@ namespace LibraryWpfApp.ViewModels
         {
             ConfirmBorrowCommand = new RelayCommand(() =>
             {
-                MessageBox.Show("Vui lòng không mở dialog này trực tiếp từ XAML!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Please do not open this dialog directly from XAML!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             });
         }
 
@@ -87,29 +88,31 @@ namespace LibraryWpfApp.ViewModels
         }
 
         // THÊM METHOD MỚI ĐÂY
+
         private void LoadPatronName()
         {
-            if (!string.IsNullOrEmpty(PatronId) && _patronService != null)
+            if (!string.IsNullOrWhiteSpace(PatronId) && _patronService != null)
             {
-                try
+                // ✅ Kiểm tra PatronId có phải là số không
+                if (!int.TryParse(PatronId, out int patronId))
                 {
-                    // Tìm patron theo ID (giả sử PatronId là string, nếu là int thì parse trước)
-                    var patron = _patronService.GetAllPatrons().FirstOrDefault(p => p.PatronId.ToString() == PatronId);
-
-                    if (patron != null)
-                    {
-                        PatronName = patron.FullName;
-                        SelectedPatron = patron; // Cập nhật SelectedPatron để logic cũ vẫn hoạt động
-                    }
-                    else
-                    {
-                        PatronName = "Patron not found";
-                        SelectedPatron = null;
-                    }
+                    PatronName = "Invalid ID format";
+                    SelectedPatron = null;
+                    return;
                 }
-                catch (Exception)
+
+                // ✅ Tìm patron theo ID
+                var patron = _patronService.GetAllPatrons()
+                                           .FirstOrDefault(p => p.PatronId == patronId);
+
+                if (patron != null)
                 {
-                    PatronName = "Error loading patron";
+                    PatronName = patron.FullName;
+                    SelectedPatron = patron;
+                }
+                else
+                {
+                    PatronName = "Patron not found";
                     SelectedPatron = null;
                 }
             }
@@ -119,6 +122,7 @@ namespace LibraryWpfApp.ViewModels
                 SelectedPatron = null;
             }
         }
+
 
         private void ConfirmBorrow()
         {
@@ -144,9 +148,15 @@ namespace LibraryWpfApp.ViewModels
 
             try
             {
+                // Mượn cách đây 20 ngày
+                var borrowDate = DateOnly.FromDateTime(DateTime.Now.AddDays(-20));
+
+                // Hạn trả là 14 ngày sau ngày mượn → cách đây 6 ngày
+                var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(-6));
+
                 // Thiết lập ngày mượn và hạn trả
-                var borrowDate = DateOnly.FromDateTime(DateTime.Now); // Ngày mượn là ngày hiện tại
-                var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(14)); // Hạn trả là 14 ngày sau
+                //var borrowDate = DateOnly.FromDateTime(DateTime.Now); // Ngày mượn là ngày hiện tại
+                //var dueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(14)); // Hạn trả là 14 ngày sau
 
                 // Gọi phương thức BorrowBook và lấy bản ghi mượn sách được trả về
                 LastBorrowedRecord = _borrowingService.BorrowBook(

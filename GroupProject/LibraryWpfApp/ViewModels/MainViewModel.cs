@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Services;
+using LibraryWpfApp.Helpers;
 
 namespace LibraryWpfApp.ViewModels
 {
@@ -17,10 +18,8 @@ namespace LibraryWpfApp.ViewModels
         public string WelcomeMessage { get; set; }
 
         //public bool IsAdmin => AppContext.IsAdmin;
-        public bool IsLibrarian => AppContext.IsLibrarian;
-
-        public bool IsStaff => AppContext.IsStaff;
-        public bool IsMember => AppContext.IsMember; // Bổ sung
+        public bool IsAdmin => AppSession.CurrentUserRole == "Administrator";
+        public bool IsStaff => AppSession.CurrentUserRole == "Staff";
 
         public ICommand LogoutCommand { get; }
         public ICommand OpenBookManagementCommand { get; }
@@ -30,24 +29,27 @@ namespace LibraryWpfApp.ViewModels
         public ICommand OpenUserManagementCommand { get; }
         public ICommand OpenCategoryManagementCommand { get; }
         public ICommand OpenReportsCommand { get; }
-        public ICommand OpenProfileCommand { get; }
+        //public ICommand OpenProfileCommand { get; }
         public ICommand OpenOverdueBooksCommand { get; }
         public ICommand OpenMemberBookListCommand { get; } // Bổ sung
         public ICommand OpenMyBorrowingHistoryCommand { get; } // Bổ sung
 
         public MainViewModel()
         {
-            WelcomeMessage = $"Welcome, {AppContext.CurrentUserName} ({AppContext.CurrentUserRole})";
+            WelcomeMessage = $"Welcome, {AppSession.CurrentUserName} ({AppSession.CurrentUserRole})";
 
             LogoutCommand = new RelayCommand(Logout);
-            OpenBookManagementCommand = new RelayCommand(() => GetWindow<Views.BookWindow>()?.Show());
-            OpenPatronManagementCommand = new RelayCommand(() => GetWindow<Views.PatronWindow>()?.Show());
-            OpenBorrowReturnCommand = new RelayCommand(() => GetWindow<Views.BorrowReturnWindow>()?.Show());
-            OpenFineManagementCommand = new RelayCommand(() => GetWindow<Views.FineManagementWindow>()?.Show());
-            OpenUserManagementCommand = new RelayCommand(() => GetWindow<Views.UserManagementWindow>()?.Show());
-            OpenCategoryManagementCommand = new RelayCommand(() => GetWindow<Views.CategoryWindow>()?.Show());
-            OpenReportsCommand = new RelayCommand(() => GetWindow<Views.ReportWindow>()?.Show());
-            OpenMemberBookListCommand = new RelayCommand(() => GetWindow<Views.BookWindow>()?.Show()); // Bổ sung
+            OpenBookManagementCommand = new RelayCommand(() => OpenWindow<Views.BookWindow>());
+            OpenPatronManagementCommand = new RelayCommand(() => OpenWindow<Views.PatronWindow>());
+            OpenBorrowReturnCommand = new RelayCommand(() => OpenWindow<Views.BorrowReturnWindow>());
+            OpenFineManagementCommand = new RelayCommand(() => OpenWindow<Views.FineManagementWindow>());
+            //OpenUserManagementCommand = new RelayCommand(() => OpenWindow<Views.UserManagementWindow>());
+            OpenUserManagementCommand = new RelayCommand(OpenUserManagement);
+
+
+            OpenCategoryManagementCommand = new RelayCommand(() => OpenWindow<Views.CategoryWindow>());
+            OpenReportsCommand = new RelayCommand(() => OpenWindow<Views.ReportWindow>());
+            OpenMemberBookListCommand = new RelayCommand(() => OpenWindow<Views.BookWindow>()); // Bổ sung
 
             OpenMyBorrowingHistoryCommand = new RelayCommand(OpenMyBorrowingHistory);
         }
@@ -57,25 +59,79 @@ namespace LibraryWpfApp.ViewModels
             return (Application.Current as App)?.Services.GetRequiredService<T>();
         }
 
-        private void Logout()
+        private void OpenWindow<T>() where T : Window
         {
-            AppContext.Reset();
-
-            // Mở LoginWindow trước
-            var loginWindow = (Application.Current as App)?.Services.GetRequiredService<LoginWindow>();
-            if (loginWindow != null)
+            // Kiểm tra xem window đã mở chưa
+            var existingWindow = Application.Current.Windows.OfType<T>().FirstOrDefault();
+            if (existingWindow != null)
             {
-                loginWindow.Show();
+                // Nếu đã mở, focus vào window đó
+                existingWindow.Activate();
+                existingWindow.Focus();
+                return;
             }
 
-            // Đóng MainWindow
+            // Nếu chưa mở, tạo window mới
+            var window = GetWindow<T>();
+            if (window != null)
+            {
+                window.Owner = Application.Current.MainWindow;
+                window.Show();
+            }
+        }
+
+        //private void Logout()
+        //{
+        //    foreach (Window window in Application.Current.Windows.OfType<Window>().ToList())
+        //    {
+        //        if (!(window is LoginWindow))
+        //        {
+
+        //            window.Close();
+        //        }
+        //    }
+
+        //    //AppContext.Reset();
+        //    AppSession.Reset();
+        //    (Application.Current as App)?.Services.GetRequiredService<LoginWindow>()?.Show();
+        //}
+
+        private void Logout()
+        {
+            // Tạo loginWindow trước khi đóng các cửa sổ khác
+            var loginWindow = (Application.Current as App)?.Services.GetRequiredService<LoginWindow>();
+
+            // Nếu null thì không làm gì
+            if (loginWindow == null) return;
+
+            // Mở login trước
+            loginWindow.Show();
+
+            // Sau đó đóng các cửa sổ khác
             foreach (Window window in Application.Current.Windows.OfType<Window>().ToList())
             {
-                if (window is MainWindow)
+                if (!(window is LoginWindow))
                 {
                     window.Close();
                 }
             }
+
+            // Reset session
+            AppSession.Reset();
+        }
+
+
+        private void OpenUserManagement()
+        {
+            if (AppSession.CurrentUserRole?.Equals("Staff", StringComparison.OrdinalIgnoreCase) == true)
+            {
+                MessageBox.Show("You do not have permission to access this feature.",
+                   "Access Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                return;
+            }
+
+            OpenWindow<Views.UserManagementWindow>();
         }
 
         private void OpenMyBorrowingHistory()

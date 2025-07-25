@@ -34,5 +34,7 @@ namespace LibraryWpfApp.Views
             DialogResult = false;
             Close();
         }
+
+
     }
 }

@@ -3,31 +3,35 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
         xmlns:conv="clr-namespace:LibraryWpfApp.Converters"
-        Title="Library Book Management System" Height="500" Width="900"
+        Title="Library Book Management System"
         WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="CanResize"
         Background="#F4F7FB">
-
     <Window.Resources>
         <conv:BoolToVisibilityConverter x:Key="BoolToVisibility"/>
         <Style x:Key="FeatureButtonStyle" TargetType="Button">
-            <Setter Property="Margin" Value="10"/>
-            <Setter Property="Padding" Value="18,14"/>
-            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="15"/>
+            <Setter Property="Padding" Value="20,16"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="Foreground" Value="#2D3748"/>
             <Setter Property="Background" Value="#FFF1F5F9"/>
             <Setter Property="BorderBrush" Value="#FFCBD5E0"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="MinWidth" Value="160"/>
-            <Setter Property="MinHeight" Value="60"/>
+            <Setter Property="MinWidth" Value="200"/>
+            <Setter Property="MinHeight" Value="80"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
                                 BorderBrush="{TemplateBinding BorderBrush}" 
                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                CornerRadius="10">
+                                CornerRadius="12">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -35,6 +39,11 @@
                                 <Setter Property="Background" Value="#FF007ACC"/>
                                 <Setter Property="Foreground" Value="White"/>
                                 <Setter Property="BorderBrush" Value="#FF007ACC"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FF005A99"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="BorderBrush" Value="#FF005A99"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -50,55 +59,115 @@
 
     <DockPanel>
         <!-- Header Bar -->
-        <Border DockPanel.Dock="Top" Background="#FF24506D" Height="60" CornerRadius="0,0,12,12" 
+        <Border DockPanel.Dock="Top" Background="#FF24506D" Height="70" CornerRadius="0,0,12,12" 
                 Effect="{DynamicResource DropShadowEffect}">
             <DockPanel>
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="20,0,0,0">
-                    <TextBlock Text="📚" FontSize="28" Margin="0,0,10,0"/>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="25,0,0,0">
+                    <TextBlock Text="📚" FontSize="32" Margin="0,0,15,0"/>
                     <TextBlock Text="Library Book Management System"
-                               FontSize="20" FontWeight="Bold" Foreground="White"
+                               FontSize="22" FontWeight="Bold" Foreground="White"
                                VerticalAlignment="Center"/>
                 </StackPanel>
             </DockPanel>
         </Border>
 
         <!-- Main Content -->
-        <Grid>
-            <Border Background="White" CornerRadius="12" Margin="40,10,40,27" 
+        <Grid Height="631" Width="1015">
+            <Border Background="White" CornerRadius="16" Margin="40,20,40,30" 
                     BorderBrush="#E0E7EF" BorderThickness="1"
                     Effect="{DynamicResource DropShadowEffect}">
-                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30">
                     <TextBlock Text="{Binding WelcomeMessage}"
-                               FontSize="28" FontWeight="Bold"
-                               Foreground="Black"
-                               HorizontalAlignment="Center" Margin="0,30,0,10"/>
+                               FontSize="32" FontWeight="Bold"
+                               Foreground="#2D3748"
+                               HorizontalAlignment="Center" Margin="0,30,0,15"/>
                     <TextBlock Text="Manage your books, users, and library operations easily."
-                               FontSize="15" Foreground="Black"
-                               HorizontalAlignment="Center" Margin="0,0,0,30"/>
+                               FontSize="16" Foreground="#4A5568"
+                               HorizontalAlignment="Center" Margin="0,0,0,40"/>
 
-                    <!-- Feature Buttons -->
-                    <WrapPanel HorizontalAlignment="Center" Margin="0,10,0,0">
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-                                Content="View Books" Command="{Binding OpenMemberBookListCommand}"/>
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-                                Content="Manage Borrow/Return" Command="{Binding OpenBorrowReturnCommand}"/>
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-                                Content="Manage Fines" Command="{Binding OpenFineManagementCommand}"/>
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-                                Content="Reports" Command="{Binding OpenReportsCommand}"/>
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-                                Content="User Management" Command="{Binding OpenUserManagementCommand}"/>
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-                                Content="Category Management" Command="{Binding OpenCategoryManagementCommand}"/>
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-                                Content="Patron Management" Command="{Binding OpenPatronManagementCommand}"/>
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-Content="Profile" Command="{Binding OpenProfileCommand}"/>
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-                                Content="Logout" Command="{Binding LogoutCommand}"/>
-                        <Button Style="{StaticResource FeatureButtonStyle}" Foreground="Black"
-                                Content="Exit" Click="Exit_Click"/>
-                    </WrapPanel>
+                    <!-- Feature Buttons with UniformGrid -->
+                    <UniformGrid Columns="3" Rows="3" MaxWidth="800" MaxHeight="400">
+                        <!-- View Books -->
+                        <Button Style="{StaticResource FeatureButtonStyle}" 
+                                Command="{Binding OpenMemberBookListCommand}">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock Text="📖" FontSize="28" Margin="0,0,0,8" HorizontalAlignment="Center"/>
+                                <TextBlock Text="View Books" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- Manage Borrow/Return -->
+                        <Button Style="{StaticResource FeatureButtonStyle}" 
+                                Command="{Binding OpenBorrowReturnCommand}">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock Text="🔄" FontSize="28" Margin="0,0,0,8" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Borrow/Return" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- Manage Fines -->
+                        <Button Style="{StaticResource FeatureButtonStyle}" 
+                                Command="{Binding OpenFineManagementCommand}">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock Text="💰" FontSize="28" Margin="0,0,0,8" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Manage Fines" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- Reports -->
+                        <Button Style="{StaticResource FeatureButtonStyle}" 
+                                Command="{Binding OpenReportsCommand}">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock Text="📊" FontSize="28" Margin="0,0,0,8" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Reports" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- User Management -->
+                        <Button Style="{StaticResource FeatureButtonStyle}" 
+                                Command="{Binding OpenUserManagementCommand}">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock Text="👥" FontSize="28" Margin="0,0,0,8" HorizontalAlignment="Center"/>
+                                <TextBlock Text="User Management" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- Category Management -->
+                        <Button Style="{StaticResource FeatureButtonStyle}" 
+                                Command="{Binding OpenCategoryManagementCommand}">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock Text="📂" FontSize="28" Margin="0,0,0,8" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Category Management" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- Patron Management -->
+                        <Button Style="{StaticResource FeatureButtonStyle}" 
+                                Command="{Binding OpenPatronManagementCommand}">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock Text="👤" FontSize="28" Margin="0,0,0,8" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Patron Management" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- Logout -->
+                        <Button Style="{StaticResource FeatureButtonStyle}" 
+                                Command="{Binding LogoutCommand}">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock Text="🚪" FontSize="28" Margin="0,0,0,8" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Logout" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- Exit -->
+                        <Button Style="{StaticResource FeatureButtonStyle}" 
+                                Click="Exit_Click">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock Text="❌" FontSize="28" Margin="0,0,0,8" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Exit" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                    </UniformGrid>
                 </StackPanel>
             </Border>
         </Grid>

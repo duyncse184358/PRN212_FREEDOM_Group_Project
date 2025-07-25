@@ -31,6 +31,7 @@ public partial class Book
 
 
     public decimal? Price { get; set; } // Thêm dòng này
+    public string? ImagePath { get; set; } // Đường dẫn ảnh sách
 
     public virtual ICollection<Borrowing> Borrowings { get; set; } = new List<Borrowing>();
 

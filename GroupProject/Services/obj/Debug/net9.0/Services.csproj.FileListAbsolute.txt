@@ -57,23 +57,83 @@ C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupPro
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\refint\Services.dll
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.pdb
 C:\Users\VicTus\Desktop\PRN212GroupProject\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\ref\Services.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Services.deps.json
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Services.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Services.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\BusinessObject.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Reponsitories.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\BusinessObject.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Reponsitories.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfoInputs.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfo.cs
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.sourcelink.json
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.csproj.Up2Date
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\refint\Services.dll
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.pdb
-C:\Users\HP\Desktop\Course\supportTin\SupportToan\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\ref\Services.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Services.deps.json
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Services.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Services.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Reponsitories.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\Reponsitories.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.csproj.AssemblyReference.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfoInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfo.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.csproj.CoreCompileInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.sourcelink.json
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.csproj.Up2Date
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\refint\Services.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\Services.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\PRN212_FREEDOM_Group_Project\GroupProject\Services\obj\Debug\net9.0\ref\Services.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\Services.deps.json
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\Services.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\Services.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\Reponsitories.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.csproj.AssemblyReference.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfoInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfo.cs
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.csproj.CoreCompileInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.csproj.Up2Date
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\refint\Services.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\obj\Debug\net9.0\ref\Services.dll
+D:\DOC\ky5\PRN212\Project\GroupProject\GroupProject\Services\bin\Debug\net9.0\LibraryDbContext.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\LibraryDbContext.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\Services.deps.json
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\Services.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\Services.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\BusinessObject.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\Reponsitories.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\BusinessObject.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\Reponsitories.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.csproj.AssemblyReference.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfoInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfo.cs
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.csproj.CoreCompileInputs.cache
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.csproj.Up2Date
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\refint\Services.dll
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\Services.pdb
+D:\fpt ki5\PRN212\project cuoi ky\code\GroupProject\GroupProject\Services\obj\Debug\net9.0\ref\Services.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\LibraryDbContext.cs
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\Services.deps.json
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\Services.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\Services.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\BusinessObject.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\Reponsitories.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\BusinessObject.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\Reponsitories.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\bin\Debug\net9.0\DataAccessLayer.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\Services.csproj.AssemblyReference.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfoInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\Services.AssemblyInfo.cs
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\Services.csproj.CoreCompileInputs.cache
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\Services.csproj.Up2Date
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\Services.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\refint\Services.dll
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\Services.pdb
+D:\DOC\ky5\PRN212\Project\GroupProject2\GroupProject\Services\obj\Debug\net9.0\ref\Services.dll

@@ -21,7 +21,7 @@ namespace Reponsitories.Implementations
 
         public List<Patron> Search(string keyword)
         {
-            throw new NotImplementedException();
+            return _patronDao.Search(keyword);
         }
         //   public List<Patron> Search(string keyword) => _patronDao.Search(keyword);
     }

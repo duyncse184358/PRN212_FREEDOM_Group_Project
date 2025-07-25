@@ -10,6 +10,6 @@ namespace Services
         User? LoginUser(string username, string password);
         void AddUser(User user);
         void UpdateUser(User user);
-        void DeleteUser(int id);
+        void DeleteUser(int id, int currentUserId);
     }
 }

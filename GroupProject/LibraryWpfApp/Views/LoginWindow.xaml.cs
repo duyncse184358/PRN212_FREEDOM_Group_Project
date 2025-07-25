@@ -31,5 +31,21 @@ namespace LibraryWpfApp.Views
                 vm.Password = ((PasswordBox)sender).Password;
             }
         }
+        // Cho phép kéo thả cửa sổ (vì đã tắt WindowStyle)
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        // Xử lý nút đóng
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+
     }
 }

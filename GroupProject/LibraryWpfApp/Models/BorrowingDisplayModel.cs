@@ -76,5 +76,13 @@ namespace LibraryWpfApp.Models
             get => _isFinePaid;
             set => SetProperty(ref _isFinePaid, value);
         }
+
+        private string? _bookImage;
+        public string? BookImage
+        {
+            get => _bookImage;
+            set => SetProperty(ref _bookImage, value);
+        }
+
     }
 }

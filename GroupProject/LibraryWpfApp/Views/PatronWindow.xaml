@@ -4,43 +4,224 @@
         xmlns:vm="clr-namespace:LibraryWpfApp.ViewModels"
         xmlns:conv="clr-namespace:LibraryWpfApp.Converters"
         Title="Patron Management" Height="600" Width="1000"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+         WindowState="Maximized"
+         WindowStyle="SingleBorderWindow"
+         ResizeMode="CanResize"
+         Background="#F4F7FB">  
 
     <Window.Resources>
+        <conv:BoolToVisibilityConverter x:Key="BoolToVisibility"/>
+
         <Style x:Key="RightAlignedText" TargetType="TextBlock">
             <Setter Property="TextAlignment" Value="Right"/>
         </Style>
-        <!-- ModernDatePickerStyle đã được định nghĩa trong App.xaml -->
+
+        <!-- Enhanced Button Style -->
+        <Style x:Key="EnhancedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF0066AA"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FF004488"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Search Button Style -->
+        <Style x:Key="SearchButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FF6C5CE7"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF5A4FCF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Action Button Styles -->
+        <Style x:Key="AddButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FF28A745"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF1E7E34"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="EditButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FFFFC107"/>
+            <Setter Property="Foreground" Value="#FF212529"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFE0A800"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="DeleteButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FFDC3545"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFC82333"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="HistoryButtonStyle" TargetType="Button" BasedOn="{StaticResource EnhancedButtonStyle}">
+            <Setter Property="Background" Value="#FF17A2B8"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF138496"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Enhanced TextBox Style -->
+        <Style x:Key="SearchTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Padding" Value="12,10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#FFCBD5E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#FF2D3748"/>
+            <Setter Property="Height" Value="40"/>
+        </Style>
+
+        <!-- Card Style -->
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderBrush" Value="#FFCBD5E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="8" ShadowDepth="2" Opacity="0.1"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Custom DataGrid Style with Blue Header -->
+        <Style x:Key="BlueHeaderDataGridStyle" TargetType="DataGrid">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#FFCBD5E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RowHeight" Value="35"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#FF24506D"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="Padding" Value="8,10"/>
+                        <Setter Property="BorderBrush" Value="#FF24506D"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,0"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
 
-    <DockPanel Margin="10">
-        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
-            <TextBox Width="300" Text="{Binding SearchKeyword}" Margin="0,0,10,0" Style="{StaticResource ModernTextBoxStyle}"/>
-            <Button Content="Search" Command="{Binding SearchCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"/>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-            <!-- Các nút quản lý chỉ hiển thị nếu CanManagePatrons là true (Admin/Librarian/Staff) -->
-            <Button Content="Add New" Command="{Binding AddCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
-                    Visibility="{Binding CanManagePatrons, Converter={StaticResource BoolToVisibility}}"/>
-            <Button Content="Edit Selected" Command="{Binding EditCommand}" Margin="0,0,10,0" Style="{StaticResource ModernButtonStyle}"
-                    Visibility="{Binding CanManagePatrons, Converter={StaticResource BoolToVisibility}}"/>
-            <Button Content="Delete Selected" Command="{Binding DeleteCommand}" Style="{StaticResource ModernButtonStyle}"
-                    Visibility="{Binding CanManagePatrons, Converter={StaticResource BoolToVisibility}}"/>
+        <!-- Header Section -->
+        <Border Grid.Row="0" Style="{StaticResource CardStyle}" Margin="0,0,0,20" Padding="20">
+            <StackPanel>
+                <!-- Title -->
+                <TextBlock Text="Patron Management System" FontSize="24" FontWeight="Bold" 
+                          Foreground="#FF2D3748" Margin="0,0,0,20"/>
 
-            <Button Content="View Borrowing History" Command="{Binding ViewBorrowingHistoryCommand}" Margin="20,0,0,0" Style="{StaticResource ModernButtonStyle}"/>
-        </StackPanel>
+                <!-- Search and Action Buttons -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-        <DataGrid ItemsSource="{Binding Patrons}"
-                  SelectedItem="{Binding SelectedPatron}"
-                  AutoGenerateColumns="False" IsReadOnly="True"
-                  Style="{StaticResource ModernDataGridStyle}">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding PatronId}" Width="Auto"/>
-                <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" Width="*"/>
-                <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="Auto"/>
-                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
-                <DataGridTextColumn Header="Membership" Binding="{Binding MembershipType}" Width="Auto"/>
-                <DataGridTextColumn Header="Registration Date" Binding="{Binding RegistrationDate, StringFormat=dd/MM/yyyy}" Width="Auto"/>
-            </DataGrid.Columns>
-        </DataGrid>
-    </DockPanel>
+                    <!-- Search Section -->
+                    <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                        <TextBox Width="300" Text="{Binding SearchKeyword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                Style="{StaticResource SearchTextBoxStyle}" 
+                                Margin="0,0,10,0"/>
+                        <Button Content="Search" Command="{Binding SearchCommand}" 
+                                Style="{StaticResource SearchButtonStyle}" Background="#FF24506D"
+                                Height="40" Width="100" Margin="0,0,20,0"/>
+                    </StackPanel>
+
+                    <!-- Action Buttons -->
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Content="Add New" Command="{Binding AddCommand}" 
+                                Style="{StaticResource AddButtonStyle}" 
+                                Height="40" Width="100" Margin="0,0,10,0"/>
+                        <Button Content="Edit" Command="{Binding EditCommand}" Background="#FF24506D"
+                                Style="{StaticResource EditButtonStyle}" Foreground="White"
+                                Height="40" Width="80" Margin="0,0,10,0"/>
+                        <Button Content="Delete" Command="{Binding DeleteCommand}" 
+                                Style="{StaticResource DeleteButtonStyle}" 
+                                Height="40" Width="80" Margin="0,0,15,0"/>
+                        <Button Content="View History" Command="{Binding ViewBorrowingHistoryCommand}" 
+                                Style="{StaticResource HistoryButtonStyle}"  Background="#FF24506D"
+                                Height="40" Width="96"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <!-- Data Grid Section -->
+        <Border Grid.Row="1" Style="{StaticResource CardStyle}" Padding="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="Library Patrons" FontSize="18" FontWeight="SemiBold" 
+                          Foreground="#FF2D3748" Margin="0,0,0,15"/>
+
+                <DataGrid Grid.Row="1"
+                         ItemsSource="{Binding Patrons}"
+                         SelectedItem="{Binding SelectedPatron}"
+                         AutoGenerateColumns="False" IsReadOnly="True"
+                         Style="{StaticResource BlueHeaderDataGridStyle}"
+                         GridLinesVisibility="Horizontal"
+                         HorizontalGridLinesBrush="#FFE0E7EF"
+                         VerticalGridLinesBrush="Transparent">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding PatronId}" Width="60" MinWidth="50"/>
+                        <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" Width="2*" MinWidth="150"/>
+                        <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="120" MinWidth="100"/>
+                        <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="2*" MinWidth="150"/>
+                        <DataGridTextColumn Header="Membership" Binding="{Binding MembershipType}" Width="120" MinWidth="100"/>
+                        <DataGridTextColumn Header="Registration" Binding="{Binding RegistrationDate, StringFormat=dd/MM/yyyy}" Width="120" MinWidth="100"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
 </Window>

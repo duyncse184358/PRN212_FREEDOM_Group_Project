@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +9,7 @@ using Services;
 using System.Windows.Input;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
+using LibraryWpfApp.Helpers;
 
 namespace LibraryWpfApp.ViewModels
 {
@@ -64,9 +65,13 @@ namespace LibraryWpfApp.ViewModels
 
             if (user != null)
             {
-                AppContext.CurrentUserID = user.UserId;
-                AppContext.CurrentUserName = user.UserName;
-                AppContext.CurrentUserRole = user.Role ?? "Guest";
+                //AppContext.CurrentUserID = user.UserId;
+                //AppContext.CurrentUserName = user.UserName;
+                //AppContext.CurrentUserRole = user.Role ?? "Guest";
+                AppSession.CurrentUserId = user.UserId;
+                AppSession.CurrentUserName = user.UserName;
+                AppSession.CurrentUserRole = user.Role ?? "Guest";
+
 
                 Console.WriteLine($"Login successful! User: {AppContext.CurrentUserName}, Role: {AppContext.CurrentUserRole}"); // Debug
 

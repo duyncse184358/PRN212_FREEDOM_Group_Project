@@ -18,6 +18,7 @@ namespace Reponsitories.Implementations
         public User? Login(string username, string password) => _userDao.Login(username, password);
         public void Add(User user) => _userDao.Add(user);
         public void Update(User user) => _userDao.Update(user);
-        public void Delete(int id) => _userDao.Delete(id);
+
+        public void Delete(int id, int currentUserId) => _userDao.Delete(id, currentUserId);
     }
 }

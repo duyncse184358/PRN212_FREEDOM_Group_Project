@@ -45,7 +45,7 @@ namespace DataAccessLayer
                 if (string.IsNullOrEmpty(connectionString))
                 {
                     Console.WriteLine("Connection string 'DefaultConnection' not found in appsettings.json. Using fallback for DbContext.");
-                    optionsBuilder.UseSqlServer("server=localhost;database=LibraryDB;uid=sa;pwd=12345; TrustServerCertificate=True");
+                    optionsBuilder.UseSqlServer("server=localhost;database=LibraryDB4;uid=sa;pwd=12345; TrustServerCertificate=True");
                 }
                 else
                 {
@@ -82,6 +82,9 @@ namespace DataAccessLayer
                 entity.Property(e => e.Status)
                     .HasMaxLength(50)
                     .IsUnicode(false);
+                entity.Property(e => e.ImagePath)  // ✅ THÊM DÒNG NÀY
+               .HasMaxLength(255)
+               .IsUnicode(false);
 
                 entity.HasOne(d => d.Category).WithMany(p => p.Books)
                     .HasForeignKey(d => d.CategoryId)
